@@ -13,7 +13,7 @@ public final class Static20 {
         try {
             if (arg0 == 0) {
                 @Pc(11) Buffer local11 = new Buffer(arg1.method666("flo.dat", null), -26728);
-                GroundShadowModel.textureId = local11.method482();
+                GroundShadowModel.textureId = local11.get2();
                 if (aGroundShadowModelArray1 == null) {
                     aGroundShadowModelArray1 = new GroundShadowModel[GroundShadowModel.textureId];
                 }

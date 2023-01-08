@@ -147,7 +147,7 @@ public final class Js5GlTextureProvider {
                         if (local37 >= 0 && local37 < 104 && local41 >= 0 && local41 < 104) {
                             this.aByteArrayArrayArray1[local23][local37][local41] = 0;
                             while (true) {
-                                local63 = local7.method480();
+                                local63 = local7.get1();
                                 if (local63 == 0) {
                                     if (local23 == 0) {
                                         this.anIntArrayArrayArray3[0][local37][local41] = -Static6.method64(local37 + arg2 + 932731, local41 + 556238 + arg0) * 8;
@@ -157,7 +157,7 @@ public final class Js5GlTextureProvider {
                                     break;
                                 }
                                 if (local63 == 1) {
-                                    @Pc(119) int local119 = local7.method480();
+                                    @Pc(119) int local119 = local7.get1();
                                     if (local119 == 1) {
                                         local119 = 0;
                                     }
@@ -169,7 +169,7 @@ public final class Js5GlTextureProvider {
                                     break;
                                 }
                                 if (local63 <= 49) {
-                                    this.aByteArrayArrayArray3[local23][local37][local41] = local7.method481();
+                                    this.aByteArrayArrayArray3[local23][local37][local41] = local7.get1Signed();
                                     this.aByteArrayArrayArray4[local23][local37][local41] = (byte) ((local63 - 2) / 4);
                                     this.aByteArrayArrayArray5[local23][local37][local41] = (byte) (local63 - 2 & 0x3);
                                 } else if (local63 <= 81) {
@@ -180,16 +180,16 @@ public final class Js5GlTextureProvider {
                             }
                         } else {
                             while (true) {
-                                local63 = local7.method480();
+                                local63 = local7.get1();
                                 if (local63 == 0) {
                                     break;
                                 }
                                 if (local63 == 1) {
-                                    local7.method480();
+                                    local7.get1();
                                     break;
                                 }
                                 if (local63 <= 49) {
-                                    local7.method480();
+                                    local7.get1();
                                 }
                             }
                         }
@@ -228,7 +228,7 @@ public final class Js5GlTextureProvider {
                     @Pc(44) int local44 = local29 & 0x3F;
                     @Pc(50) int local50 = local29 >> 6 & 0x3F;
                     @Pc(54) int local54 = local29 >> 12;
-                    @Pc(57) int local57 = local7.method480();
+                    @Pc(57) int local57 = local7.get1();
                     @Pc(61) int local61 = local57 >> 2;
                     @Pc(65) int local65 = local57 & 0x3;
                     @Pc(69) int local69 = local50 + arg3;

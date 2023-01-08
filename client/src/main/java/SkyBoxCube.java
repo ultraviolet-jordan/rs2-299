@@ -94,38 +94,38 @@ public final class SkyBoxCube extends World {
     public SkyBoxCube(@OriginalArg(0) Class47 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
         @Pc(49) Buffer local49 = new Buffer(arg0.method666(arg1 + ".dat", null), -26728);
         @Pc(58) Buffer local58 = new Buffer(arg0.method666("index.dat", null), -26728);
-        local58.anInt742 = local49.method482();
-        this.anInt656 = local58.method482();
-        this.anInt657 = local58.method482();
-        @Pc(73) int local73 = local58.method480();
+        local58.anInt742 = local49.get2();
+        this.anInt656 = local58.get2();
+        this.anInt657 = local58.get2();
+        @Pc(73) int local73 = local58.get1();
         @Pc(76) int[] local76 = new int[local73];
         for (@Pc(78) int local78 = 0; local78 < local73 - 1; local78++) {
-            local76[local78 + 1] = local58.method484();
+            local76[local78 + 1] = local58.get3();
             if (local76[local78 + 1] == 0) {
                 local76[local78 + 1] = 1;
             }
         }
         for (@Pc(113) int local113 = 0; local113 < arg2; local113++) {
             local58.anInt742 += 2;
-            local49.anInt742 += local58.method482() * local58.method482();
+            local49.anInt742 += local58.get2() * local58.get2();
             local58.anInt742++;
         }
-        this.anInt654 = local58.method480();
-        this.anInt655 = local58.method480();
-        this.anInt652 = local58.method482();
-        this.contextId = local58.method482();
-        @Pc(160) int local160 = local58.method480();
+        this.anInt654 = local58.get1();
+        this.anInt655 = local58.get1();
+        this.anInt652 = local58.get2();
+        this.contextId = local58.get2();
+        @Pc(160) int local160 = local58.get1();
         @Pc(166) int local166 = this.anInt652 * this.contextId;
         this.anIntArray208 = new int[local166];
         @Pc(174) int local174;
         if (local160 == 0) {
             for (local174 = 0; local174 < local166; local174++) {
-                this.anIntArray208[local174] = local76[local49.method480()];
+                this.anIntArray208[local174] = local76[local49.get1()];
             }
         } else if (local160 == 1) {
             for (local174 = 0; local174 < this.anInt652; local174++) {
                 for (@Pc(198) int local198 = 0; local198 < this.contextId; local198++) {
-                    this.anIntArray208[local174 + local198 * this.anInt652] = local76[local49.method480()];
+                    this.anIntArray208[local174 + local198 * this.anInt652] = local76[local49.get1()];
                 }
             }
         }

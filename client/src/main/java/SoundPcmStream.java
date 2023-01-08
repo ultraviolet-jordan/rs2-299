@@ -51,31 +51,31 @@ public final class SoundPcmStream {
             }
             while (true) {
                 while (true) {
-                    @Pc(15) int local15 = arg0.method480();
+                    @Pc(15) int local15 = arg0.get1();
                     if (local15 == 0) {
                         return;
                     }
                     if (local15 == 1) {
-                        this.anInt828 = arg0.method482();
+                        this.anInt828 = arg0.get2();
                     } else if (local15 == 2) {
-                        this.anInt829 = arg0.method482();
+                        this.anInt829 = arg0.get2();
                         if (Static24.aClass27Array1 != null) {
                             this.aClass27_2 = Static24.aClass27Array1[this.anInt829];
                         }
                     } else if (local15 == 4) {
-                        this.anInt830 = arg0.method482();
+                        this.anInt830 = arg0.get2();
                     } else if (local15 == 5) {
-                        this.anInt831 = arg0.method482();
+                        this.anInt831 = arg0.get2();
                     } else if (local15 == 6) {
-                        this.anInt832 = arg0.method482();
+                        this.anInt832 = arg0.get2();
                     } else if (local15 == 7) {
-                        this.anInt833 = arg0.method480();
+                        this.anInt833 = arg0.get1();
                     } else if (local15 == 8) {
-                        this.anInt834 = arg0.method480();
+                        this.anInt834 = arg0.get1();
                     } else if (local15 >= 40 && local15 < 50) {
-                        this.anIntArray229[local15 - 40] = arg0.method482();
+                        this.anIntArray229[local15 - 40] = arg0.get2();
                     } else if (local15 >= 50 && local15 < 60) {
-                        this.anIntArray230[local15 - 50] = arg0.method482();
+                        this.anIntArray230[local15 - 50] = arg0.get2();
                     } else {
                         System.out.println("Error unrecognised spotanim config code: " + local15);
                     }

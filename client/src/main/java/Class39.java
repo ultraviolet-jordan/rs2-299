@@ -45,34 +45,34 @@ public final class Class39 {
         try {
             if (arg1 == 39196) {
                 while (true) {
-                    @Pc(8) int local8 = arg2.method480();
+                    @Pc(8) int local8 = arg2.get1();
                     if (local8 == 0) {
                         return;
                     }
                     if (local8 == 1) {
-                        this.anInt890 = arg2.method480();
+                        this.anInt890 = arg2.get1();
                     } else if (local8 == 2) {
-                        this.anInt891 = arg2.method480();
+                        this.anInt891 = arg2.get1();
                     } else if (local8 == 3) {
                         this.aBoolean217 = true;
                         Static30.anIntArray247[NpcList.size++] = arg0;
                     } else if (local8 == 4) {
                         this.aBoolean218 = false;
                     } else if (local8 == 5) {
-                        this.anInt892 = arg2.method482();
+                        this.anInt892 = arg2.get2();
                     } else if (local8 == 6) {
                         this.aBoolean219 = true;
                     } else if (local8 == 7) {
-                        this.anInt893 = arg2.method485();
+                        this.anInt893 = arg2.get4();
                     } else if (local8 == 8) {
                         this.anInt894 = 1;
                         this.aBoolean220 = true;
                     } else if (local8 == 10) {
-                        this.aString28 = arg2.method487();
+                        this.aString28 = arg2.getString();
                     } else if (local8 == 11) {
                         this.aBoolean220 = true;
                     } else if (local8 == 12) {
-                        this.anInt895 = arg2.method485();
+                        this.anInt895 = arg2.get4();
                     } else if (local8 == 13) {
                         this.anInt894 = 2;
                     } else {

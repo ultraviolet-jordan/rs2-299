@@ -33,22 +33,22 @@ public final class PathingEntity {
         try {
             if (arg1 == 39196) {
                 while (true) {
-                    @Pc(8) int local8 = arg2.method480();
+                    @Pc(8) int local8 = arg2.get1();
                     if (local8 == 0) {
                         return;
                     }
                     if (local8 == 1) {
-                        this.anInt846 = arg2.method482();
-                        this.anInt847 = arg2.method480();
-                        this.anInt848 = arg2.method480();
+                        this.anInt846 = arg2.get2();
+                        this.anInt847 = arg2.get1();
+                        this.anInt848 = arg2.get1();
                     } else if (local8 == 10) {
-                        this.aString27 = arg2.method487();
+                        this.aString27 = arg2.getString();
                     } else if (local8 == 2) {
                         this.aBoolean212 = true;
                     } else if (local8 == 3) {
-                        this.anInt849 = arg2.method485();
+                        this.anInt849 = arg2.get4();
                     } else if (local8 == 4) {
-                        this.anInt850 = arg2.method485();
+                        this.anInt850 = arg2.get4();
                     } else {
                         System.out.println("Error unrecognised config code: " + local8);
                     }

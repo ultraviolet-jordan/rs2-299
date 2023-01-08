@@ -15,7 +15,7 @@ public final class Static27 {
     public static void method527(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
             @Pc(10) Buffer local10 = new Buffer(arg1.method666("varbit.dat", null), -26728);
-            anInt845 = local10.method482();
+            anInt845 = local10.get2();
             if (aPathingEntityArray1 == null) {
                 aPathingEntityArray1 = new PathingEntity[anInt845];
             }

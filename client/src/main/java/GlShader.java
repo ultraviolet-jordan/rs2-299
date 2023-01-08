@@ -179,7 +179,7 @@ public final class GlShader {
                 @Pc(36) int local36;
                 do {
                     while (true) {
-                        @Pc(16) int local16 = arg0.method480();
+                        @Pc(16) int local16 = arg0.get1();
                         if (local16 == 0) {
                             if (local3 == -1) {
                                 this.aBoolean120 = false;
@@ -201,32 +201,32 @@ public final class GlShader {
                             return;
                         }
                         if (local16 == 1) {
-                            local24 = arg0.method480();
+                            local24 = arg0.get1();
                             break;
                         }
                         if (local16 == 2) {
-                            this.aString23 = arg0.method487();
+                            this.aString23 = arg0.getString();
                         } else if (local16 == 3) {
-                            this.aByteArray4 = arg0.method488((byte) 6);
+                            this.aByteArray4 = arg0.getStringArray((byte) 6);
                         } else if (local16 == 5) {
-                            local24 = arg0.method480();
+                            local24 = arg0.get1();
                             if (local24 > 0) {
                                 this.anIntArray157 = null;
                                 this.anIntArray156 = new int[local24];
                                 for (local36 = 0; local36 < local24; local36++) {
-                                    this.anIntArray156[local36] = arg0.method482();
+                                    this.anIntArray156[local36] = arg0.get2();
                                 }
                             }
                         } else if (local16 == 14) {
-                            this.anInt513 = arg0.method480();
+                            this.anInt513 = arg0.get1();
                         } else if (local16 == 15) {
-                            this.anInt514 = arg0.method480();
+                            this.anInt514 = arg0.get1();
                         } else if (local16 == 17) {
                             this.aBoolean118 = false;
                         } else if (local16 == 18) {
                             this.aBoolean119 = false;
                         } else if (local16 == 19) {
-                            local3 = arg0.method480();
+                            local3 = arg0.get1();
                             if (local3 == 1) {
                                 this.aBoolean120 = true;
                             }
@@ -237,73 +237,73 @@ public final class GlShader {
                         } else if (local16 == 23) {
                             this.aBoolean123 = true;
                         } else if (local16 == 24) {
-                            this.anInt515 = arg0.method482();
+                            this.anInt515 = arg0.get2();
                             if (this.anInt515 == 65535) {
                                 this.anInt515 = -1;
                             }
                         } else if (local16 == 28) {
-                            this.anInt516 = arg0.method480();
+                            this.anInt516 = arg0.get1();
                         } else if (local16 == 29) {
-                            this.aByte14 = arg0.method481();
+                            this.aByte14 = arg0.get1Signed();
                         } else if (local16 == 39) {
-                            this.aByte15 = arg0.method481();
+                            this.aByte15 = arg0.get1Signed();
                         } else if (local16 >= 30 && local16 < 39) {
                             if (this.aStringArray8 == null) {
                                 this.aStringArray8 = new String[5];
                             }
-                            this.aStringArray8[local16 - 30] = arg0.method487();
+                            this.aStringArray8[local16 - 30] = arg0.getString();
                             if (this.aStringArray8[local16 - 30].equalsIgnoreCase("hidden")) {
                                 this.aStringArray8[local16 - 30] = null;
                             }
                         } else if (local16 == 40) {
-                            local24 = arg0.method480();
+                            local24 = arg0.get1();
                             this.anIntArray158 = new int[local24];
                             this.anIntArray159 = new int[local24];
                             for (local36 = 0; local36 < local24; local36++) {
-                                this.anIntArray158[local36] = arg0.method482();
-                                this.anIntArray159[local36] = arg0.method482();
+                                this.anIntArray158[local36] = arg0.get2();
+                                this.anIntArray159[local36] = arg0.get2();
                             }
                         } else if (local16 == 60) {
-                            this.anInt517 = arg0.method482();
+                            this.anInt517 = arg0.get2();
                         } else if (local16 == 62) {
                             this.aBoolean124 = true;
                         } else if (local16 == 64) {
                             this.aBoolean125 = false;
                         } else if (local16 == 65) {
-                            this.anInt519 = arg0.method482();
+                            this.anInt519 = arg0.get2();
                         } else if (local16 == 66) {
-                            this.anInt520 = arg0.method482();
+                            this.anInt520 = arg0.get2();
                         } else if (local16 == 67) {
-                            this.anInt521 = arg0.method482();
+                            this.anInt521 = arg0.get2();
                         } else if (local16 == 68) {
-                            this.anInt518 = arg0.method482();
+                            this.anInt518 = arg0.get2();
                         } else if (local16 == 69) {
-                            this.anInt525 = arg0.method480();
+                            this.anInt525 = arg0.get1();
                         } else if (local16 == 70) {
-                            this.anInt522 = arg0.method483();
+                            this.anInt522 = arg0.get2Signed();
                         } else if (local16 == 71) {
-                            this.anInt523 = arg0.method483();
+                            this.anInt523 = arg0.get2Signed();
                         } else if (local16 == 72) {
-                            this.anInt524 = arg0.method483();
+                            this.anInt524 = arg0.get2Signed();
                         } else if (local16 == 73) {
                             this.aBoolean126 = true;
                         } else if (local16 == 74) {
                             this.aBoolean127 = true;
                         } else if (local16 == 75) {
-                            this.anInt526 = arg0.method480();
+                            this.anInt526 = arg0.get1();
                         } else if (local16 == 77) {
-                            this.anInt527 = arg0.method482();
+                            this.anInt527 = arg0.get2();
                             if (this.anInt527 == 65535) {
                                 this.anInt527 = -1;
                             }
-                            this.anInt528 = arg0.method482();
+                            this.anInt528 = arg0.get2();
                             if (this.anInt528 == 65535) {
                                 this.anInt528 = -1;
                             }
-                            local24 = arg0.method480();
+                            local24 = arg0.get1();
                             this.anIntArray160 = new int[local24 + 1];
                             for (local36 = 0; local36 <= local24; local36++) {
-                                this.anIntArray160[local36] = arg0.method482();
+                                this.anIntArray160[local36] = arg0.get2();
                                 if (this.anIntArray160[local36] == 65535) {
                                     this.anIntArray160[local36] = -1;
                                 }
@@ -314,8 +314,8 @@ public final class GlShader {
                 this.anIntArray157 = new int[local24];
                 this.anIntArray156 = new int[local24];
                 for (local36 = 0; local36 < local24; local36++) {
-                    this.anIntArray156[local36] = arg0.method482();
-                    this.anIntArray157[local36] = arg0.method480();
+                    this.anIntArray156[local36] = arg0.get2();
+                    this.anIntArray157[local36] = arg0.get1();
                 }
             }
         } catch (@Pc(529) RuntimeException local529) {

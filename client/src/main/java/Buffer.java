@@ -96,12 +96,9 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(ZI)V")
-    public void method469(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1) {
+    public void putPacketId(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1) {
         try {
             this.aByteArray9[this.anInt742++] = (byte) (arg1 + this.aJs5CachedResourceProvider2.method662());
-            if (arg0) {
-                ;
-            }
         } catch (@Pc(19) RuntimeException local19) {
             signlink.reporterror("21690, " + arg0 + ", " + arg1 + ", " + local19.toString());
             throw new RuntimeException();
@@ -109,18 +106,18 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(I)V")
-    public void method470(@OriginalArg(0) int arg0) {
+    public void put1(@OriginalArg(0) int arg0) {
         this.aByteArray9[this.anInt742++] = (byte) arg0;
     }
 
     @OriginalMember(owner = "client!lb", name = "b", descriptor = "(I)V")
-    public void clear(@OriginalArg(0) int arg0) {
+    public void put2(@OriginalArg(0) int arg0) {
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 8);
         this.aByteArray9[this.anInt742++] = (byte) arg0;
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(II)V")
-    public void method472(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+    public void put2LE(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
         try {
             this.aByteArray9[this.anInt742++] = (byte) arg0;
             if (arg1 != 0) {
@@ -134,14 +131,14 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "c", descriptor = "(I)V")
-    public void method473(@OriginalArg(0) int arg0) {
+    public void put3(@OriginalArg(0) int arg0) {
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 16);
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 8);
         this.aByteArray9[this.anInt742++] = (byte) arg0;
     }
 
     @OriginalMember(owner = "client!lb", name = "d", descriptor = "(I)V")
-    public void method474(@OriginalArg(0) int arg0) {
+    public void put4(@OriginalArg(0) int arg0) {
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 24);
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 16);
         this.aByteArray9[this.anInt742++] = (byte) (arg0 >> 8);
@@ -149,7 +146,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(BI)V")
-    public void method475(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1) {
+    public void put4LE(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1) {
         try {
             this.aByteArray9[this.anInt742++] = (byte) arg1;
             this.aByteArray9[this.anInt742++] = (byte) (arg1 >> 8);
@@ -164,7 +161,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(IJ)V")
-    public void method476(@OriginalArg(0) int arg0, @OriginalArg(1) long arg1) {
+    public void put8(@OriginalArg(0) int arg0, @OriginalArg(1) long arg1) {
         try {
             this.aByteArray9[this.anInt742++] = (byte) (arg1 >> 56);
             this.aByteArray9[this.anInt742++] = (byte) (arg1 >> 48);
@@ -184,14 +181,14 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(Ljava/lang/String;)V")
-    public void method477(@OriginalArg(0) String arg0) {
+    public void putString(@OriginalArg(0) String arg0) {
         arg0.getBytes(0, arg0.length(), this.aByteArray9, this.anInt742);
         this.anInt742 += arg0.length();
         this.aByteArray9[this.anInt742++] = 10;
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(II[BI)V")
-    public void method478(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
+    public void putBytes(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
         try {
             if (arg3 != 0) {
                 this.aBoolean186 = !this.aBoolean186;
@@ -206,7 +203,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "b", descriptor = "(II)V")
-    public void method479(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+    public void putPacketSize(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
         try {
             this.aByteArray9[this.anInt742 - arg1 - 1] = (byte) arg1;
             if (arg0 != -28191) {
@@ -219,23 +216,23 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "c", descriptor = "()I")
-    public int method480() {
+    public int get1() {
         return this.aByteArray9[this.anInt742++] & 0xFF;
     }
 
     @OriginalMember(owner = "client!lb", name = "d", descriptor = "()B")
-    public byte method481() {
+    public byte get1Signed() {
         return this.aByteArray9[this.anInt742++];
     }
 
     @OriginalMember(owner = "client!lb", name = "e", descriptor = "()I")
-    public int method482() {
+    public int get2() {
         this.anInt742 += 2;
         return ((this.aByteArray9[this.anInt742 - 2] & 0xFF) << 8) + (this.aByteArray9[this.anInt742 - 1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!lb", name = "f", descriptor = "()I")
-    public int method483() {
+    public int get2Signed() {
         this.anInt742 += 2;
         @Pc(27) int local27 = ((this.aByteArray9[this.anInt742 - 2] & 0xFF) << 8) + (this.aByteArray9[this.anInt742 - 1] & 0xFF);
         if (local27 > 32767) {
@@ -245,22 +242,22 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "g", descriptor = "()I")
-    public int method484() {
+    public int get3() {
         this.anInt742 += 3;
         return ((this.aByteArray9[this.anInt742 - 3] & 0xFF) << 16) + ((this.aByteArray9[this.anInt742 - 2] & 0xFF) << 8) + (this.aByteArray9[this.anInt742 - 1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!lb", name = "h", descriptor = "()I")
-    public int method485() {
+    public int get4() {
         this.anInt742 += 4;
         return ((this.aByteArray9[this.anInt742 - 4] & 0xFF) << 24) + ((this.aByteArray9[this.anInt742 - 3] & 0xFF) << 16) + ((this.aByteArray9[this.anInt742 - 2] & 0xFF) << 8) + (this.aByteArray9[this.anInt742 - 1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!lb", name = "e", descriptor = "(I)J")
-    public long method486(@OriginalArg(0) int arg0) {
+    public long get8(@OriginalArg(0) int arg0) {
         try {
-            @Pc(5) long local5 = (long) this.method485() & 0xFFFFFFFFL;
-            @Pc(11) long local11 = (long) this.method485() & 0xFFFFFFFFL;
+            @Pc(5) long local5 = (long) this.get4() & 0xFFFFFFFFL;
+            @Pc(11) long local11 = (long) this.get4() & 0xFFFFFFFFL;
             if (arg0 != 0) {
                 throw new NullPointerException();
             }
@@ -272,7 +269,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "i", descriptor = "()Ljava/lang/String;")
-    public String method487() {
+    public String getString() {
         @Pc(2) int local2 = this.anInt742;
         while (this.aByteArray9[this.anInt742++] != 10) {
         }
@@ -280,7 +277,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(B)[B")
-    public byte[] method488(@OriginalArg(0) byte arg0) {
+    public byte[] getStringArray(@OriginalArg(0) byte arg0) {
         try {
             @Pc(10) int local10;
             if (arg0 == 6) {
@@ -304,7 +301,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(II[BB)V")
-    public void method489(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) byte arg3) {
+    public void getBytes(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) byte arg3) {
         try {
             if (arg3 == 121) {
                 for (@Pc(5) int local5 = arg1; local5 < arg1 + arg0; local5++) {
@@ -318,7 +315,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "f", descriptor = "(I)V")
-    public void method490(@OriginalArg(0) int arg0) {
+    public void accessBits(@OriginalArg(0) int arg0) {
         try {
             this.anInt743 = this.anInt742 * 8;
             if (arg0 != 0) {
@@ -331,7 +328,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "c", descriptor = "(II)I")
-    public int method491(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+    public int getBit(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
         try {
             if (arg0 <= 0) {
                 this.aBoolean186 = !this.aBoolean186;
@@ -358,7 +355,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "g", descriptor = "(I)V")
-    public void method492(@OriginalArg(0) int arg0) {
+    public void accessBytes(@OriginalArg(0) int arg0) {
         try {
             this.anInt742 = (this.anInt743 + 7) / 8;
             @Pc(11) int local11 = 74 / arg0;
@@ -371,29 +368,29 @@ public final class Buffer extends ObjStackNode {
     @OriginalMember(owner = "client!lb", name = "j", descriptor = "()I")
     public int method493() {
         @Pc(7) int local7 = this.aByteArray9[this.anInt742] & 0xFF;
-        return local7 < 128 ? this.method480() - 64 : this.method482() - 49152;
+        return local7 < 128 ? this.get1() - 64 : this.get2() - 49152;
     }
 
     @OriginalMember(owner = "client!lb", name = "k", descriptor = "()I")
     public int method494() {
         @Pc(7) int local7 = this.aByteArray9[this.anInt742] & 0xFF;
-        return local7 < 128 ? this.method480() : this.method482() - 32768;
+        return local7 < 128 ? this.get1() : this.get2() - 32768;
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(ILjava/math/BigInteger;Ljava/math/BigInteger;)V")
-    public void method495(@OriginalArg(0) int arg0, @OriginalArg(1) BigInteger arg1, @OriginalArg(2) BigInteger arg2) {
+    public void rsa(@OriginalArg(0) int arg0, @OriginalArg(1) BigInteger arg1, @OriginalArg(2) BigInteger arg2) {
         try {
             @Pc(2) int local2 = this.anInt742;
             this.anInt742 = 0;
             @Pc(8) byte[] local8 = new byte[local2];
-            this.method489(local2, 0, local8, (byte) 121);
+            this.getBytes(local2, 0, local8, (byte) 121);
             @Pc(19) BigInteger local19 = new BigInteger(local8);
             if (arg0 >= 0 && arg0 <= 0) {
                 @Pc(29) BigInteger local29 = local19.modPow(arg1, arg2);
                 @Pc(32) byte[] local32 = local29.toByteArray();
                 this.anInt742 = 0;
-                this.method470(local32.length);
-                this.method478(0, local32.length, local32, 0);
+                this.put1(local32.length);
+                this.putBytes(0, local32.length, local32, 0);
             }
         } catch (@Pc(48) RuntimeException local48) {
             signlink.reporterror("67746, " + arg0 + ", " + arg1 + ", " + arg2 + ", " + local48.toString());

@@ -192,7 +192,7 @@ public final class Sound extends Class1_Sub1_Sub1 {
             @Pc(216) int local216;
             @Pc(225) int local225;
             for (@Pc(200) int local200 = 0; local200 < this.anInt490; local200++) {
-                local205 = local144.method480();
+                local205 = local144.get1();
                 local207 = 0;
                 if ((local205 & 0x1) != 0) {
                     local207 = local155.method493();
@@ -212,7 +212,7 @@ public final class Sound extends Class1_Sub1_Sub1 {
                 local196 = this.anIntArray119[local200];
                 local198 = this.anIntArray120[local200];
                 if (this.anIntArray134 != null) {
-                    this.anIntArray134[local200] = local188.method480();
+                    this.anIntArray134[local200] = local188.get1();
                 }
             }
             local144.anInt742 = local26.anInt731;
@@ -221,18 +221,18 @@ public final class Sound extends Class1_Sub1_Sub1 {
             local177.anInt742 = local26.anInt734;
             local188.anInt742 = local26.world;
             for (local205 = 0; local205 < this.anInt491; local205++) {
-                this.anIntArray130[local205] = local144.method482();
+                this.anIntArray130[local205] = local144.get2();
                 if (this.anIntArray127 != null) {
-                    this.anIntArray127[local205] = local155.method480();
+                    this.anIntArray127[local205] = local155.get1();
                 }
                 if (this.anIntArray128 != null) {
-                    this.anIntArray128[local205] = local166.method480();
+                    this.anIntArray128[local205] = local166.get1();
                 }
                 if (this.anIntArray129 != null) {
-                    this.anIntArray129[local205] = local177.method480();
+                    this.anIntArray129[local205] = local177.get1();
                 }
                 if (this.anIntArray135 != null) {
-                    this.anIntArray135[local205] = local188.method480();
+                    this.anIntArray135[local205] = local188.get1();
                 }
             }
             local144.anInt742 = local26.anInt729;
@@ -243,7 +243,7 @@ public final class Sound extends Class1_Sub1_Sub1 {
             @Pc(369) int local369 = 0;
             @Pc(376) int local376;
             for (@Pc(371) int local371 = 0; local371 < this.anInt491; local371++) {
-                local376 = local155.method480();
+                local376 = local155.get1();
                 if (local376 == 1) {
                     local207 = local144.method493() + local369;
                     local216 = local144.method493() + local207;
@@ -287,9 +287,9 @@ public final class Sound extends Class1_Sub1_Sub1 {
             }
             local144.anInt742 = local26.anInt2989;
             for (local376 = 0; local376 < this.anInt493; local376++) {
-                this.anIntArray131[local376] = local144.method482();
-                this.anIntArray132[local376] = local144.method482();
-                this.anIntArray133[local376] = local144.method482();
+                this.anIntArray131[local376] = local144.get2();
+                this.anIntArray132[local376] = local144.get2();
+                this.anIntArray133[local376] = local144.get2();
             }
         } catch (@Pc(550) RuntimeException local550) {
             signlink.reporterror("7397, " + arg0 + ", " + arg1 + ", " + local550.toString());

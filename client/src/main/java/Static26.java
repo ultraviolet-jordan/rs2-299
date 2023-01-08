@@ -21,7 +21,7 @@ public final class Static26 {
     public static void method521(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
             @Pc(8) Buffer local8 = new Buffer(arg1.method666("spotanim.dat", null), -26728);
-            anInt826 = local8.method482();
+            anInt826 = local8.get2();
             if (aSoundPcmStreamArray1 == null) {
                 aSoundPcmStreamArray1 = new SoundPcmStream[anInt826];
             }

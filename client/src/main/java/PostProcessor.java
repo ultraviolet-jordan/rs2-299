@@ -126,20 +126,20 @@ public final class PostProcessor {
     public void method55(@OriginalArg(0) TextureOpIrregularBricks arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
             if (arg1 == 39196) {
-                @Pc(8) int local8 = arg2.method480();
+                @Pc(8) int local8 = arg2.get1();
                 this.anIntArray18[0] = local8 >> 4;
                 this.anIntArray18[1] = local8 & 0xF;
                 if (local8 == 0) {
                     this.anIntArray19[0] = this.anIntArray19[1] = 0;
                 } else {
-                    this.anIntArray19[0] = arg2.method482();
-                    this.anIntArray19[1] = arg2.method482();
-                    @Pc(39) int local39 = arg2.method480();
+                    this.anIntArray19[0] = arg2.get2();
+                    this.anIntArray19[1] = arg2.get2();
+                    @Pc(39) int local39 = arg2.get1();
                     @Pc(45) int local45;
                     for (@Pc(41) int local41 = 0; local41 < 2; local41++) {
                         for (local45 = 0; local45 < this.anIntArray18[local41]; local45++) {
-                            this.anIntArrayArrayArray1[local41][0][local45] = arg2.method482();
-                            this.anIntArrayArrayArray2[local41][0][local45] = arg2.method482();
+                            this.anIntArrayArrayArray1[local41][0][local45] = arg2.get2();
+                            this.anIntArrayArrayArray2[local41][0][local45] = arg2.get2();
                         }
                     }
                     for (local45 = 0; local45 < 2; local45++) {
@@ -148,8 +148,8 @@ public final class PostProcessor {
                                 this.anIntArrayArrayArray1[local45][1][local84] = this.anIntArrayArrayArray1[local45][0][local84];
                                 this.anIntArrayArrayArray2[local45][1][local84] = this.anIntArrayArrayArray2[local45][0][local84];
                             } else {
-                                this.anIntArrayArrayArray1[local45][1][local84] = arg2.method482();
-                                this.anIntArrayArrayArray2[local45][1][local84] = arg2.method482();
+                                this.anIntArrayArrayArray1[local45][1][local84] = arg2.get2();
+                                this.anIntArrayArrayArray2[local45][1][local84] = arg2.get2();
                             }
                         }
                     }

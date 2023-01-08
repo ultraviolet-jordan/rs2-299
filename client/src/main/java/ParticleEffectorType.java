@@ -265,7 +265,7 @@ public final class ParticleEffectorType {
             this.aTextureOpIrregularBricks1.method42(arg0, 8);
             this.aTextureOpIrregularBricks2 = new TextureOpIrregularBricks();
             this.aTextureOpIrregularBricks2.method42(arg0, 8);
-            @Pc(24) int local24 = arg0.method480();
+            @Pc(24) int local24 = arg0.get1();
             if (arg1 != 8) {
                 this.anInt478 = -416;
             }
@@ -276,7 +276,7 @@ public final class ParticleEffectorType {
                 this.aTextureOpIrregularBricks4 = new TextureOpIrregularBricks();
                 this.aTextureOpIrregularBricks4.method42(arg0, 8);
             }
-            local24 = arg0.method480();
+            local24 = arg0.get1();
             if (local24 != 0) {
                 arg0.anInt742--;
                 this.aTextureOpIrregularBricks5 = new TextureOpIrregularBricks();
@@ -284,7 +284,7 @@ public final class ParticleEffectorType {
                 this.aTextureOpIrregularBricks6 = new TextureOpIrregularBricks();
                 this.aTextureOpIrregularBricks6.method42(arg0, 8);
             }
-            local24 = arg0.method480();
+            local24 = arg0.get1();
             if (local24 != 0) {
                 arg0.anInt742--;
                 this.aTextureOpIrregularBricks7 = new TextureOpIrregularBricks();
@@ -303,8 +303,8 @@ public final class ParticleEffectorType {
             }
             this.anInt902 = arg0.method494();
             this.anInt903 = arg0.method494();
-            this.anInt905 = arg0.method482();
-            this.anInt906 = arg0.method482();
+            this.anInt905 = arg0.get2();
+            this.anInt906 = arg0.get2();
             this.aPostProcessor1 = new PostProcessor();
             this.aTextureOpIrregularBricks9 = new TextureOpIrregularBricks();
             this.aPostProcessor1.method55(this.aTextureOpIrregularBricks9, 39196, arg0);

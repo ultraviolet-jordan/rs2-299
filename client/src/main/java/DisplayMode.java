@@ -168,7 +168,7 @@ public final class DisplayMode extends Keyboard implements Runnable {
             this.anIntArrayArray24[local22] = new int[local36];
             this.aByteArrayArray6[local22] = new byte[local36];
             for (local56 = 0; local56 < local36; local56++) {
-                this.anIntArrayArray24[local22][local56] = local42.method482();
+                this.anIntArrayArray24[local22][local56] = local42.get2();
             }
         }
         @Pc(93) String[] local93 = new String[]{"model_crc", "anim_crc", "midi_crc", "map_crc"};
@@ -179,7 +179,7 @@ public final class DisplayMode extends Keyboard implements Runnable {
             @Pc(115) Buffer local115 = new Buffer(local104, -26728);
             this.anIntArrayArray25[local36] = new int[local56];
             for (@Pc(123) int local123 = 0; local123 < local56; local123++) {
-                this.anIntArrayArray25[local36][local123] = local115.method485();
+                this.anIntArrayArray25[local36][local123] = local115.get4();
             }
         }
         local104 = arg0.method666("model_index", null);
@@ -200,24 +200,24 @@ public final class DisplayMode extends Keyboard implements Runnable {
         this.anIntArray258 = new int[local56];
         this.anIntArray259 = new int[local56];
         for (@Pc(216) int local216 = 0; local216 < local56; local216++) {
-            this.anIntArray256[local216] = local193.method482();
-            this.anIntArray257[local216] = local193.method482();
-            this.anIntArray258[local216] = local193.method482();
-            this.anIntArray259[local216] = local193.method480();
+            this.anIntArray256[local216] = local193.get2();
+            this.anIntArray257[local216] = local193.get2();
+            this.anIntArray258[local216] = local193.get2();
+            this.anIntArray259[local216] = local193.get1();
         }
         local104 = arg0.method666("anim_index", null);
         local193 = new Buffer(local104, -26728);
         local56 = local104.length / 2;
         this.anIntArray260 = new int[local56];
         for (@Pc(268) int local268 = 0; local268 < local56; local268++) {
-            this.anIntArray260[local268] = local193.method482();
+            this.anIntArray260[local268] = local193.get2();
         }
         local104 = arg0.method666("midi_index", null);
         local193 = new Buffer(local104, -26728);
         local56 = local104.length;
         this.anIntArray261 = new int[local56];
         for (@Pc(300) int local300 = 0; local300 < local56; local300++) {
-            this.anIntArray261[local300] = local193.method480();
+            this.anIntArray261[local300] = local193.get1();
         }
         this.aClient5 = arg1;
         this.aBoolean228 = true;

@@ -49,13 +49,13 @@ public final class TextureOpIrregularBricks {
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(Lclient!lb;I)V")
     public void method42(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
-            this.anInt146 = arg0.method480();
+            this.anInt146 = arg0.get1();
             if (arg1 != 8) {
                 for (@Pc(8) int local8 = 1; local8 > 0; local8++) {
                 }
             }
-            this.anInt144 = arg0.method485();
-            this.anInt145 = arg0.method485();
+            this.anInt144 = arg0.get4();
+            this.anInt145 = arg0.get4();
             this.method43(arg0, this.anInt141);
         } catch (@Pc(28) RuntimeException local28) {
             signlink.reporterror("39517, " + arg0 + ", " + arg1 + ", " + local28.toString());
@@ -66,15 +66,15 @@ public final class TextureOpIrregularBricks {
     @OriginalMember(owner = "client!ac", name = "b", descriptor = "(Lclient!lb;I)V")
     public void method43(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
-            this.anInt143 = arg0.method480();
+            this.anInt143 = arg0.get1();
             this.anIntArray15 = new int[this.anInt143];
             this.anIntArray16 = new int[this.anInt143];
             if (arg1 <= 0) {
                 this.anInt142 = 182;
             }
             for (@Pc(20) int local20 = 0; local20 < this.anInt143; local20++) {
-                this.anIntArray15[local20] = arg0.method482();
-                this.anIntArray16[local20] = arg0.method482();
+                this.anIntArray15[local20] = arg0.get2();
+                this.anIntArray16[local20] = arg0.get2();
             }
         } catch (@Pc(41) RuntimeException local41) {
             signlink.reporterror("62173, " + arg0 + ", " + arg1 + ", " + local41.toString());

@@ -33,12 +33,12 @@ public final class Static15 {
     public static void method321(@OriginalArg(0) Class47 arg0) {
         aSecondaryParticleLinkedList6 = new Buffer(arg0.method666("npc.dat", null), -26728);
         @Pc(19) Buffer local19 = new Buffer(arg0.method666("npc.idx", null), -26728);
-        anInt556 = local19.method482();
+        anInt556 = local19.get2();
         anIntArray169 = new int[anInt556];
         @Pc(27) int local27 = 2;
         for (@Pc(29) int local29 = 0; local29 < anInt556; local29++) {
             anIntArray169[local29] = local27;
-            local27 += local19.method482();
+            local27 += local19.get2();
         }
         aClass13Array1 = new Class13[20];
         for (@Pc(49) int local49 = 0; local49 < 20; local49++) {

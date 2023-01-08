@@ -20,7 +20,7 @@ public final class Static30 {
             @Pc(8) Buffer local8 = new Buffer(arg1.method666("varp.dat", null), -26728);
             NpcList.size = 0;
             if (arg0 == 0) {
-                anInt888 = local8.method482();
+                anInt888 = local8.get2();
                 if (aClass39Array1 == null) {
                     aClass39Array1 = new Class39[anInt888];
                 }

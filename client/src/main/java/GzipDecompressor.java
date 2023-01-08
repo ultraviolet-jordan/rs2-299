@@ -50,35 +50,35 @@ public final class GzipDecompressor extends World {
     public GzipDecompressor(@OriginalArg(0) Class47 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
         @Pc(31) Buffer local31 = new Buffer(arg0.method666(arg1 + ".dat", null), -26728);
         @Pc(40) Buffer local40 = new Buffer(arg0.method666("index.dat", null), -26728);
-        local40.anInt742 = local31.method482();
-        this.anInt679 = local40.method482();
-        this.anInt680 = local40.method482();
-        @Pc(55) int local55 = local40.method480();
+        local40.anInt742 = local31.get2();
+        this.anInt679 = local40.get2();
+        this.anInt680 = local40.get2();
+        @Pc(55) int local55 = local40.get1();
         this.anIntArray212 = new int[local55];
         for (@Pc(61) int local61 = 0; local61 < local55 - 1; local61++) {
-            this.anIntArray212[local61 + 1] = local40.method484();
+            this.anIntArray212[local61 + 1] = local40.get3();
         }
         for (@Pc(79) int local79 = 0; local79 < arg2; local79++) {
             local40.anInt742 += 2;
-            local31.anInt742 += local40.method482() * local40.method482();
+            local31.anInt742 += local40.get2() * local40.get2();
             local40.anInt742++;
         }
-        this.anInt677 = local40.method480();
-        this.anInt678 = local40.method480();
-        this.anInt675 = local40.method482();
-        this.anInt676 = local40.method482();
-        @Pc(126) int local126 = local40.method480();
+        this.anInt677 = local40.get1();
+        this.anInt678 = local40.get1();
+        this.anInt675 = local40.get2();
+        this.anInt676 = local40.get2();
+        @Pc(126) int local126 = local40.get1();
         @Pc(132) int local132 = this.anInt675 * this.anInt676;
         this.aByteArray7 = new byte[local132];
         @Pc(140) int local140;
         if (local126 == 0) {
             for (local140 = 0; local140 < local132; local140++) {
-                this.aByteArray7[local140] = local31.method481();
+                this.aByteArray7[local140] = local31.get1Signed();
             }
         } else if (local126 == 1) {
             for (local140 = 0; local140 < this.anInt675; local140++) {
                 for (@Pc(162) int local162 = 0; local162 < this.anInt676; local162++) {
-                    this.aByteArray7[local140 + local162 * this.anInt675] = local31.method481();
+                    this.aByteArray7[local140 + local162 * this.anInt675] = local31.get1Signed();
                 }
             }
         }

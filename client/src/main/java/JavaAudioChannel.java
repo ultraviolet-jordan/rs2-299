@@ -69,29 +69,29 @@ public final class JavaAudioChannel extends World {
             @Pc(72) Buffer local72 = new Buffer(arg3.method666(arg2 + ".dat", null), -26728);
             @Pc(81) Buffer local81 = new Buffer(arg3.method666("index.dat", null), -26728);
             @Pc(83) boolean local83 = true;
-            local81.anInt742 = local72.method482() + 4;
-            @Pc(92) int local92 = local81.method480();
+            local81.anInt742 = local72.get2() + 4;
+            @Pc(92) int local92 = local81.get1();
             if (local92 > 0) {
                 local81.anInt742 += (local92 - 1) * 3;
             }
             for (@Pc(106) int local106 = 0; local106 < 256; local106++) {
-                this.anIntArray216[local106] = local81.method480();
-                this.anIntArray217[local106] = local81.method480();
-                @Pc(130) int local130 = this.anIntArray214[local106] = local81.method482();
-                @Pc(138) int local138 = this.anIntArray215[local106] = local81.method482();
-                @Pc(141) int local141 = local81.method480();
+                this.anIntArray216[local106] = local81.get1();
+                this.anIntArray217[local106] = local81.get1();
+                @Pc(130) int local130 = this.anIntArray214[local106] = local81.get2();
+                @Pc(138) int local138 = this.anIntArray215[local106] = local81.get2();
+                @Pc(141) int local141 = local81.get1();
                 @Pc(145) int local145 = local130 * local138;
                 this.aByteArrayArray4[local106] = new byte[local145];
                 @Pc(155) int local155;
                 @Pc(180) int local180;
                 if (local141 == 0) {
                     for (local155 = 0; local155 < local145; local155++) {
-                        this.aByteArrayArray4[local106][local155] = local72.method481();
+                        this.aByteArrayArray4[local106][local155] = local72.get1Signed();
                     }
                 } else if (local141 == 1) {
                     for (local155 = 0; local155 < local130; local155++) {
                         for (local180 = 0; local180 < local138; local180++) {
-                            this.aByteArrayArray4[local106][local155 + local180 * local130] = local72.method481();
+                            this.aByteArrayArray4[local106][local155 + local180 * local130] = local72.get1Signed();
                         }
                     }
                 }

@@ -27,7 +27,7 @@ public final class Static38 {
             @Pc(5) int local5 = -1;
             @Pc(18) int local18;
             for (@Pc(7) int local7 = 0; local7 < arg0; local7++) {
-                @Pc(12) int local12 = arg1.method480();
+                @Pc(12) int local12 = arg1.get1();
                 local18 = local12 >> 4 & 0xF;
                 if (local5 != -1) {
                     aCharArray3[local3++] = aCharArray4[(local5 << 4) + local18 - 195];
@@ -92,13 +92,13 @@ public final class Static38 {
                     if (local25 < 13) {
                         local15 = local25;
                     } else {
-                        arg0.method470(local25);
+                        arg0.put1(local25);
                     }
                 } else if (local25 < 13) {
-                    arg0.method470((local15 << 4) + local25);
+                    arg0.put1((local15 << 4) + local25);
                     local15 = -1;
                 } else {
-                    arg0.method470((local15 << 4) + (local25 >> 4));
+                    arg0.put1((local15 << 4) + (local25 >> 4));
                     local15 = local25 & 0xF;
                 }
             }
@@ -106,7 +106,7 @@ public final class Static38 {
                 anInt1027 = -320;
             }
             if (local15 != -1) {
-                arg0.method470(local15 << 4);
+                arg0.put1(local15 << 4);
             }
         } catch (@Pc(108) RuntimeException local108) {
             signlink.reporterror("30011, " + arg0 + ", " + arg1 + ", " + arg2 + ", " + local108.toString());

@@ -63,7 +63,7 @@ public final class Static6 {
                         local29 += local36 - 1;
                         @Pc(58) int local58 = local29 & 0x3F;
                         @Pc(64) int local64 = local29 >> 6 & 0x3F;
-                        @Pc(69) int local69 = local9.method480() >> 2;
+                        @Pc(69) int local69 = local9.get1() >> 2;
                         @Pc(73) int local73 = local64 + arg1;
                         @Pc(77) int local77 = local58 + arg2;
                         if (local73 > 0 && local77 > 0 && local73 < 103 && local77 < 103) {
@@ -78,7 +78,7 @@ public final class Static6 {
                     if (local36 == 0) {
                         break;
                     }
-                    local9.method480();
+                    local9.get1();
                 }
             }
         } catch (@Pc(116) RuntimeException local116) {
@@ -107,7 +107,7 @@ public final class Static6 {
                     if (local27 == 0) {
                         break;
                     }
-                    arg0.method480();
+                    arg0.get1();
                 }
             }
         } catch (@Pc(38) RuntimeException local38) {

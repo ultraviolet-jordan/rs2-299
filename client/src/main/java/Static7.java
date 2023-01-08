@@ -30,7 +30,7 @@ public final class Static7 {
             aSecondaryParticleLinkedList1 = new Buffer(aByteArray1, -26728);
             Static10.method243();
             while (true) {
-                @Pc(20) int local20 = arg1.method482();
+                @Pc(20) int local20 = arg1.get2();
                 if (local20 == 65535) {
                     return;
                 }

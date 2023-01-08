@@ -52,8 +52,8 @@ public final class Class47 {
     private void method665(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(7) Buffer local7 = new Buffer(arg0, -26728);
-            @Pc(10) int local10 = local7.method484();
-            @Pc(13) int local13 = local7.method484();
+            @Pc(10) int local10 = local7.get3();
+            @Pc(13) int local13 = local7.get3();
             if (local13 == local10) {
                 this.aByteArray21 = arg0;
                 this.aBoolean237 = false;
@@ -64,7 +64,7 @@ public final class Class47 {
                 local7 = new Buffer(this.aByteArray21, -26728);
                 this.aBoolean237 = true;
             }
-            this.anInt974 = local7.method482();
+            this.anInt974 = local7.get2();
             @Pc(56) int local56;
             if (arg1 != -40537) {
                 for (local56 = 1; local56 > 0; local56++) {
@@ -76,9 +76,9 @@ public final class Class47 {
             this.anIntArray268 = new int[this.anInt974];
             local56 = local7.anInt742 + this.anInt974 * 10;
             for (@Pc(91) int local91 = 0; local91 < this.anInt974; local91++) {
-                this.anIntArray265[local91] = local7.method485();
-                this.anIntArray266[local91] = local7.method484();
-                this.anIntArray267[local91] = local7.method484();
+                this.anIntArray265[local91] = local7.get4();
+                this.anIntArray266[local91] = local7.get3();
+                this.anIntArray267[local91] = local7.get3();
                 this.anIntArray268[local91] = local56;
                 local56 += this.anIntArray267[local91];
             }

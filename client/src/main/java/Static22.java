@@ -17,7 +17,7 @@ public final class Static22 {
                 for (local14 = 1; local14 > 0; local14++) {
                 }
             }
-            TextureOpRasterizerShape.fillColor = local10.method482();
+            TextureOpRasterizerShape.fillColor = local10.get2();
             if (aTextureOpRasterizerShapeArray1 == null) {
                 aTextureOpRasterizerShapeArray1 = new TextureOpRasterizerShape[TextureOpRasterizerShape.fillColor];
             }

@@ -104,92 +104,92 @@ public final class Class13 {
             }
             while (true) {
                 while (true) {
-                    local9 = arg0.method480();
+                    local9 = arg0.get1();
                     if (local9 == 0) {
                         return;
                     }
                     @Pc(26) int local26;
                     @Pc(32) int local32;
                     if (local9 == 1) {
-                        local26 = arg0.method480();
+                        local26 = arg0.get1();
                         this.anIntArray170 = new int[local26];
                         for (local32 = 0; local32 < local26; local32++) {
-                            this.anIntArray170[local32] = arg0.method482();
+                            this.anIntArray170[local32] = arg0.get2();
                         }
                     } else if (local9 == 2) {
-                        this.aString24 = arg0.method487();
+                        this.aString24 = arg0.getString();
                     } else if (local9 == 3) {
-                        this.aByteArray5 = arg0.method488((byte) 6);
+                        this.aByteArray5 = arg0.getStringArray((byte) 6);
                     } else if (local9 == 12) {
-                        this.aByte16 = arg0.method481();
+                        this.aByte16 = arg0.get1Signed();
                     } else if (local9 == 13) {
-                        this.anInt558 = arg0.method482();
+                        this.anInt558 = arg0.get2();
                     } else if (local9 == 14) {
-                        this.anInt559 = arg0.method482();
+                        this.anInt559 = arg0.get2();
                     } else if (local9 == 17) {
-                        this.anInt559 = arg0.method482();
-                        this.anInt560 = arg0.method482();
-                        this.anInt561 = arg0.method482();
-                        this.anInt562 = arg0.method482();
+                        this.anInt559 = arg0.get2();
+                        this.anInt560 = arg0.get2();
+                        this.anInt561 = arg0.get2();
+                        this.anInt562 = arg0.get2();
                     } else if (local9 >= 30 && local9 < 40) {
                         if (this.aStringArray9 == null) {
                             this.aStringArray9 = new String[5];
                         }
-                        this.aStringArray9[local9 - 30] = arg0.method487();
+                        this.aStringArray9[local9 - 30] = arg0.getString();
                         if (this.aStringArray9[local9 - 30].equalsIgnoreCase("hidden")) {
                             this.aStringArray9[local9 - 30] = null;
                         }
                     } else if (local9 == 40) {
-                        local26 = arg0.method480();
+                        local26 = arg0.get1();
                         this.anIntArray172 = new int[local26];
                         this.anIntArray173 = new int[local26];
                         for (local32 = 0; local32 < local26; local32++) {
-                            this.anIntArray172[local32] = arg0.method482();
-                            this.anIntArray173[local32] = arg0.method482();
+                            this.anIntArray172[local32] = arg0.get2();
+                            this.anIntArray173[local32] = arg0.get2();
                         }
                     } else if (local9 == 60) {
-                        local26 = arg0.method480();
+                        local26 = arg0.get1();
                         this.anIntArray171 = new int[local26];
                         for (local32 = 0; local32 < local26; local32++) {
-                            this.anIntArray171[local32] = arg0.method482();
+                            this.anIntArray171[local32] = arg0.get2();
                         }
                     } else if (local9 == 90) {
-                        this.anInt563 = arg0.method482();
+                        this.anInt563 = arg0.get2();
                     } else if (local9 == 91) {
-                        this.anInt564 = arg0.method482();
+                        this.anInt564 = arg0.get2();
                     } else if (local9 == 92) {
-                        this.anInt565 = arg0.method482();
+                        this.anInt565 = arg0.get2();
                     } else if (local9 == 93) {
                         this.aBoolean139 = false;
                     } else if (local9 == 95) {
-                        this.anInt566 = arg0.method482();
+                        this.anInt566 = arg0.get2();
                     } else if (local9 == 97) {
-                        this.anInt567 = arg0.method482();
+                        this.anInt567 = arg0.get2();
                     } else if (local9 == 98) {
-                        this.anInt568 = arg0.method482();
+                        this.anInt568 = arg0.get2();
                     } else if (local9 == 99) {
                         this.aBoolean140 = true;
                     } else if (local9 == 100) {
-                        this.anInt569 = arg0.method481();
+                        this.anInt569 = arg0.get1Signed();
                     } else if (local9 == 101) {
-                        this.anInt570 = arg0.method481() * 5;
+                        this.anInt570 = arg0.get1Signed() * 5;
                     } else if (local9 == 102) {
-                        this.anInt571 = arg0.method482();
+                        this.anInt571 = arg0.get2();
                     } else if (local9 == 103) {
-                        this.anInt572 = arg0.method482();
+                        this.anInt572 = arg0.get2();
                     } else if (local9 == 106) {
-                        this.anInt573 = arg0.method482();
+                        this.anInt573 = arg0.get2();
                         if (this.anInt573 == 65535) {
                             this.anInt573 = -1;
                         }
-                        this.anInt574 = arg0.method482();
+                        this.anInt574 = arg0.get2();
                         if (this.anInt574 == 65535) {
                             this.anInt574 = -1;
                         }
-                        local26 = arg0.method480();
+                        local26 = arg0.get1();
                         this.anIntArray174 = new int[local26 + 1];
                         for (local32 = 0; local32 <= local26; local32++) {
-                            this.anIntArray174[local32] = arg0.method482();
+                            this.anIntArray174[local32] = arg0.get2();
                             if (this.anIntArray174[local32] == 65535) {
                                 this.anIntArray174[local32] = -1;
                             }

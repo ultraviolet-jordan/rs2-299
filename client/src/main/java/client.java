@@ -1843,26 +1843,26 @@ public final class client extends AnimFrame {
             for (@Pc(3) int local3 = 0; local3 < this.anInt333; local3++) {
                 @Pc(10) int local10 = this.anIntArray65[local3];
                 @Pc(15) Class1_Sub1_Sub1_Sub1_Sub2 local15 = this.aClass1_Sub1_Sub1_Sub1_Sub2Array1[local10];
-                @Pc(18) int local18 = arg0.method480();
+                @Pc(18) int local18 = arg0.get1();
                 @Pc(26) int local26;
                 @Pc(29) int local29;
                 if ((local18 & 0x1) == 1) {
-                    local26 = arg0.method480();
-                    local29 = arg0.method480();
+                    local26 = arg0.get1();
+                    local29 = arg0.get1();
                     local15.method681(true, local29, Static8.anInt297, local26);
                     local15.anInt993 = Static8.anInt297 + 300;
-                    local15.anInt994 = arg0.method480();
-                    local15.anInt995 = arg0.method480();
+                    local15.anInt994 = arg0.get1();
+                    local15.anInt995 = arg0.get1();
                 }
                 if ((local18 & 0x2) == 2) {
-                    local26 = arg0.method482();
+                    local26 = arg0.get2();
                     if (local26 == 65535) {
                         local26 = -1;
                     }
                     if (local26 == local15.anInt1002) {
                         local15.anInt1006 = 0;
                     }
-                    local29 = arg0.method480();
+                    local29 = arg0.get1();
                     if (local26 == local15.anInt1002 && local26 != -1) {
                         @Pc(83) int local83 = Static24.aClass27Array1[local26].anInt802;
                         if (local83 == 1) {
@@ -1884,25 +1884,25 @@ public final class client extends AnimFrame {
                     }
                 }
                 if ((local18 & 0x4) == 4) {
-                    local15.anInt996 = arg0.method482();
+                    local15.anInt996 = arg0.get2();
                     if (local15.anInt996 == 65535) {
                         local15.anInt996 = -1;
                     }
                 }
                 if ((local18 & 0x8) == 8) {
-                    local15.aString30 = arg0.method487();
+                    local15.aString30 = arg0.getString();
                     local15.anInt990 = 100;
                 }
                 if ((local18 & 0x10) == 16) {
-                    local26 = arg0.method480();
-                    local29 = arg0.method480();
+                    local26 = arg0.get1();
+                    local29 = arg0.get1();
                     local15.method681(true, local29, Static8.anInt297, local26);
                     local15.anInt993 = Static8.anInt297 + 300;
-                    local15.anInt994 = arg0.method480();
-                    local15.anInt995 = arg0.method480();
+                    local15.anInt994 = arg0.get1();
+                    local15.anInt995 = arg0.get1();
                 }
                 if ((local18 & 0x20) == 32) {
-                    local15.aClass13_2 = Static15.method323(arg0.method482());
+                    local15.aClass13_2 = Static15.method323(arg0.get2());
                     local15.anInt982 = local15.aClass13_2.aByte16;
                     local15.anInt1022 = local15.aClass13_2.anInt572;
                     local15.anInt985 = local15.aClass13_2.anInt559;
@@ -1912,8 +1912,8 @@ public final class client extends AnimFrame {
                     local15.anInt983 = local15.aClass13_2.anInt558;
                 }
                 if ((local18 & 0x40) == 64) {
-                    local15.anInt1007 = arg0.method482();
-                    local26 = arg0.method485();
+                    local15.anInt1007 = arg0.get2();
+                    local26 = arg0.get4();
                     local15.anInt1011 = local26 >> 16;
                     local15.anInt1010 = Static8.anInt297 + (local26 & 0xFFFF);
                     local15.anInt1008 = 0;
@@ -1926,8 +1926,8 @@ public final class client extends AnimFrame {
                     }
                 }
                 if ((local18 & 0x80) == 128) {
-                    local15.anInt997 = arg0.method482();
-                    local15.anInt998 = arg0.method482();
+                    local15.anInt997 = arg0.get2();
+                    local15.anInt998 = arg0.get2();
                 }
             }
             if (arg1 == 37046) {
@@ -2232,12 +2232,12 @@ public final class client extends AnimFrame {
                     if (arg1 == 7) {
                         @Pc(89) boolean local89 = false;
                     } else {
-                        this.aSecondaryParticleLinkedList4.method470(48);
+                        this.aSecondaryParticleLinkedList4.put1(48);
                     }
                     this.aLongArray4[this.anInt274++] = arg0;
                     this.aBoolean53 = true;
-                    this.aSecondaryParticleLinkedList4.method469(true, 158);
-                    this.aSecondaryParticleLinkedList4.method476(-13398, arg0);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 158);
+                    this.aSecondaryParticleLinkedList4.put8(-13398, arg0);
                 }
             }
         } catch (@Pc(121) RuntimeException local121) {
@@ -2381,7 +2381,7 @@ public final class client extends AnimFrame {
                 this.anInt353 = 2;
                 Static6.anInt172 = this.anInt246;
                 this.method144(true);
-                this.aSecondaryParticleLinkedList4.method469(true, 81);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 81);
                 if (arg0 != 8) {
                     this.method89();
                 }
@@ -3343,7 +3343,7 @@ public final class client extends AnimFrame {
             if (arg0 == 2) {
                 @Pc(11) boolean local11 = false;
             } else {
-                this.aSecondaryParticleLinkedList4.method470(128);
+                this.aSecondaryParticleLinkedList4.put1(128);
             }
             Static16.anIntArray180 = this.anIntArray87;
             this.aGzipDecompressor1.method418(0, 0, 37651);
@@ -3512,7 +3512,7 @@ public final class client extends AnimFrame {
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(ILclient!lb;B)V")
     private void method127(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) byte arg2) {
         try {
-            @Pc(6) int local6 = arg1.method491(477, 8);
+            @Pc(6) int local6 = arg1.getBit(477, 8);
             if (arg2 == -124) {
                 @Pc(16) int local16;
                 if (local6 < this.anInt332) {
@@ -3528,12 +3528,12 @@ public final class client extends AnimFrame {
                 for (local16 = 0; local16 < local6; local16++) {
                     @Pc(68) int local68 = this.anIntArray64[local16];
                     @Pc(73) Class1_Sub1_Sub1_Sub1_Sub1 local73 = this.aClass1_Sub1_Sub1_Sub1_Sub1Array1[local68];
-                    @Pc(78) int local78 = arg1.method491(477, 1);
+                    @Pc(78) int local78 = arg1.getBit(477, 1);
                     if (local78 == 0) {
                         this.anIntArray64[this.anInt332++] = local68;
                         local73.anInt1019 = Static8.anInt297;
                     } else {
-                        @Pc(101) int local101 = arg1.method491(477, 2);
+                        @Pc(101) int local101 = arg1.getBit(477, 2);
                         if (local101 == 0) {
                             this.anIntArray64[this.anInt332++] = local68;
                             local73.anInt1019 = Static8.anInt297;
@@ -3544,20 +3544,20 @@ public final class client extends AnimFrame {
                             if (local101 == 1) {
                                 this.anIntArray64[this.anInt332++] = local68;
                                 local73.anInt1019 = Static8.anInt297;
-                                local152 = arg1.method491(477, 3);
+                                local152 = arg1.getBit(477, 3);
                                 local73.method678(false, 490, local152);
-                                local162 = arg1.method491(477, 1);
+                                local162 = arg1.getBit(477, 1);
                                 if (local162 == 1) {
                                     this.anIntArray65[this.anInt333++] = local68;
                                 }
                             } else if (local101 == 2) {
                                 this.anIntArray64[this.anInt332++] = local68;
                                 local73.anInt1019 = Static8.anInt297;
-                                local152 = arg1.method491(477, 3);
+                                local152 = arg1.getBit(477, 3);
                                 local73.method678(true, 490, local152);
-                                local162 = arg1.method491(477, 3);
+                                local162 = arg1.getBit(477, 3);
                                 local73.method678(true, 490, local162);
-                                @Pc(220) int local220 = arg1.method491(477, 1);
+                                @Pc(220) int local220 = arg1.getBit(477, 1);
                                 if (local220 == 1) {
                                     this.anIntArray65[this.anInt333++] = local68;
                                 }
@@ -3676,13 +3676,13 @@ public final class client extends AnimFrame {
                 this.method139(0);
             }
             if (local8 == 326) {
-                this.aSecondaryParticleLinkedList4.method469(true, 145);
-                this.aSecondaryParticleLinkedList4.method470(this.aBoolean76 ? 0 : 1);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 145);
+                this.aSecondaryParticleLinkedList4.put1(this.aBoolean76 ? 0 : 1);
                 for (local116 = 0; local116 < 7; local116++) {
-                    this.aSecondaryParticleLinkedList4.method470(this.anIntArray91[local116]);
+                    this.aSecondaryParticleLinkedList4.put1(this.anIntArray91[local116]);
                 }
                 for (local120 = 0; local120 < 5; local120++) {
-                    this.aSecondaryParticleLinkedList4.method470(this.anIntArray75[local120]);
+                    this.aSecondaryParticleLinkedList4.put1(this.anIntArray75[local120]);
                 }
                 return true;
             }
@@ -3692,10 +3692,10 @@ public final class client extends AnimFrame {
             if (local8 >= 601 && local8 <= 612) {
                 this.method143(true);
                 if (this.aString12.length() > 0) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 85);
-                    this.aSecondaryParticleLinkedList4.method476(-13398, Static37.method667(this.aString12));
-                    this.aSecondaryParticleLinkedList4.method470(local8 - 601);
-                    this.aSecondaryParticleLinkedList4.method470(this.aBoolean82 ? 1 : 0);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 85);
+                    this.aSecondaryParticleLinkedList4.put8(-13398, Static37.method667(this.aString12));
+                    this.aSecondaryParticleLinkedList4.put1(local8 - 601);
+                    this.aSecondaryParticleLinkedList4.put1(this.aBoolean82 ? 1 : 0);
                 }
             }
             return false;
@@ -3763,7 +3763,7 @@ public final class client extends AnimFrame {
     protected java.awt.Component method94(@OriginalArg(0) int arg0) {
         try {
             if (arg0 != this.anInt318) {
-                this.aSecondaryParticleLinkedList4.method470(3);
+                this.aSecondaryParticleLinkedList4.put1(3);
             }
             if (signlink.mainapp == null) {
                 return super.aFrame_Sub1_2 == null ? this : super.aFrame_Sub1_2;
@@ -3789,17 +3789,17 @@ public final class client extends AnimFrame {
             @Pc(48) int local48;
             @Pc(53) int local53;
             if (arg2 == 136 || arg2 == 211) {
-                local16 = arg1.method480();
+                local16 = arg1.get1();
                 local25 = this.anInt337 + (local16 >> 4 & 0x7);
                 local32 = this.anInt338 + (local16 & 0x7);
-                local35 = arg1.method480();
+                local35 = arg1.get1();
                 local39 = local35 >> 2;
                 local43 = local35 & 0x3;
                 local48 = this.anIntArray71[local39];
                 if (arg2 == 211) {
                     local53 = -1;
                 } else {
-                    local53 = arg1.method482();
+                    local53 = arg1.get2();
                 }
                 if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104) {
                     this.method207(local39, this.anInt246, 608, -1, local32, 0, local43, local25, local53, local48);
@@ -3810,14 +3810,14 @@ public final class client extends AnimFrame {
                 @Pc(169) int local169;
                 @Pc(181) int local181;
                 if (arg2 == 2) {
-                    local16 = arg1.method480();
+                    local16 = arg1.get1();
                     local25 = this.anInt337 + (local16 >> 4 & 0x7);
                     local32 = this.anInt338 + (local16 & 0x7);
-                    local35 = arg1.method480();
+                    local35 = arg1.get1();
                     local39 = local35 >> 2;
                     local43 = local35 & 0x3;
                     local48 = this.anIntArray71[local39];
-                    local53 = arg1.method482();
+                    local53 = arg1.get2();
                     if (local25 >= 0 && local32 >= 0 && local25 < 103 && local32 < 103) {
                         local143 = this.anIntArrayArrayArray5[this.anInt246][local25][local32];
                         local155 = this.anIntArrayArrayArray5[this.anInt246][local25 + 1][local32];
@@ -3860,11 +3860,11 @@ public final class client extends AnimFrame {
                 } else {
                     @Pc(407) Class1_Sub1_Sub1_Sub3 local407;
                     if (arg2 == 147) {
-                        local16 = arg1.method480();
+                        local16 = arg1.get1();
                         local25 = this.anInt337 + (local16 >> 4 & 0x7);
                         local32 = this.anInt338 + (local16 & 0x7);
-                        local35 = arg1.method482();
-                        local39 = arg1.method482();
+                        local35 = arg1.get2();
+                        local39 = arg1.get2();
                         if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104) {
                             local407 = new Class1_Sub1_Sub1_Sub3();
                             local407.anInt525 = local35;
@@ -3876,10 +3876,10 @@ public final class client extends AnimFrame {
                             this.method176(local25, local32);
                         }
                     } else if (arg2 == 53) {
-                        local16 = arg1.method480();
+                        local16 = arg1.get1();
                         local25 = this.anInt337 + (local16 >> 4 & 0x7);
                         local32 = this.anInt338 + (local16 & 0x7);
-                        local35 = arg1.method482();
+                        local35 = arg1.get2();
                         if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104) {
                             @Pc(497) FrameBuffer local497 = this.aFrameBufferArrayArrayArray1[this.anInt246][local25][local32];
                             if (local497 != null) {
@@ -3896,19 +3896,19 @@ public final class client extends AnimFrame {
                             }
                         }
                     } else if (arg2 == 30) {
-                        local16 = arg1.method480();
+                        local16 = arg1.get1();
                         local25 = this.anInt337 + (local16 >> 4 & 0x7);
                         local32 = this.anInt338 + (local16 & 0x7);
-                        local35 = local25 + arg1.method481();
-                        local39 = local32 + arg1.method481();
-                        local43 = arg1.method483();
-                        local48 = arg1.method482();
-                        local53 = arg1.method480() * 4;
-                        local143 = arg1.method480() * 4;
-                        local155 = arg1.method482();
-                        local169 = arg1.method482();
-                        local181 = arg1.method480();
-                        @Pc(600) int local600 = arg1.method480();
+                        local35 = local25 + arg1.get1Signed();
+                        local39 = local32 + arg1.get1Signed();
+                        local43 = arg1.get2Signed();
+                        local48 = arg1.get2();
+                        local53 = arg1.get1() * 4;
+                        local143 = arg1.get1() * 4;
+                        local155 = arg1.get2();
+                        local169 = arg1.get2();
+                        local181 = arg1.get1();
+                        @Pc(600) int local600 = arg1.get1();
                         if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104 && local35 >= 0 && local39 >= 0 && local35 < 104 && local39 < 104 && local48 != 65535) {
                             local25 = local25 * 128 + 64;
                             local32 = local32 * 128 + 64;
@@ -3919,12 +3919,12 @@ public final class client extends AnimFrame {
                             this.aFrameBuffer1.method508(local677);
                         }
                     } else if (arg2 == 193) {
-                        local16 = arg1.method480();
+                        local16 = arg1.get1();
                         local25 = this.anInt337 + (local16 >> 4 & 0x7);
                         local32 = this.anInt338 + (local16 & 0x7);
-                        local35 = arg1.method482();
-                        local39 = arg1.method480();
-                        local43 = arg1.method482();
+                        local35 = arg1.get2();
+                        local39 = arg1.get1();
+                        local43 = arg1.get2();
                         if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104) {
                             local25 = local25 * 128 + 64;
                             local32 = local32 * 128 + 64;
@@ -3932,12 +3932,12 @@ public final class client extends AnimFrame {
                             this.aFrameBuffer3.method508(local773);
                         }
                     } else if (arg2 == 137) {
-                        local16 = arg1.method480();
+                        local16 = arg1.get1();
                         local25 = this.anInt337 + (local16 >> 4 & 0x7);
                         local32 = this.anInt338 + (local16 & 0x7);
-                        local35 = arg1.method482();
-                        local39 = arg1.method482();
-                        local43 = arg1.method482();
+                        local35 = arg1.get2();
+                        local39 = arg1.get2();
+                        local43 = arg1.get2();
                         if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104 && local43 != this.anInt772) {
                             @Pc(827) Class1_Sub1_Sub1_Sub3 local827 = new Class1_Sub1_Sub1_Sub3();
                             local827.anInt525 = local35;
@@ -3950,21 +3950,21 @@ public final class client extends AnimFrame {
                         }
                     } else {
                         if (arg2 == 191) {
-                            local16 = arg1.method480();
+                            local16 = arg1.get1();
                             local25 = this.anInt337 + (local16 >> 4 & 0x7);
                             local32 = this.anInt338 + (local16 & 0x7);
-                            local35 = arg1.method480();
+                            local35 = arg1.get1();
                             local39 = local35 >> 2;
                             local43 = local35 & 0x3;
                             local48 = this.anIntArray71[local39];
-                            local53 = arg1.method482();
-                            local143 = arg1.method482();
-                            local155 = arg1.method482();
-                            local169 = arg1.method482();
-                            @Pc(925) byte local925 = arg1.method481();
-                            @Pc(928) byte local928 = arg1.method481();
-                            @Pc(931) byte local931 = arg1.method481();
-                            @Pc(934) byte local934 = arg1.method481();
+                            local53 = arg1.get2();
+                            local143 = arg1.get2();
+                            local155 = arg1.get2();
+                            local169 = arg1.get2();
+                            @Pc(925) byte local925 = arg1.get1Signed();
+                            @Pc(928) byte local928 = arg1.get1Signed();
+                            @Pc(931) byte local931 = arg1.get1Signed();
+                            @Pc(934) byte local934 = arg1.get1Signed();
                             @Pc(940) Class1_Sub1_Sub1_Sub1_Sub1 local940;
                             if (local169 == this.anInt772) {
                                 local940 = Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1;
@@ -4011,12 +4011,12 @@ public final class client extends AnimFrame {
                             }
                         }
                         if (arg2 == 253) {
-                            local16 = arg1.method480();
+                            local16 = arg1.get1();
                             local25 = this.anInt337 + (local16 >> 4 & 0x7);
                             local32 = this.anInt338 + (local16 & 0x7);
-                            local35 = arg1.method482();
-                            local39 = arg1.method482();
-                            local43 = arg1.method482();
+                            local35 = arg1.get2();
+                            local39 = arg1.get2();
+                            local43 = arg1.get2();
                             if (local25 >= 0 && local32 >= 0 && local25 < 104 && local32 < 104) {
                                 @Pc(1178) FrameBuffer local1178 = this.aFrameBufferArrayArrayArray1[this.anInt246][local25][local32];
                                 if (local1178 != null) {
@@ -4030,11 +4030,11 @@ public final class client extends AnimFrame {
                                 }
                             }
                         } else if (arg2 == 222) {
-                            local16 = arg1.method480();
+                            local16 = arg1.get1();
                             local25 = this.anInt337 + (local16 >> 4 & 0x7);
                             local32 = this.anInt338 + (local16 & 0x7);
-                            local35 = arg1.method482();
-                            local39 = arg1.method480();
+                            local35 = arg1.get2();
+                            local39 = arg1.get1();
                             local43 = local39 >> 4 & 0xF;
                             local48 = local39 & 0x7;
                             if (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray272[0] >= local25 - local43 && Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray272[0] <= local25 + local43 && Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray273[0] >= local32 - local43 && Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray273[0] <= local32 + local43 && this.aBoolean77 && !Static8.aBoolean71 && this.anInt317 < 50) {
@@ -4066,7 +4066,7 @@ public final class client extends AnimFrame {
             }
             @Pc(41) int local41 = -1;
             if (!arg0) {
-                this.aSecondaryParticleLinkedList4.method470(5);
+                this.aSecondaryParticleLinkedList4.put1(5);
             }
             for (@Pc(49) int local49 = 0; local49 < Static11.anInt508; local49++) {
                 @Pc(55) int local55 = Static11.anIntArray150[local49];
@@ -4275,24 +4275,24 @@ public final class client extends AnimFrame {
             Static8.anInt366++;
             if (Static8.anInt366 > 1086) {
                 Static8.anInt366 = 0;
-                this.aSecondaryParticleLinkedList4.method469(true, 170);
-                this.aSecondaryParticleLinkedList4.method470(0);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 170);
+                this.aSecondaryParticleLinkedList4.put1(0);
                 @Pc(53) int local53 = this.aSecondaryParticleLinkedList4.anInt742;
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.clear(16791);
+                    this.aSecondaryParticleLinkedList4.put2(16791);
                 }
-                this.aSecondaryParticleLinkedList4.method470(254);
-                this.aSecondaryParticleLinkedList4.clear((int) (Math.random() * 65536.0D));
-                this.aSecondaryParticleLinkedList4.clear(16128);
-                this.aSecondaryParticleLinkedList4.clear(52610);
-                this.aSecondaryParticleLinkedList4.clear((int) (Math.random() * 65536.0D));
-                this.aSecondaryParticleLinkedList4.clear(55420);
+                this.aSecondaryParticleLinkedList4.put1(254);
+                this.aSecondaryParticleLinkedList4.put2((int) (Math.random() * 65536.0D));
+                this.aSecondaryParticleLinkedList4.put2(16128);
+                this.aSecondaryParticleLinkedList4.put2(52610);
+                this.aSecondaryParticleLinkedList4.put2((int) (Math.random() * 65536.0D));
+                this.aSecondaryParticleLinkedList4.put2(55420);
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.clear(35025);
+                    this.aSecondaryParticleLinkedList4.put2(35025);
                 }
-                this.aSecondaryParticleLinkedList4.clear(46628);
-                this.aSecondaryParticleLinkedList4.method470((int) (Math.random() * 256.0D));
-                this.aSecondaryParticleLinkedList4.method479(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local53);
+                this.aSecondaryParticleLinkedList4.put2(46628);
+                this.aSecondaryParticleLinkedList4.put1((int) (Math.random() * 256.0D));
+                this.aSecondaryParticleLinkedList4.putPacketSize(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local53);
             }
             if (local25 == 10 || local25 == 11 || local25 == 22) {
                 @Pc(133) GlShader local133 = Static12.method288(local7);
@@ -4317,11 +4317,11 @@ public final class client extends AnimFrame {
             this.anInt311 = super.anInt204;
             this.anInt313 = 2;
             this.anInt312 = 0;
-            this.aSecondaryParticleLinkedList4.method469(true, arg3);
-            this.aSecondaryParticleLinkedList4.clear(arg1 + this.anInt323);
-            this.aSecondaryParticleLinkedList4.clear(arg2 + this.anInt324);
+            this.aSecondaryParticleLinkedList4.putPacketId(true, arg3);
+            this.aSecondaryParticleLinkedList4.put2(arg1 + this.anInt323);
+            this.aSecondaryParticleLinkedList4.put2(arg2 + this.anInt324);
             this.anInt368 += arg4;
-            this.aSecondaryParticleLinkedList4.clear(local7);
+            this.aSecondaryParticleLinkedList4.put2(local7);
             return true;
         } catch (@Pc(261) RuntimeException local261) {
             signlink.reporterror("3326, " + arg0 + ", " + arg1 + ", " + arg2 + ", " + arg3 + ", " + arg4 + ", " + local261.toString());
@@ -4348,7 +4348,7 @@ public final class client extends AnimFrame {
         try {
             @Pc(7) int local7 = this.anInt392 + this.anInt422 & 0x7FF;
             if (arg0) {
-                this.aSecondaryParticleLinkedList4.method470(179);
+                this.aSecondaryParticleLinkedList4.put1(179);
             }
             @Pc(21) int local21 = arg2 * arg2 + arg3 * arg3;
             if (local21 <= 6400) {
@@ -4375,7 +4375,7 @@ public final class client extends AnimFrame {
         try {
             while (true) {
                 if (arg1.anInt743 + 10 < arg2 * 8) {
-                    @Pc(12) int local12 = arg1.method491(477, 11);
+                    @Pc(12) int local12 = arg1.getBit(477, 11);
                     if (local12 != 2047) {
                         if (this.aClass1_Sub1_Sub1_Sub1_Sub1Array1[local12] == null) {
                             this.aClass1_Sub1_Sub1_Sub1_Sub1Array1[local12] = new Class1_Sub1_Sub1_Sub1_Sub1();
@@ -4386,24 +4386,24 @@ public final class client extends AnimFrame {
                         this.anIntArray64[this.anInt332++] = local12;
                         @Pc(58) Class1_Sub1_Sub1_Sub1_Sub1 local58 = this.aClass1_Sub1_Sub1_Sub1_Sub1Array1[local12];
                         local58.anInt1019 = Static8.anInt297;
-                        @Pc(66) int local66 = arg1.method491(477, 5);
+                        @Pc(66) int local66 = arg1.getBit(477, 5);
                         if (local66 > 15) {
                             local66 -= 32;
                         }
-                        @Pc(75) int local75 = arg1.method491(477, 5);
+                        @Pc(75) int local75 = arg1.getBit(477, 5);
                         if (local75 > 15) {
                             local75 -= 32;
                         }
-                        @Pc(84) int local84 = arg1.method491(477, 1);
+                        @Pc(84) int local84 = arg1.getBit(477, 1);
                         local58.method677(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray273[0] + local75, (byte) 7, local84 == 1, Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray272[0] + local66);
-                        @Pc(110) int local110 = arg1.method491(477, 1);
+                        @Pc(110) int local110 = arg1.getBit(477, 1);
                         if (local110 == 1) {
                             this.anIntArray65[this.anInt333++] = local12;
                         }
                         continue;
                     }
                 }
-                arg1.method492(312);
+                arg1.accessBytes(312);
                 if (arg0 != 4) {
                     return;
                 }
@@ -4443,24 +4443,24 @@ public final class client extends AnimFrame {
             if (arg0 < 0) {
                 @Pc(14) int local14;
                 if ((arg3 & 0x1) == 1) {
-                    local14 = arg1.method480();
+                    local14 = arg1.get1();
                     @Pc(17) byte[] local17 = new byte[local14];
                     @Pc(23) Buffer local23 = new Buffer(local17, -26728);
-                    arg1.method489(local14, 0, local17, (byte) 121);
+                    arg1.getBytes(local14, 0, local17, (byte) 121);
                     this.aSecondaryParticleLinkedListArray1[arg4] = local23;
                     arg2.method39(627, local23);
                 }
                 @Pc(61) int local61;
                 @Pc(73) int local73;
                 if ((arg3 & 0x2) == 2) {
-                    local14 = arg1.method482();
+                    local14 = arg1.get2();
                     if (local14 == 65535) {
                         local14 = -1;
                     }
                     if (local14 == arg2.anInt1002) {
                         arg2.anInt1006 = 0;
                     }
-                    local61 = arg1.method480();
+                    local61 = arg1.get1();
                     if (local14 == arg2.anInt1002 && local14 != -1) {
                         local73 = Static24.aClass27Array1[local14].anInt802;
                         if (local73 == 1) {
@@ -4482,13 +4482,13 @@ public final class client extends AnimFrame {
                     }
                 }
                 if ((arg3 & 0x4) == 4) {
-                    arg2.anInt996 = arg1.method482();
+                    arg2.anInt996 = arg1.get2();
                     if (arg2.anInt996 == 65535) {
                         arg2.anInt996 = -1;
                     }
                 }
                 if ((arg3 & 0x8) == 8) {
-                    arg2.aString30 = arg1.method487();
+                    arg2.aString30 = arg1.getString();
                     if (arg2.aString30.charAt(0) == '~') {
                         arg2.aString30 = arg2.aString30.substring(1);
                         this.method227(176, 2, arg2.aString3, arg2.aString30);
@@ -4500,21 +4500,21 @@ public final class client extends AnimFrame {
                     arg2.anInt990 = 150;
                 }
                 if ((arg3 & 0x10) == 16) {
-                    local14 = arg1.method480();
-                    local61 = arg1.method480();
+                    local14 = arg1.get1();
+                    local61 = arg1.get1();
                     arg2.method681(true, local61, Static8.anInt297, local14);
                     arg2.anInt993 = Static8.anInt297 + 300;
-                    arg2.anInt994 = arg1.method480();
-                    arg2.anInt995 = arg1.method480();
+                    arg2.anInt994 = arg1.get1();
+                    arg2.anInt995 = arg1.get1();
                 }
                 if ((arg3 & 0x20) == 32) {
-                    arg2.anInt997 = arg1.method482();
-                    arg2.anInt998 = arg1.method482();
+                    arg2.anInt997 = arg1.get2();
+                    arg2.anInt998 = arg1.get2();
                 }
                 if ((arg3 & 0x40) == 64) {
-                    local14 = arg1.method482();
-                    local61 = arg1.method480();
-                    local73 = arg1.method480();
+                    local14 = arg1.get2();
+                    local61 = arg1.get1();
+                    local73 = arg1.get1();
                     @Pc(259) int local259 = arg1.anInt742;
                     if (arg2.aString3 != null && arg2.aBoolean24) {
                         @Pc(269) long local269 = Static37.method667(arg2.aString3);
@@ -4550,8 +4550,8 @@ public final class client extends AnimFrame {
                     arg1.anInt742 = local259 + local73;
                 }
                 if ((arg3 & 0x100) == 256) {
-                    arg2.anInt1007 = arg1.method482();
-                    local14 = arg1.method485();
+                    arg2.anInt1007 = arg1.get2();
+                    local14 = arg1.get4();
                     arg2.anInt1011 = local14 >> 16;
                     arg2.anInt1010 = Static8.anInt297 + (local14 & 0xFFFF);
                     arg2.anInt1008 = 0;
@@ -4564,22 +4564,22 @@ public final class client extends AnimFrame {
                     }
                 }
                 if ((arg3 & 0x200) == 512) {
-                    arg2.anInt1012 = arg1.method480();
-                    arg2.anInt1014 = arg1.method480();
-                    arg2.anInt1013 = arg1.method480();
-                    arg2.anInt1015 = arg1.method480();
-                    arg2.anInt1016 = arg1.method482() + Static8.anInt297;
-                    arg2.anInt1017 = arg1.method482() + Static8.anInt297;
-                    arg2.anInt1018 = arg1.method480();
+                    arg2.anInt1012 = arg1.get1();
+                    arg2.anInt1014 = arg1.get1();
+                    arg2.anInt1013 = arg1.get1();
+                    arg2.anInt1015 = arg1.get1();
+                    arg2.anInt1016 = arg1.get2() + Static8.anInt297;
+                    arg2.anInt1017 = arg1.get2() + Static8.anInt297;
+                    arg2.anInt1018 = arg1.get1();
                     arg2.method679(0);
                 }
                 if ((arg3 & 0x400) == 1024) {
-                    local14 = arg1.method480();
-                    local61 = arg1.method480();
+                    local14 = arg1.get1();
+                    local61 = arg1.get1();
                     arg2.method681(true, local61, Static8.anInt297, local14);
                     arg2.anInt993 = Static8.anInt297 + 300;
-                    arg2.anInt994 = arg1.method480();
-                    arg2.anInt995 = arg1.method480();
+                    arg2.anInt994 = arg1.get1();
+                    arg2.anInt995 = arg1.get1();
                 }
             }
         } catch (@Pc(496) RuntimeException local496) {
@@ -4625,7 +4625,7 @@ public final class client extends AnimFrame {
     @OriginalMember(owner = "client!client", name = "i", descriptor = "(Z)V")
     private void method143(@OriginalArg(0) boolean arg0) {
         try {
-            this.aSecondaryParticleLinkedList4.method469(true, 165);
+            this.aSecondaryParticleLinkedList4.putPacketId(true, 165);
             this.aBoolean54 &= arg0;
             if (this.anInt376 != -1) {
                 this.anInt376 = -1;
@@ -4649,7 +4649,7 @@ public final class client extends AnimFrame {
     private void method144(@OriginalArg(0) boolean arg0) {
         try {
             if (!arg0) {
-                this.aSecondaryParticleLinkedList4.method470(194);
+                this.aSecondaryParticleLinkedList4.put1(194);
             }
             @Pc(28) int local28;
             @Pc(56) int local56;
@@ -4684,7 +4684,7 @@ public final class client extends AnimFrame {
                 } else {
                     this.aSecondaryParticleNode1.method531(978, 0);
                 }
-                this.aSecondaryParticleLinkedList4.method469(true, 115);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 115);
                 @Pc(144) byte[] local144;
                 for (local69 = 0; local69 < local56; local69++) {
                     local76 = (this.anIntArray43[local69] >> 8) * 64 - this.anInt323;
@@ -4702,7 +4702,7 @@ public final class client extends AnimFrame {
                         local52.method56(64, local139, local196, 0, 64);
                     }
                 }
-                this.aSecondaryParticleLinkedList4.method469(true, 115);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 115);
                 @Pc(246) int local246;
                 for (local139 = 0; local139 < local56; local139++) {
                     local144 = this.aByteArrayArray1[local139];
@@ -4712,10 +4712,10 @@ public final class client extends AnimFrame {
                         local52.method60(local258, this.aParamTypeArray1, this.aSecondaryParticleNode1, local246, local144, true);
                     }
                 }
-                this.aSecondaryParticleLinkedList4.method469(true, 115);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 115);
                 local52.method62(this.aParamTypeArray1, this.aSecondaryParticleNode1, false);
                 this.aTextureOpMonochromeFill5.method524(this.anInt255);
-                this.aSecondaryParticleLinkedList4.method469(true, 115);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 115);
                 for (local196 = 0; local196 < 104; local196++) {
                     for (local246 = 0; local246 < 104; local246++) {
                         this.method176(local196, local246);
@@ -5248,30 +5248,30 @@ public final class client extends AnimFrame {
                 local814 = this.anIntArray73[local57];
                 local820 = this.anIntArray74[local57];
                 if (arg7 == 0) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 141);
-                    this.aSecondaryParticleLinkedList4.method470(local74 + local74 + 3);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 141);
+                    this.aSecondaryParticleLinkedList4.put1(local74 + local74 + 3);
                 }
                 if (arg7 == 1) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 196);
-                    this.aSecondaryParticleLinkedList4.method470(local74 + local74 + 3 + 14);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 196);
+                    this.aSecondaryParticleLinkedList4.put1(local74 + local74 + 3 + 14);
                 }
                 if (arg7 == 2) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 70);
-                    this.aSecondaryParticleLinkedList4.method470(local74 + local74 + 3);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 70);
+                    this.aSecondaryParticleLinkedList4.put1(local74 + local74 + 3);
                 }
                 if (super.anIntArray30[5] == 1) {
-                    this.aSecondaryParticleLinkedList4.method470(1);
+                    this.aSecondaryParticleLinkedList4.put1(1);
                 } else {
-                    this.aSecondaryParticleLinkedList4.method470(0);
+                    this.aSecondaryParticleLinkedList4.put1(0);
                 }
-                this.aSecondaryParticleLinkedList4.clear(local814 + this.anInt323);
-                this.aSecondaryParticleLinkedList4.clear(local820 + this.anInt324);
+                this.aSecondaryParticleLinkedList4.put2(local814 + this.anInt323);
+                this.aSecondaryParticleLinkedList4.put2(local820 + this.anInt324);
                 this.anInt275 = this.anIntArray73[0];
                 this.anInt276 = this.anIntArray74[0];
                 for (@Pc(1083) int local1083 = 1; local1083 < local74; local1083++) {
                     local57--;
-                    this.aSecondaryParticleLinkedList4.method470(this.anIntArray73[local57] - local814);
-                    this.aSecondaryParticleLinkedList4.method470(this.anIntArray74[local57] - local820);
+                    this.aSecondaryParticleLinkedList4.put1(this.anIntArray73[local57] - local814);
+                    this.aSecondaryParticleLinkedList4.put1(this.anIntArray74[local57] - local820);
                 }
                 return true;
             } else if (arg7 == 1) {
@@ -5303,9 +5303,9 @@ public final class client extends AnimFrame {
                     local42.readFully(local49.aByteArray9, 0, 40);
                     local42.close();
                     for (@Pc(59) int local59 = 0; local59 < 9; local59++) {
-                        this.anIntArray69[local59] = local49.method485();
+                        this.anIntArray69[local59] = local49.get4();
                     }
-                    @Pc(74) int local74 = local49.method485();
+                    @Pc(74) int local74 = local49.get4();
                     @Pc(76) int local76 = 1234;
                     for (@Pc(78) int local78 = 0; local78 < 9; local78++) {
                         local76 = (local76 << 1) + this.anIntArray69[local78];
@@ -5358,35 +5358,35 @@ public final class client extends AnimFrame {
     private void method152(@OriginalArg(0) int arg0) {
         try {
             if (arg0 != this.anInt375) {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             if (super.anInt202 == 1) {
                 if (super.anInt203 >= 6 && super.anInt203 <= 106 && super.anInt204 >= 467 && super.anInt204 <= 499) {
                     this.anInt216 = (this.anInt216 + 1) % 4;
                     this.aBoolean45 = true;
                     this.aBoolean59 = true;
-                    this.aSecondaryParticleLinkedList4.method469(true, 242);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt216);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt421);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt296);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 242);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt216);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt421);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt296);
                 }
                 if (super.anInt203 >= 135 && super.anInt203 <= 235 && super.anInt204 >= 467 && super.anInt204 <= 499) {
                     this.anInt421 = (this.anInt421 + 1) % 3;
                     this.aBoolean45 = true;
                     this.aBoolean59 = true;
-                    this.aSecondaryParticleLinkedList4.method469(true, 242);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt216);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt421);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt296);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 242);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt216);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt421);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt296);
                 }
                 if (super.anInt203 >= 273 && super.anInt203 <= 373 && super.anInt204 >= 467 && super.anInt204 <= 499) {
                     this.anInt296 = (this.anInt296 + 1) % 3;
                     this.aBoolean45 = true;
                     this.aBoolean59 = true;
-                    this.aSecondaryParticleLinkedList4.method469(true, 242);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt216);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt421);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt296);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 242);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt216);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt421);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt296);
                 }
                 if (super.anInt203 >= 412 && super.anInt203 <= 512 && super.anInt204 >= 467 && super.anInt204 <= 499) {
                     if (this.anInt378 == -1) {
@@ -5436,11 +5436,11 @@ public final class client extends AnimFrame {
                     local28 -= 2000;
                 }
                 if (local28 == 563) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 199);
-                    this.aSecondaryParticleLinkedList4.clear(local33);
-                    this.aSecondaryParticleLinkedList4.clear(local18);
-                    this.aSecondaryParticleLinkedList4.clear(local23);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt426);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 199);
+                    this.aSecondaryParticleLinkedList4.put2(local33);
+                    this.aSecondaryParticleLinkedList4.put2(local18);
+                    this.aSecondaryParticleLinkedList4.put2(local23);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt426);
                     this.anInt249 = 0;
                     this.anInt250 = local23;
                     this.anInt251 = local18;
@@ -5462,16 +5462,16 @@ public final class client extends AnimFrame {
                     this.anInt311 = super.anInt204;
                     this.anInt313 = 2;
                     this.anInt312 = 0;
-                    this.aSecondaryParticleLinkedList4.method469(true, 163);
-                    this.aSecondaryParticleLinkedList4.clear(local18 + this.anInt323);
-                    this.aSecondaryParticleLinkedList4.clear(local23 + this.anInt324);
-                    this.aSecondaryParticleLinkedList4.clear(local33);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt230);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt228);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt229);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 163);
+                    this.aSecondaryParticleLinkedList4.put2(local18 + this.anInt323);
+                    this.aSecondaryParticleLinkedList4.put2(local23 + this.anInt324);
+                    this.aSecondaryParticleLinkedList4.put2(local33);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt230);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt228);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt229);
                 }
                 if (local28 == 899 && this.method135(local33, local18, local23, 124, 0)) {
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt426);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt426);
                 }
                 @Pc(234) String local234;
                 @Pc(225) ByteArray local225;
@@ -5493,11 +5493,11 @@ public final class client extends AnimFrame {
                         this.anInt311 = super.anInt204;
                         this.anInt313 = 2;
                         this.anInt312 = 0;
-                        this.aSecondaryParticleLinkedList4.method469(true, 136);
-                        this.aSecondaryParticleLinkedList4.clear(local33);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt230);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt228);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt229);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 136);
+                        this.aSecondaryParticleLinkedList4.put2(local33);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt230);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt228);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt229);
                     }
                 }
                 if (local28 == 1071) {
@@ -5506,8 +5506,8 @@ public final class client extends AnimFrame {
                 @Pc(355) BasType local355;
                 @Pc(373) int local373;
                 if (local28 == 435) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 62);
-                    this.aSecondaryParticleLinkedList4.clear(local23);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 62);
+                    this.aSecondaryParticleLinkedList4.put2(local23);
                     local355 = Static9.aBasTypeArray1[local23];
                     if (local355.anIntArrayArray7 != null && local355.anIntArrayArray7[0][0] == 5) {
                         local373 = local355.anIntArrayArray7[0][1];
@@ -5525,20 +5525,20 @@ public final class client extends AnimFrame {
                     this.anInt311 = super.anInt204;
                     this.anInt313 = 2;
                     this.anInt312 = 0;
-                    this.aSecondaryParticleLinkedList4.method469(true, 195);
-                    this.aSecondaryParticleLinkedList4.clear(local18 + this.anInt323);
-                    this.aSecondaryParticleLinkedList4.clear(local23 + this.anInt324);
-                    this.aSecondaryParticleLinkedList4.clear(local33);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt426);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 195);
+                    this.aSecondaryParticleLinkedList4.put2(local18 + this.anInt323);
+                    this.aSecondaryParticleLinkedList4.put2(local23 + this.anInt324);
+                    this.aSecondaryParticleLinkedList4.put2(local33);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt426);
                 }
                 if (local28 == 810 && this.method135(local33, local18, local23, 215, 0)) {
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt230);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt228);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt229);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt230);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt228);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt229);
                 }
                 if (local28 == 997 && !this.aBoolean49) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 223);
-                    this.aSecondaryParticleLinkedList4.clear(local23);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 223);
+                    this.aSecondaryParticleLinkedList4.put2(local23);
                     this.aBoolean49 = true;
                 }
                 if (local28 == 139 || local28 == 778 || local28 == 617 || local28 == 224 || local28 == 662) {
@@ -5555,36 +5555,36 @@ public final class client extends AnimFrame {
                             Static8.anInt244++;
                         }
                         if (Static8.anInt244 >= 123) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 58);
-                            this.aSecondaryParticleLinkedList4.method474(0);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 58);
+                            this.aSecondaryParticleLinkedList4.put4(0);
                         }
-                        this.aSecondaryParticleLinkedList4.method469(true, 27);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 27);
                     }
                     if (local28 == 662) {
                         Static8.anInt209 += this.anInt324;
                         if (Static8.anInt209 >= 118) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 26);
-                            this.aSecondaryParticleLinkedList4.method474(0);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 26);
+                            this.aSecondaryParticleLinkedList4.put4(0);
                         }
-                        this.aSecondaryParticleLinkedList4.method469(true, 211);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 211);
                     }
                     if (local28 == 617) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 60);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 60);
                     }
                     if (local28 == 224) {
                         Static8.anInt212 += local23;
                         if (Static8.anInt212 >= 75) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 41);
-                            this.aSecondaryParticleLinkedList4.method470(19);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 41);
+                            this.aSecondaryParticleLinkedList4.put1(19);
                         }
-                        this.aSecondaryParticleLinkedList4.method469(true, 123);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 123);
                     }
                     if (local28 == 778) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 42);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 42);
                     }
-                    this.aSecondaryParticleLinkedList4.clear(local18 + this.anInt323);
-                    this.aSecondaryParticleLinkedList4.clear(local23 + this.anInt324);
-                    this.aSecondaryParticleLinkedList4.clear(local33);
+                    this.aSecondaryParticleLinkedList4.put2(local18 + this.anInt323);
+                    this.aSecondaryParticleLinkedList4.put2(local23 + this.anInt324);
+                    this.aSecondaryParticleLinkedList4.put2(local33);
                 }
                 @Pc(728) Class1_Sub1_Sub1_Sub1_Sub2 local728;
                 if (local28 == 242 || local28 == 209 || local28 == 309 || local28 == 852 || local28 == 793) {
@@ -5596,21 +5596,21 @@ public final class client extends AnimFrame {
                         this.anInt313 = 2;
                         this.anInt312 = 0;
                         if (local28 == 309) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 239);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 239);
                         }
                         if (local28 == 852) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 22);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 22);
                         }
                         if (local28 == 793) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 188);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 188);
                         }
                         if (local28 == 209) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 4);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 4);
                         }
                         if (local28 == 242) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 35);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 35);
                         }
-                        this.aSecondaryParticleLinkedList4.clear(local33);
+                        this.aSecondaryParticleLinkedList4.put2(local33);
                     }
                 }
                 @Pc(836) String local836;
@@ -5647,16 +5647,16 @@ public final class client extends AnimFrame {
                 if (local28 == 721) {
                     Static8.anInt248 += local23;
                     if (Static8.anInt248 >= 139) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 202);
-                        this.aSecondaryParticleLinkedList4.method474(0);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 202);
+                        this.aSecondaryParticleLinkedList4.put4(0);
                     }
                     this.method135(local33, local18, local23, 207, 0);
                 }
                 if (local28 == 743) {
                     Static8.anInt273++;
                     if (Static8.anInt273 >= 124) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 173);
-                        this.aSecondaryParticleLinkedList4.clear(37954);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 173);
+                        this.aSecondaryParticleLinkedList4.put2(37954);
                     }
                     this.method135(local33, local18, local23, 98, 0);
                 }
@@ -5702,36 +5702,36 @@ public final class client extends AnimFrame {
                             this.anInt313 = 2;
                             this.anInt312 = 0;
                             if (local28 == 27) {
-                                this.aSecondaryParticleLinkedList4.method469(true, 17);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 17);
                             }
                             if (local28 == 185) {
-                                this.aSecondaryParticleLinkedList4.method469(true, 83);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 83);
                             }
                             if (local28 == 387) {
                                 Static8.anInt346 += local33;
                                 if (Static8.anInt346 >= 66) {
-                                    this.aSecondaryParticleLinkedList4.method469(true, 222);
-                                    this.aSecondaryParticleLinkedList4.method470(154);
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 222);
+                                    this.aSecondaryParticleLinkedList4.put1(154);
                                 }
-                                this.aSecondaryParticleLinkedList4.method469(true, 241);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 241);
                             }
                             if (local28 == 639) {
                                 Static8.anInt329++;
                                 if (Static8.anInt329 >= 52) {
-                                    this.aSecondaryParticleLinkedList4.method469(true, 0);
-                                    this.aSecondaryParticleLinkedList4.method470(131);
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 0);
+                                    this.aSecondaryParticleLinkedList4.put1(131);
                                 }
-                                this.aSecondaryParticleLinkedList4.method469(true, 10);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 10);
                             }
                             if (local28 == 499) {
-                                this.aSecondaryParticleLinkedList4.method469(true, 40);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 40);
                             }
-                            this.aSecondaryParticleLinkedList4.clear(local33);
+                            this.aSecondaryParticleLinkedList4.put2(local33);
                         }
                     }
                     if (local28 == 225) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 62);
-                        this.aSecondaryParticleLinkedList4.clear(local23);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 62);
+                        this.aSecondaryParticleLinkedList4.put2(local23);
                         local355 = Static9.aBasTypeArray1[local23];
                         if (local355.anIntArrayArray7 != null && local355.anIntArrayArray7[0][0] == 5) {
                             local373 = local355.anIntArrayArray7[0][1];
@@ -5749,26 +5749,26 @@ public final class client extends AnimFrame {
                         if (local28 == 681) {
                             Static8.anInt218++;
                             if (Static8.anInt218 >= 116) {
-                                this.aSecondaryParticleLinkedList4.method469(true, 152);
-                                this.aSecondaryParticleLinkedList4.method473(13018169);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 152);
+                                this.aSecondaryParticleLinkedList4.put3(13018169);
                             }
-                            this.aSecondaryParticleLinkedList4.method469(true, 254);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 254);
                         }
                         if (local28 == 962) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 156);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 156);
                         }
                         if (local28 == 795) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 213);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 213);
                         }
                         if (local28 == 100) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 127);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 127);
                         }
                         if (local28 == 694) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 64);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 64);
                         }
-                        this.aSecondaryParticleLinkedList4.clear(local33);
-                        this.aSecondaryParticleLinkedList4.clear(local18);
-                        this.aSecondaryParticleLinkedList4.clear(local23);
+                        this.aSecondaryParticleLinkedList4.put2(local33);
+                        this.aSecondaryParticleLinkedList4.put2(local18);
+                        this.aSecondaryParticleLinkedList4.put2(local23);
                         this.anInt249 = 0;
                         this.anInt250 = local23;
                         this.anInt251 = local18;
@@ -5782,30 +5782,30 @@ public final class client extends AnimFrame {
                     }
                     if (local28 == 582 || local28 == 113 || local28 == 555 || local28 == 331 || local28 == 354) {
                         if (local28 == 354) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 87);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 87);
                         }
                         if (local28 == 555) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 130);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 130);
                         }
                         if (local28 == 113) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 88);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 88);
                         }
                         if (local28 == 582) {
                             if ((local33 & 0x3) == 0) {
                                 Static8.anInt222++;
                             }
                             if (Static8.anInt222 >= 133) {
-                                this.aSecondaryParticleLinkedList4.method469(true, 203);
-                                this.aSecondaryParticleLinkedList4.clear(6118);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 203);
+                                this.aSecondaryParticleLinkedList4.put2(6118);
                             }
-                            this.aSecondaryParticleLinkedList4.method469(true, 198);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 198);
                         }
                         if (local28 == 331) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 125);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 125);
                         }
-                        this.aSecondaryParticleLinkedList4.clear(local33);
-                        this.aSecondaryParticleLinkedList4.clear(local18);
-                        this.aSecondaryParticleLinkedList4.clear(local23);
+                        this.aSecondaryParticleLinkedList4.put2(local33);
+                        this.aSecondaryParticleLinkedList4.put2(local18);
+                        this.aSecondaryParticleLinkedList4.put2(local23);
                         this.anInt249 = 0;
                         this.anInt250 = local23;
                         this.anInt251 = local18;
@@ -5821,13 +5821,13 @@ public final class client extends AnimFrame {
                         this.method135(local33, local18, local23, 238, 0);
                     }
                     if (local28 == 398) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 101);
-                        this.aSecondaryParticleLinkedList4.clear(local33);
-                        this.aSecondaryParticleLinkedList4.clear(local18);
-                        this.aSecondaryParticleLinkedList4.clear(local23);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt230);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt228);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt229);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 101);
+                        this.aSecondaryParticleLinkedList4.put2(local33);
+                        this.aSecondaryParticleLinkedList4.put2(local18);
+                        this.aSecondaryParticleLinkedList4.put2(local23);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt230);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt228);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt229);
                         this.anInt249 = 0;
                         this.anInt250 = local23;
                         this.anInt251 = local18;
@@ -5846,8 +5846,8 @@ public final class client extends AnimFrame {
                             local1628 = this.method128(local355, this.anInt264);
                         }
                         if (local1628) {
-                            this.aSecondaryParticleLinkedList4.method469(true, 62);
-                            this.aSecondaryParticleLinkedList4.clear(local23);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 62);
+                            this.aSecondaryParticleLinkedList4.put2(local23);
                         }
                     }
                     if (local28 == 1714) {
@@ -5912,11 +5912,11 @@ public final class client extends AnimFrame {
                             this.anInt311 = super.anInt204;
                             this.anInt313 = 2;
                             this.anInt312 = 0;
-                            this.aSecondaryParticleLinkedList4.method469(true, 120);
-                            this.aSecondaryParticleLinkedList4.clear(local33);
-                            this.aSecondaryParticleLinkedList4.clear(this.anInt230);
-                            this.aSecondaryParticleLinkedList4.clear(this.anInt228);
-                            this.aSecondaryParticleLinkedList4.clear(this.anInt229);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 120);
+                            this.aSecondaryParticleLinkedList4.put2(local33);
+                            this.aSecondaryParticleLinkedList4.put2(this.anInt230);
+                            this.aSecondaryParticleLinkedList4.put2(this.anInt228);
+                            this.aSecondaryParticleLinkedList4.put2(this.anInt229);
                         }
                     }
                     if (local28 == 605 || local28 == 47 || local28 == 513 || local28 == 884) {
@@ -5953,9 +5953,9 @@ public final class client extends AnimFrame {
                             this.anInt311 = super.anInt204;
                             this.anInt313 = 2;
                             this.anInt312 = 0;
-                            this.aSecondaryParticleLinkedList4.method469(true, 100);
-                            this.aSecondaryParticleLinkedList4.clear(local33);
-                            this.aSecondaryParticleLinkedList4.clear(this.anInt426);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 100);
+                            this.aSecondaryParticleLinkedList4.put2(local33);
+                            this.aSecondaryParticleLinkedList4.put2(this.anInt426);
                         }
                     }
                     if (local28 == 507 || local28 == 957) {
@@ -5972,20 +5972,20 @@ public final class client extends AnimFrame {
                                     if (local28 == 507) {
                                         Static8.anInt346 += local33;
                                         if (Static8.anInt346 >= 66) {
-                                            this.aSecondaryParticleLinkedList4.method469(true, 222);
-                                            this.aSecondaryParticleLinkedList4.method470(154);
+                                            this.aSecondaryParticleLinkedList4.putPacketId(true, 222);
+                                            this.aSecondaryParticleLinkedList4.put1(154);
                                         }
-                                        this.aSecondaryParticleLinkedList4.method469(true, 241);
+                                        this.aSecondaryParticleLinkedList4.putPacketId(true, 241);
                                     }
                                     if (local28 == 957) {
                                         Static8.anInt329++;
                                         if (Static8.anInt329 >= 52) {
-                                            this.aSecondaryParticleLinkedList4.method469(true, 0);
-                                            this.aSecondaryParticleLinkedList4.method470(131);
+                                            this.aSecondaryParticleLinkedList4.putPacketId(true, 0);
+                                            this.aSecondaryParticleLinkedList4.put1(131);
                                         }
-                                        this.aSecondaryParticleLinkedList4.method469(true, 10);
+                                        this.aSecondaryParticleLinkedList4.putPacketId(true, 10);
                                     }
-                                    this.aSecondaryParticleLinkedList4.clear(this.anIntArray64[local1786]);
+                                    this.aSecondaryParticleLinkedList4.put2(this.anIntArray64[local1786]);
                                     local2112 = true;
                                     break;
                                 }
@@ -6003,9 +6003,9 @@ public final class client extends AnimFrame {
                             this.anInt311 = super.anInt204;
                             this.anInt313 = 2;
                             this.anInt312 = 0;
-                            this.aSecondaryParticleLinkedList4.method469(true, 97);
-                            this.aSecondaryParticleLinkedList4.clear(local33);
-                            this.aSecondaryParticleLinkedList4.clear(this.anInt426);
+                            this.aSecondaryParticleLinkedList4.putPacketId(true, 97);
+                            this.aSecondaryParticleLinkedList4.put2(local33);
+                            this.aSecondaryParticleLinkedList4.put2(this.anInt426);
                         }
                     }
                     this.anInt227 = 0;
@@ -6040,8 +6040,8 @@ public final class client extends AnimFrame {
                     if (!Static8.aBoolean69) {
                         this.aClass11_1.anInt540 = 0;
                     } else if (super.anInt202 != 0 || this.aClass11_1.anInt540 >= 40) {
-                        this.aSecondaryParticleLinkedList4.method469(true, 151);
-                        this.aSecondaryParticleLinkedList4.method470(0);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 151);
+                        this.aSecondaryParticleLinkedList4.put1(0);
                         local66 = this.aSecondaryParticleLinkedList4.anInt742;
                         local68 = 0;
                         @Pc(86) int local86;
@@ -6073,20 +6073,20 @@ public final class client extends AnimFrame {
                                 if (this.anInt292 < 8 && local165 >= -32 && local165 <= 31 && local173 >= -32 && local173 <= 31) {
                                     local165 += 32;
                                     local173 += 32;
-                                    this.aSecondaryParticleLinkedList4.clear((this.anInt292 << 12) + (local165 << 6) + local173);
+                                    this.aSecondaryParticleLinkedList4.put2((this.anInt292 << 12) + (local165 << 6) + local173);
                                     this.anInt292 = 0;
                                 } else if (this.anInt292 < 8) {
-                                    this.aSecondaryParticleLinkedList4.method473((this.anInt292 << 19) + local120 + 8388608);
+                                    this.aSecondaryParticleLinkedList4.put3((this.anInt292 << 19) + local120 + 8388608);
                                     this.anInt292 = 0;
                                 } else {
-                                    this.aSecondaryParticleLinkedList4.method474((this.anInt292 << 19) + local120 - 1073741824);
+                                    this.aSecondaryParticleLinkedList4.put4((this.anInt292 << 19) + local120 - 1073741824);
                                     this.anInt292 = 0;
                                 }
                             } else if (this.anInt292 < 2047) {
                                 this.anInt292++;
                             }
                         }
-                        this.aSecondaryParticleLinkedList4.method479(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local66);
+                        this.aSecondaryParticleLinkedList4.putPacketSize(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local66);
                         if (local68 >= this.aClass11_1.anInt540) {
                             this.aClass11_1.anInt540 = 0;
                         } else {
@@ -6122,8 +6122,8 @@ public final class client extends AnimFrame {
                         local382 = 1;
                     }
                     local103 = (int) local336;
-                    this.aSecondaryParticleLinkedList4.method469(true, 240);
-                    this.aSecondaryParticleLinkedList4.method474((local103 << 20) + (local382 << 19) + local70);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 240);
+                    this.aSecondaryParticleLinkedList4.put4((local103 << 20) + (local382 << 19) + local70);
                 }
                 if (this.anInt221 > 0) {
                     this.anInt221--;
@@ -6134,19 +6134,19 @@ public final class client extends AnimFrame {
                 if (this.aBoolean44 && this.anInt221 <= 0) {
                     this.anInt221 = 20;
                     this.aBoolean44 = false;
-                    this.aSecondaryParticleLinkedList4.method469(true, 169);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt391);
-                    this.aSecondaryParticleLinkedList4.clear(this.anInt392);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 169);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt391);
+                    this.aSecondaryParticleLinkedList4.put2(this.anInt392);
                 }
                 if (super.aBoolean42 && !this.aBoolean65) {
                     this.aBoolean65 = true;
-                    this.aSecondaryParticleLinkedList4.method469(true, 247);
-                    this.aSecondaryParticleLinkedList4.method470(1);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 247);
+                    this.aSecondaryParticleLinkedList4.put1(1);
                 }
                 if (!super.aBoolean42 && this.aBoolean65) {
                     this.aBoolean65 = false;
-                    this.aSecondaryParticleLinkedList4.method469(true, 247);
-                    this.aSecondaryParticleLinkedList4.method470(0);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 247);
+                    this.aSecondaryParticleLinkedList4.put1(0);
                 }
                 this.method112(874);
                 this.method181(this.aBoolean87);
@@ -6224,11 +6224,11 @@ public final class client extends AnimFrame {
                                 } else {
                                     local683.setComponentScrollPositionServer(0, this.anInt350, this.anInt403);
                                 }
-                                this.aSecondaryParticleLinkedList4.method469(true, 38);
-                                this.aSecondaryParticleLinkedList4.clear(this.anInt402);
-                                this.aSecondaryParticleLinkedList4.clear(this.anInt403);
-                                this.aSecondaryParticleLinkedList4.clear(this.anInt350);
-                                this.aSecondaryParticleLinkedList4.method470(local685);
+                                this.aSecondaryParticleLinkedList4.putPacketId(true, 38);
+                                this.aSecondaryParticleLinkedList4.put2(this.anInt402);
+                                this.aSecondaryParticleLinkedList4.put2(this.anInt403);
+                                this.aSecondaryParticleLinkedList4.put2(this.anInt350);
+                                this.aSecondaryParticleLinkedList4.put1(local685);
                             }
                         } else if ((this.anInt266 == 1 || this.method134(this.anInt322 - 1, (byte) 3)) && this.anInt322 > 2) {
                             this.method149(Static8.anInt298);
@@ -6242,7 +6242,7 @@ public final class client extends AnimFrame {
                 Static8.anInt253++;
                 if (Static8.anInt253 > 62) {
                     Static8.anInt253 = 0;
-                    this.aSecondaryParticleLinkedList4.method469(true, 6);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 6);
                 }
                 @Pc(869) int local869;
                 @Pc(871) int local871;
@@ -6287,7 +6287,7 @@ public final class client extends AnimFrame {
                 if (super.anInt195 > 4500) {
                     this.anInt372 = 250;
                     super.anInt195 -= 500;
-                    this.aSecondaryParticleLinkedList4.method469(true, 80);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 80);
                 }
                 this.anInt407++;
                 if (this.anInt407 > 500) {
@@ -6346,7 +6346,7 @@ public final class client extends AnimFrame {
                 }
                 this.anInt371++;
                 if (this.anInt371 > 50) {
-                    this.aSecondaryParticleLinkedList4.method469(true, 115);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 115);
                 }
                 try {
                     if (this.aMapChunk1 != null && this.aSecondaryParticleLinkedList4.anInt742 > 0) {
@@ -6641,8 +6641,8 @@ public final class client extends AnimFrame {
             @Pc(30) long local30 = Static37.method667(arg0);
             @Pc(37) int local37 = (int) (local30 >> 16 & 0x1FL);
             this.aSecondaryParticleLinkedList4.anInt742 = 0;
-            this.aSecondaryParticleLinkedList4.method470(14);
-            this.aSecondaryParticleLinkedList4.method470(local37);
+            this.aSecondaryParticleLinkedList4.put1(14);
+            this.aSecondaryParticleLinkedList4.put1(local37);
             this.aMapChunk1.method251(this.aSecondaryParticleLinkedList4.aByteArray9, (byte) -28, 2, 0);
             for (@Pc(60) int local60 = 0; local60 < 8; local60++) {
                 this.aMapChunk1.method248();
@@ -6654,32 +6654,32 @@ public final class client extends AnimFrame {
             if (local74 == 0) {
                 this.aMapChunk1.method250(this.aSecondaryParticleLinkedList3.aByteArray9, 0, 8);
                 this.aSecondaryParticleLinkedList3.anInt742 = 0;
-                this.aLong18 = this.aSecondaryParticleLinkedList3.method486(0);
+                this.aLong18 = this.aSecondaryParticleLinkedList3.get8(0);
                 @Pc(99) int[] local99 = new int[]{(int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (this.aLong18 >> 32), (int) this.aLong18};
                 this.aSecondaryParticleLinkedList4.anInt742 = 0;
-                this.aSecondaryParticleLinkedList4.method470(10);
-                this.aSecondaryParticleLinkedList4.method474(local99[0]);
-                this.aSecondaryParticleLinkedList4.method474(local99[1]);
-                this.aSecondaryParticleLinkedList4.method474(local99[2]);
-                this.aSecondaryParticleLinkedList4.method474(local99[3]);
-                this.aSecondaryParticleLinkedList4.method474(signlink.uid);
-                this.aSecondaryParticleLinkedList4.method477(arg0);
-                this.aSecondaryParticleLinkedList4.method477(arg1);
-                this.aSecondaryParticleLinkedList4.method495(0, Static8.aBigInteger1, Static8.aBigInteger2);
+                this.aSecondaryParticleLinkedList4.put1(10);
+                this.aSecondaryParticleLinkedList4.put4(local99[0]);
+                this.aSecondaryParticleLinkedList4.put4(local99[1]);
+                this.aSecondaryParticleLinkedList4.put4(local99[2]);
+                this.aSecondaryParticleLinkedList4.put4(local99[3]);
+                this.aSecondaryParticleLinkedList4.put4(signlink.uid);
+                this.aSecondaryParticleLinkedList4.putString(arg0);
+                this.aSecondaryParticleLinkedList4.putString(arg1);
+                this.aSecondaryParticleLinkedList4.rsa(0, Static8.aBigInteger1, Static8.aBigInteger2);
                 this.aSecondaryParticleLinkedList2.anInt742 = 0;
                 if (arg2) {
-                    this.aSecondaryParticleLinkedList2.method470(18);
+                    this.aSecondaryParticleLinkedList2.put1(18);
                 } else {
-                    this.aSecondaryParticleLinkedList2.method470(16);
+                    this.aSecondaryParticleLinkedList2.put1(16);
                 }
-                this.aSecondaryParticleLinkedList2.method470(this.aSecondaryParticleLinkedList4.anInt742 + 36 + 1 + 1 + 2);
-                this.aSecondaryParticleLinkedList2.method470(255);
-                this.aSecondaryParticleLinkedList2.clear(299);
-                this.aSecondaryParticleLinkedList2.method470(Static8.aBoolean71 ? 1 : 0);
+                this.aSecondaryParticleLinkedList2.put1(this.aSecondaryParticleLinkedList4.anInt742 + 36 + 1 + 1 + 2);
+                this.aSecondaryParticleLinkedList2.put1(255);
+                this.aSecondaryParticleLinkedList2.put2(299);
+                this.aSecondaryParticleLinkedList2.put1(Static8.aBoolean71 ? 1 : 0);
                 for (local225 = 0; local225 < 9; local225++) {
-                    this.aSecondaryParticleLinkedList2.method474(this.anIntArray69[local225]);
+                    this.aSecondaryParticleLinkedList2.put4(this.anIntArray69[local225]);
                 }
-                this.aSecondaryParticleLinkedList2.method478(0, this.aSecondaryParticleLinkedList4.anInt742, this.aSecondaryParticleLinkedList4.aByteArray9, 0);
+                this.aSecondaryParticleLinkedList2.putBytes(0, this.aSecondaryParticleLinkedList4.anInt742, this.aSecondaryParticleLinkedList4.aByteArray9, 0);
                 this.aSecondaryParticleLinkedList4.aJs5CachedResourceProvider2 = new Js5CachedResourceProvider(local99, this.aBoolean80);
                 for (local260 = 0; local260 < 4; local260++) {
                     local99[local260] += 50;
@@ -6891,7 +6891,7 @@ public final class client extends AnimFrame {
     private void method159(@OriginalArg(0) byte arg0) {
         try {
             if (arg0 != 4) {
-                this.aSecondaryParticleLinkedList4.method470(252);
+                this.aSecondaryParticleLinkedList4.put1(252);
             }
             if (this.anInt359 != 0) {
                 @Pc(12) int local12 = 0;
@@ -7130,7 +7130,7 @@ public final class client extends AnimFrame {
         try {
             while (true) {
                 if (arg2.anInt743 + 21 < arg0 * 8) {
-                    @Pc(12) int local12 = arg2.method491(477, 14);
+                    @Pc(12) int local12 = arg2.getBit(477, 14);
                     if (local12 != 16383) {
                         if (this.aClass1_Sub1_Sub1_Sub1_Sub2Array1[local12] == null) {
                             this.aClass1_Sub1_Sub1_Sub1_Sub2Array1[local12] = new Class1_Sub1_Sub1_Sub1_Sub2();
@@ -7138,7 +7138,7 @@ public final class client extends AnimFrame {
                         @Pc(32) Class1_Sub1_Sub1_Sub1_Sub2 local32 = this.aClass1_Sub1_Sub1_Sub1_Sub2Array1[local12];
                         this.anIntArray92[this.anInt424++] = local12;
                         local32.anInt1019 = Static8.anInt297;
-                        local32.aClass13_2 = Static15.method323(arg2.method491(477, 12));
+                        local32.aClass13_2 = Static15.method323(arg2.getBit(477, 12));
                         local32.anInt982 = local32.aClass13_2.aByte16;
                         local32.anInt1022 = local32.aClass13_2.anInt572;
                         local32.anInt985 = local32.aClass13_2.anInt559;
@@ -7146,26 +7146,26 @@ public final class client extends AnimFrame {
                         local32.anInt987 = local32.aClass13_2.anInt561;
                         local32.anInt988 = local32.aClass13_2.anInt562;
                         local32.anInt983 = local32.aClass13_2.anInt558;
-                        @Pc(93) int local93 = arg2.method491(477, 5);
+                        @Pc(93) int local93 = arg2.getBit(477, 5);
                         if (local93 > 15) {
                             local93 -= 32;
                         }
-                        @Pc(102) int local102 = arg2.method491(477, 5);
+                        @Pc(102) int local102 = arg2.getBit(477, 5);
                         if (local102 > 15) {
                             local102 -= 32;
                         }
-                        @Pc(111) int local111 = arg2.method491(477, 1);
+                        @Pc(111) int local111 = arg2.getBit(477, 1);
                         local32.method677(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray273[0] + local102, (byte) 7, local111 == 1, Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray272[0] + local93);
-                        @Pc(137) int local137 = arg2.method491(477, 1);
+                        @Pc(137) int local137 = arg2.getBit(477, 1);
                         if (local137 == 1) {
                             this.anIntArray65[this.anInt333++] = local12;
                         }
                         continue;
                     }
                 }
-                arg2.method492(312);
+                arg2.accessBytes(312);
                 if (arg1 != 115) {
-                    this.aSecondaryParticleLinkedList4.method470(141);
+                    this.aSecondaryParticleLinkedList4.put1(141);
                     return;
                 }
                 return;
@@ -7264,7 +7264,7 @@ public final class client extends AnimFrame {
                         }
                         this.aMapChunk1.method250(this.aSecondaryParticleLinkedList3.aByteArray9, 0, 2);
                         this.aSecondaryParticleLinkedList3.anInt742 = 0;
-                        this.anInt368 = this.aSecondaryParticleLinkedList3.method482();
+                        this.anInt368 = this.aSecondaryParticleLinkedList3.get2();
                         local16 -= 2;
                     }
                     if (local16 < this.anInt368) {
@@ -7281,7 +7281,7 @@ public final class client extends AnimFrame {
                     @Pc(311) String local311;
                     @Pc(171) String local171;
                     if (this.anInt369 == 238) {
-                        local160 = this.aSecondaryParticleLinkedList3.method487();
+                        local160 = this.aSecondaryParticleLinkedList3.getString();
                         @Pc(174) long local174;
                         if (local160.endsWith(":tradereq:")) {
                             local171 = local160.substring(0, local160.indexOf(":"));
@@ -7330,7 +7330,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 118) {
-                        this.anInt410 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt410 = this.aSecondaryParticleLinkedList3.get1();
                         this.aBoolean53 = true;
                         this.anInt369 = -1;
                         return true;
@@ -7342,8 +7342,8 @@ public final class client extends AnimFrame {
                     }
                     @Pc(367) int local367;
                     if (this.anInt369 == 169) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local171 = this.aSecondaryParticleLinkedList3.method487();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local171 = this.aSecondaryParticleLinkedList3.getString();
                         Static9.aBasTypeArray1[local367].aString18 = local171;
                         if (Static9.aBasTypeArray1[local367].anInt433 == this.anIntArray68[this.anInt334]) {
                             this.aBoolean53 = true;
@@ -7358,10 +7358,10 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 108) {
-                        this.anInt337 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt338 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt337 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt338 = this.aSecondaryParticleLinkedList3.get1();
                         while (this.aSecondaryParticleLinkedList3.anInt742 < this.anInt368) {
-                            local367 = this.aSecondaryParticleLinkedList3.method480();
+                            local367 = this.aSecondaryParticleLinkedList3.get1();
                             this.method132(true, this.aSecondaryParticleLinkedList3, local367);
                         }
                         this.anInt369 = -1;
@@ -7373,14 +7373,14 @@ public final class client extends AnimFrame {
                     @Pc(465) BasType local465;
                     if (this.anInt369 == 188) {
                         this.aBoolean53 = true;
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         local465 = Static9.aBasTypeArray1[local367];
-                        local469 = this.aSecondaryParticleLinkedList3.method482();
+                        local469 = this.aSecondaryParticleLinkedList3.get2();
                         for (local471 = 0; local471 < local469; local471++) {
-                            local465.anIntArray94[local471] = this.aSecondaryParticleLinkedList3.method482();
-                            local484 = this.aSecondaryParticleLinkedList3.method480();
+                            local465.anIntArray94[local471] = this.aSecondaryParticleLinkedList3.get2();
+                            local484 = this.aSecondaryParticleLinkedList3.get1();
                             if (local484 == 255) {
-                                local484 = this.aSecondaryParticleLinkedList3.method485();
+                                local484 = this.aSecondaryParticleLinkedList3.get4();
                             }
                             local465.anIntArray95[local471] = local484;
                         }
@@ -7399,8 +7399,8 @@ public final class client extends AnimFrame {
                     @Pc(803) int local803;
                     @Pc(824) int local824;
                     if (this.anInt369 == 170) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         if (this.anInt225 == local367 && this.anInt226 == local553 && this.anInt353 == 2) {
                             this.anInt369 = -1;
                             return true;
@@ -7531,8 +7531,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 213) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        @Pc(1178) byte local1178 = this.aSecondaryParticleLinkedList3.method481();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        @Pc(1178) byte local1178 = this.aSecondaryParticleLinkedList3.get1Signed();
                         this.anIntArray78[local367] = local1178;
                         if (this.anIntArray50[local367] != local1178) {
                             this.anIntArray50[local367] = local1178;
@@ -7546,9 +7546,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 153) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
-                        local469 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
+                        local469 = this.aSecondaryParticleLinkedList3.get2();
                         if (local553 == 65535) {
                             Static9.aBasTypeArray1[local367].anInt451 = 0;
                             this.anInt369 = -1;
@@ -7564,7 +7564,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 19) {
-                        this.anInt344 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt344 = this.aSecondaryParticleLinkedList3.get1();
                         this.anInt369 = -1;
                         return true;
                     }
@@ -7589,8 +7589,8 @@ public final class client extends AnimFrame {
                     }
                     @Pc(1360) BasType local1360;
                     if (this.anInt369 == 186) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method483();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2Signed();
                         local1360 = Static9.aBasTypeArray1[local367];
                         local1360.anInt455 = local553;
                         if (local553 == -1) {
@@ -7601,13 +7601,13 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 33) {
-                        this.anInt772 = this.aSecondaryParticleLinkedList3.method482();
-                        this.anInt367 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt772 = this.aSecondaryParticleLinkedList3.get2();
+                        this.anInt367 = this.aSecondaryParticleLinkedList3.get1();
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 181) {
-                        this.anInt271 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt271 = this.aSecondaryParticleLinkedList3.get1();
                         if (this.anInt271 == this.anInt334) {
                             if (this.anInt271 == 3) {
                                 this.anInt334 = 1;
@@ -7628,9 +7628,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 55) {
-                        this.anInt420 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt420 = this.aSecondaryParticleLinkedList3.get1();
                         if (this.anInt420 == 1) {
-                            this.anInt233 = this.aSecondaryParticleLinkedList3.method482();
+                            this.anInt233 = this.aSecondaryParticleLinkedList3.get2();
                         }
                         if (this.anInt420 >= 2 && this.anInt420 <= 6) {
                             if (this.anInt420 == 2) {
@@ -7654,12 +7654,12 @@ public final class client extends AnimFrame {
                                 this.anInt242 = 128;
                             }
                             this.anInt420 = 2;
-                            this.anInt238 = this.aSecondaryParticleLinkedList3.method482();
-                            this.anInt239 = this.aSecondaryParticleLinkedList3.method482();
-                            this.anInt240 = this.aSecondaryParticleLinkedList3.method480();
+                            this.anInt238 = this.aSecondaryParticleLinkedList3.get2();
+                            this.anInt239 = this.aSecondaryParticleLinkedList3.get2();
+                            this.anInt240 = this.aSecondaryParticleLinkedList3.get1();
                         }
                         if (this.anInt420 == 10) {
-                            this.anInt258 = this.aSecondaryParticleLinkedList3.method482();
+                            this.anInt258 = this.aSecondaryParticleLinkedList3.get2();
                         }
                         this.anInt369 = -1;
                         return true;
@@ -7667,14 +7667,14 @@ public final class client extends AnimFrame {
                     if (this.anInt369 == 105) {
                         this.anInt274 = this.anInt368 / 8;
                         for (local367 = 0; local367 < this.anInt274; local367++) {
-                            this.aLongArray4[local367] = this.aSecondaryParticleLinkedList3.method486(0);
+                            this.aLongArray4[local367] = this.aSecondaryParticleLinkedList3.get8(0);
                         }
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 145) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method485();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get4();
                         this.anIntArray78[local367] = local553;
                         if (this.anIntArray50[local367] != local553) {
                             this.anIntArray50[local367] = local553;
@@ -7688,8 +7688,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 44) {
-                        this.anInt337 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt338 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt337 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt338 = this.aSecondaryParticleLinkedList3.get1();
                         for (local367 = this.anInt337; local367 < this.anInt337 + 8; local367++) {
                             for (local553 = this.anInt338; local553 < this.anInt338 + 8; local553++) {
                                 if (this.aFrameBufferArrayArrayArray1[this.anInt246][local367][local553] != null) {
@@ -7707,8 +7707,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 141) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method480();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get1();
                         if (local367 == 65535) {
                             local367 = -1;
                         }
@@ -7719,7 +7719,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 38) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         if (local367 == 65535) {
                             local367 = -1;
                         }
@@ -7733,8 +7733,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 183) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         if (this.aBoolean79 && !Static8.aBoolean71) {
                             this.anInt357 = local367;
                             this.aBoolean73 = false;
@@ -7745,8 +7745,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 85) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         local1360 = Static9.aBasTypeArray1[local367];
                         if (local1360 != null && local1360.anInt838 == 0) {
                             if (local553 < 0) {
@@ -7775,7 +7775,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 77) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         this.method212(local367, false);
                         if (this.anInt376 != -1) {
                             this.anInt376 = -1;
@@ -7790,17 +7790,17 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 3) {
-                        this.anInt334 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt334 = this.aSecondaryParticleLinkedList3.get1();
                         this.aBoolean53 = true;
                         this.aBoolean64 = true;
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 81) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
-                        local469 = this.aSecondaryParticleLinkedList3.method482();
-                        local471 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
+                        local469 = this.aSecondaryParticleLinkedList3.get2();
+                        local471 = this.aSecondaryParticleLinkedList3.get2();
                         Static9.aBasTypeArray1[local367].anInt458 = local553;
                         Static9.aBasTypeArray1[local367].anInt459 = local469;
                         Static9.aBasTypeArray1[local367].anInt457 = local471;
@@ -7808,14 +7808,14 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 22) {
-                        this.anInt337 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt338 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt337 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt338 = this.aSecondaryParticleLinkedList3.get1();
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 185) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         Static9.aBasTypeArray1[local367].anInt451 = 1;
                         Static9.aBasTypeArray1[local367].anInt452 = local553;
                         this.anInt369 = -1;
@@ -7823,14 +7823,14 @@ public final class client extends AnimFrame {
                     }
                     if (this.anInt369 == 13) {
                         this.aBoolean53 = true;
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         local465 = Static9.aBasTypeArray1[local367];
                         while (this.aSecondaryParticleLinkedList3.anInt742 < this.anInt368) {
                             local469 = this.aSecondaryParticleLinkedList3.method494();
-                            local471 = this.aSecondaryParticleLinkedList3.method482();
-                            local484 = this.aSecondaryParticleLinkedList3.method480();
+                            local471 = this.aSecondaryParticleLinkedList3.get2();
+                            local484 = this.aSecondaryParticleLinkedList3.get1();
                             if (local484 == 255) {
-                                local484 = this.aSecondaryParticleLinkedList3.method485();
+                                local484 = this.aSecondaryParticleLinkedList3.get4();
                             }
                             if (local469 >= 0 && local469 < local465.anIntArray94.length) {
                                 local465.anIntArray94[local469] = local471;
@@ -7841,8 +7841,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 214) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         local469 = local553 >> 10 & 0x1F;
                         local471 = local553 >> 5 & 0x1F;
                         local484 = local553 & 0x1F;
@@ -7851,9 +7851,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 98) {
-                        local367 = this.aSecondaryParticleLinkedList3.method480();
-                        local553 = this.aSecondaryParticleLinkedList3.method480();
-                        @Pc(2245) String local2245 = this.aSecondaryParticleLinkedList3.method487();
+                        local367 = this.aSecondaryParticleLinkedList3.get1();
+                        local553 = this.aSecondaryParticleLinkedList3.get1();
+                        @Pc(2245) String local2245 = this.aSecondaryParticleLinkedList3.getString();
                         if (local367 >= 1 && local367 <= 5) {
                             if (local2245.equalsIgnoreCase("null")) {
                                 local2245 = null;
@@ -7865,7 +7865,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 204) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         local465 = Static9.aBasTypeArray1[local367];
                         for (local469 = 0; local469 < local465.anIntArray94.length; local469++) {
                             local465.anIntArray94[local469] = -1;
@@ -7878,15 +7878,15 @@ public final class client extends AnimFrame {
                         if (this.anInt334 == 12) {
                             this.aBoolean53 = true;
                         }
-                        this.anInt374 = this.aSecondaryParticleLinkedList3.method483();
+                        this.anInt374 = this.aSecondaryParticleLinkedList3.get2Signed();
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 151) {
                         this.aBoolean53 = true;
-                        local367 = this.aSecondaryParticleLinkedList3.method480();
-                        local553 = this.aSecondaryParticleLinkedList3.method485();
-                        local469 = this.aSecondaryParticleLinkedList3.method480();
+                        local367 = this.aSecondaryParticleLinkedList3.get1();
+                        local553 = this.aSecondaryParticleLinkedList3.get4();
+                        local469 = this.aSecondaryParticleLinkedList3.get1();
                         this.anIntArray55[local367] = local553;
                         this.anIntArray32[local367] = local469;
                         this.anIntArray59[local367] = 1;
@@ -7904,9 +7904,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 45) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method480();
-                        local469 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get1();
+                        local469 = this.aSecondaryParticleLinkedList3.get2();
                         if (this.aBoolean77 && !Static8.aBoolean71 && this.anInt317 < 50) {
                             this.anIntArray42[this.anInt317] = local367;
                             this.anIntArray89[this.anInt317] = local553;
@@ -7926,8 +7926,8 @@ public final class client extends AnimFrame {
                     }
                     @Pc(2541) long local2541;
                     if (this.anInt369 == 149) {
-                        local2541 = this.aSecondaryParticleLinkedList3.method486(0);
-                        local469 = this.aSecondaryParticleLinkedList3.method480();
+                        local2541 = this.aSecondaryParticleLinkedList3.get8(0);
+                        local469 = this.aSecondaryParticleLinkedList3.get1();
                         @Pc(2551) String local2551 = Static37.method671(943, Static37.method668(0, local2541));
                         for (local484 = 0; local484 < this.anInt409; local484++) {
                             if (local2541 == this.aLongArray3[local484]) {
@@ -7986,19 +7986,19 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 131) {
-                        this.anInt339 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt339 = this.aSecondaryParticleLinkedList3.get1();
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 9) {
-                        local367 = this.aSecondaryParticleLinkedList3.method483();
+                        local367 = this.aSecondaryParticleLinkedList3.get2Signed();
                         this.anInt412 = local367;
                         this.aBoolean59 = true;
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 237) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         this.method212(local367, false);
                         if (this.anInt217 != -1) {
                             this.anInt217 = -1;
@@ -8018,11 +8018,11 @@ public final class client extends AnimFrame {
                     }
                     if (this.anInt369 == 115) {
                         this.aBoolean50 = true;
-                        this.anInt287 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt288 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt289 = this.aSecondaryParticleLinkedList3.method482();
-                        this.anInt290 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt291 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt287 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt288 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt289 = this.aSecondaryParticleLinkedList3.get2();
+                        this.anInt290 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt291 = this.aSecondaryParticleLinkedList3.get1();
                         if (this.anInt291 >= 100) {
                             this.anInt381 = this.anInt287 * 128 + 64;
                             this.anInt383 = this.anInt288 * 128 + 64;
@@ -8032,9 +8032,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 224) {
-                        local2541 = this.aSecondaryParticleLinkedList3.method486(0);
-                        local469 = this.aSecondaryParticleLinkedList3.method485();
-                        local471 = this.aSecondaryParticleLinkedList3.method480();
+                        local2541 = this.aSecondaryParticleLinkedList3.get8(0);
+                        local469 = this.aSecondaryParticleLinkedList3.get4();
+                        local471 = this.aSecondaryParticleLinkedList3.get1();
                         local176 = false;
                         for (local178 = 0; local178 < 100; local178++) {
                             if (this.anIntArray90[local178] == local469) {
@@ -8071,24 +8071,24 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 51) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        @Pc(3141) boolean local3141 = this.aSecondaryParticleLinkedList3.method480() == 1;
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        @Pc(3141) boolean local3141 = this.aSecondaryParticleLinkedList3.get1() == 1;
                         Static9.aBasTypeArray1[local367].aBoolean92 = local3141;
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 7) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         Static9.aBasTypeArray1[local367].anInt451 = 2;
                         Static9.aBasTypeArray1[local367].anInt452 = local553;
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 130) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method483();
-                        local469 = this.aSecondaryParticleLinkedList3.method483();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2Signed();
+                        local469 = this.aSecondaryParticleLinkedList3.get2Signed();
                         @Pc(3198) BasType local3198 = Static9.aBasTypeArray1[local367];
                         local3198.crawlCcwSeqId = local553;
                         local3198.anInt844 = local469;
@@ -8096,8 +8096,8 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 245) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
-                        local553 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
+                        local553 = this.aSecondaryParticleLinkedList3.get2();
                         if (this.anInt217 != -1) {
                             this.anInt217 = -1;
                             this.aBoolean59 = true;
@@ -8115,7 +8115,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 246) {
-                        local367 = this.aSecondaryParticleLinkedList3.method483();
+                        local367 = this.aSecondaryParticleLinkedList3.get2Signed();
                         if (local367 >= 0) {
                             this.method212(local367, false);
                         }
@@ -8124,10 +8124,10 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 92) {
-                        local367 = this.aSecondaryParticleLinkedList3.method480();
-                        local553 = this.aSecondaryParticleLinkedList3.method480();
-                        local469 = this.aSecondaryParticleLinkedList3.method480();
-                        local471 = this.aSecondaryParticleLinkedList3.method480();
+                        local367 = this.aSecondaryParticleLinkedList3.get1();
+                        local553 = this.aSecondaryParticleLinkedList3.get1();
+                        local469 = this.aSecondaryParticleLinkedList3.get1();
+                        local471 = this.aSecondaryParticleLinkedList3.get1();
                         this.aBooleanArray4[local367] = true;
                         this.anIntArray57[local367] = local553;
                         this.anIntArray56[local367] = local469;
@@ -8137,12 +8137,12 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 228) {
-                        this.anInt365 = this.aSecondaryParticleLinkedList3.method482() * 30;
+                        this.anInt365 = this.aSecondaryParticleLinkedList3.get2() * 30;
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 94) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         Static9.aBasTypeArray1[local367].anInt451 = 3;
                         if (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.aClass13_1 == null) {
                             Static9.aBasTypeArray1[local367].anInt452 = (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray14[0] << 25) + (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray14[4] << 20) + (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray13[0] << 15) + (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray13[8] << 10) + (Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray13[11] << 5) + Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray13[1];
@@ -8153,9 +8153,9 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 206) {
-                        this.anInt216 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt421 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt296 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt216 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt421 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt296 = this.aSecondaryParticleLinkedList3.get1();
                         this.aBoolean45 = true;
                         this.aBoolean59 = true;
                         this.anInt369 = -1;
@@ -8165,17 +8165,17 @@ public final class client extends AnimFrame {
                         if (this.anInt334 == 12) {
                             this.aBoolean53 = true;
                         }
-                        this.anInt380 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt380 = this.aSecondaryParticleLinkedList3.get1();
                         this.anInt369 = -1;
                         return true;
                     }
                     if (this.anInt369 == 241) {
                         this.aBoolean50 = true;
-                        this.anInt414 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt415 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt416 = this.aSecondaryParticleLinkedList3.method482();
-                        this.anInt417 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt418 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt414 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt415 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt416 = this.aSecondaryParticleLinkedList3.get2();
+                        this.anInt417 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt418 = this.aSecondaryParticleLinkedList3.get1();
                         if (this.anInt418 >= 100) {
                             local367 = this.anInt414 * 128 + 64;
                             local553 = this.anInt415 * 128 + 64;
@@ -8197,11 +8197,11 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 119) {
-                        this.anInt413 = this.aSecondaryParticleLinkedList3.method485();
-                        this.anInt278 = this.aSecondaryParticleLinkedList3.method482();
-                        this.anInt390 = this.aSecondaryParticleLinkedList3.method480();
-                        this.anInt280 = this.aSecondaryParticleLinkedList3.method482();
-                        this.anInt224 = this.aSecondaryParticleLinkedList3.method480();
+                        this.anInt413 = this.aSecondaryParticleLinkedList3.get4();
+                        this.anInt278 = this.aSecondaryParticleLinkedList3.get2();
+                        this.anInt390 = this.aSecondaryParticleLinkedList3.get1();
+                        this.anInt280 = this.aSecondaryParticleLinkedList3.get2();
+                        this.anInt224 = this.aSecondaryParticleLinkedList3.get1();
                         if (this.anInt413 != 0 && this.anInt378 == -1) {
                             signlink.dnslookup(Static37.method670(this.anInt413, true));
                             this.method143(true);
@@ -8222,7 +8222,7 @@ public final class client extends AnimFrame {
                         return true;
                     }
                     if (this.anInt369 == 236) {
-                        local367 = this.aSecondaryParticleLinkedList3.method482();
+                        local367 = this.aSecondaryParticleLinkedList3.get2();
                         this.method212(local367, false);
                         if (this.anInt376 != -1) {
                             this.anInt376 = -1;
@@ -8331,7 +8331,7 @@ public final class client extends AnimFrame {
                 }
             }
             if (!arg1) {
-                this.aSecondaryParticleLinkedList4.method470(87);
+                this.aSecondaryParticleLinkedList4.put1(87);
             }
             return true;
         } catch (@Pc(72) RuntimeException local72) {
@@ -8370,8 +8370,8 @@ public final class client extends AnimFrame {
             Static8.anInt223++;
             if (Static8.anInt223 > 192) {
                 Static8.anInt223 = 0;
-                this.aSecondaryParticleLinkedList4.method469(true, 24);
-                this.aSecondaryParticleLinkedList4.method470(232);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 24);
+                this.aSecondaryParticleLinkedList4.put1(232);
             }
             while (true) {
                 @Pc(29) int local29;
@@ -8410,22 +8410,22 @@ public final class client extends AnimFrame {
                                     this.method209(local169, (byte) -51);
                                 }
                                 if (this.anInt286 == 3 && this.aString4.length() > 0) {
-                                    this.aSecondaryParticleLinkedList4.method469(true, 47);
-                                    this.aSecondaryParticleLinkedList4.method470(0);
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 47);
+                                    this.aSecondaryParticleLinkedList4.put1(0);
                                     local209 = this.aSecondaryParticleLinkedList4.anInt742;
-                                    this.aSecondaryParticleLinkedList4.method476(-13398, this.aLong17);
+                                    this.aSecondaryParticleLinkedList4.put8(-13398, this.aLong17);
                                     Static38.method684(this.aSecondaryParticleLinkedList4, this.aString4, false);
-                                    this.aSecondaryParticleLinkedList4.method479(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local209);
+                                    this.aSecondaryParticleLinkedList4.putPacketSize(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local209);
                                     this.aString4 = Static38.method685(-212, this.aString4);
                                     this.aString4 = Static32.method604(-212, this.aString4);
                                     this.method227(176, 6, Static37.method671(943, Static37.method668(0, this.aLong17)), this.aString4);
                                     if (this.anInt421 == 2) {
                                         this.anInt421 = 1;
                                         this.aBoolean45 = true;
-                                        this.aSecondaryParticleLinkedList4.method469(true, 242);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt216);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt421);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt296);
+                                        this.aSecondaryParticleLinkedList4.putPacketId(true, 242);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt216);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt421);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt296);
                                     }
                                 }
                                 if (this.anInt286 == 4 && this.anInt274 < 100) {
@@ -8453,8 +8453,8 @@ public final class client extends AnimFrame {
                                         local209 = Integer.parseInt(this.aString11);
                                     } catch (@Pc(386) Exception local386) {
                                     }
-                                    this.aSecondaryParticleLinkedList4.method469(true, 236);
-                                    this.aSecondaryParticleLinkedList4.method474(local209);
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 236);
+                                    this.aSecondaryParticleLinkedList4.put4(local209);
                                 }
                                 this.aBoolean43 = false;
                                 this.aBoolean59 = true;
@@ -8489,9 +8489,9 @@ public final class client extends AnimFrame {
                                     }
                                 }
                                 if (this.aString10.startsWith("::")) {
-                                    this.aSecondaryParticleLinkedList4.method469(true, 248);
-                                    this.aSecondaryParticleLinkedList4.method470(this.aString10.length() - 1);
-                                    this.aSecondaryParticleLinkedList4.method477(this.aString10.substring(2));
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 248);
+                                    this.aSecondaryParticleLinkedList4.put1(this.aString10.length() - 1);
+                                    this.aSecondaryParticleLinkedList4.putString(this.aString10.substring(2));
                                 } else {
                                     @Pc(553) String local553 = this.aString10.toLowerCase();
                                     @Pc(555) byte local555 = 0;
@@ -8550,13 +8550,13 @@ public final class client extends AnimFrame {
                                         local727 = 5;
                                         this.aString10 = this.aString10.substring(6);
                                     }
-                                    this.aSecondaryParticleLinkedList4.method469(true, 37);
-                                    this.aSecondaryParticleLinkedList4.method470(0);
+                                    this.aSecondaryParticleLinkedList4.putPacketId(true, 37);
+                                    this.aSecondaryParticleLinkedList4.put1(0);
                                     @Pc(808) int local808 = this.aSecondaryParticleLinkedList4.anInt742;
-                                    this.aSecondaryParticleLinkedList4.method470(local555);
-                                    this.aSecondaryParticleLinkedList4.method470(local727);
+                                    this.aSecondaryParticleLinkedList4.put1(local555);
+                                    this.aSecondaryParticleLinkedList4.put1(local727);
                                     Static38.method684(this.aSecondaryParticleLinkedList4, this.aString10, false);
-                                    this.aSecondaryParticleLinkedList4.method479(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local808);
+                                    this.aSecondaryParticleLinkedList4.putPacketSize(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local808);
                                     this.aString10 = Static38.method685(-212, this.aString10);
                                     this.aString10 = Static32.method604(-212, this.aString10);
                                     Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.aString30 = this.aString10;
@@ -8573,10 +8573,10 @@ public final class client extends AnimFrame {
                                     if (this.anInt216 == 2) {
                                         this.anInt216 = 3;
                                         this.aBoolean45 = true;
-                                        this.aSecondaryParticleLinkedList4.method469(true, 242);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt216);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt421);
-                                        this.aSecondaryParticleLinkedList4.method470(this.anInt296);
+                                        this.aSecondaryParticleLinkedList4.putPacketId(true, 242);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt216);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt421);
+                                        this.aSecondaryParticleLinkedList4.put1(this.anInt296);
                                     }
                                 }
                                 this.aString10 = "";
@@ -8622,45 +8622,45 @@ public final class client extends AnimFrame {
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(IILclient!lb;)V")
     private void method172(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
-            arg2.method490(0);
-            @Pc(7) int local7 = arg2.method491(477, 1);
+            arg2.accessBits(0);
+            @Pc(7) int local7 = arg2.getBit(477, 1);
             @Pc(12) int local12;
             if (arg0 != -29266) {
                 for (local12 = 1; local12 > 0; local12++) {
                 }
             }
             if (local7 != 0) {
-                local12 = arg2.method491(477, 2);
+                local12 = arg2.getBit(477, 2);
                 if (local12 == 0) {
                     this.anIntArray65[this.anInt333++] = this.anInt331;
                 } else {
                     @Pc(48) int local48;
                     @Pc(58) int local58;
                     if (local12 == 1) {
-                        local48 = arg2.method491(477, 3);
+                        local48 = arg2.getBit(477, 3);
                         Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.method678(false, 490, local48);
-                        local58 = arg2.method491(477, 1);
+                        local58 = arg2.getBit(477, 1);
                         if (local58 == 1) {
                             this.anIntArray65[this.anInt333++] = this.anInt331;
                         }
                     } else {
                         @Pc(102) int local102;
                         if (local12 == 2) {
-                            local48 = arg2.method491(477, 3);
+                            local48 = arg2.getBit(477, 3);
                             Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.method678(true, 490, local48);
-                            local58 = arg2.method491(477, 3);
+                            local58 = arg2.getBit(477, 3);
                             Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.method678(true, 490, local58);
-                            local102 = arg2.method491(477, 1);
+                            local102 = arg2.getBit(477, 1);
                             if (local102 == 1) {
                                 this.anIntArray65[this.anInt333++] = this.anInt331;
                             }
                         } else if (local12 == 3) {
-                            this.anInt246 = arg2.method491(477, 2);
-                            local48 = arg2.method491(477, 7);
-                            local58 = arg2.method491(477, 7);
-                            local102 = arg2.method491(477, 1);
+                            this.anInt246 = arg2.getBit(477, 2);
+                            local48 = arg2.getBit(477, 7);
+                            local58 = arg2.getBit(477, 7);
+                            local102 = arg2.getBit(477, 1);
                             Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.method677(local58, (byte) 7, local102 == 1, local48);
-                            @Pc(158) int local158 = arg2.method491(477, 1);
+                            @Pc(158) int local158 = arg2.getBit(477, 1);
                             if (local158 == 1) {
                                 this.anIntArray65[this.anInt333++] = this.anInt331;
                             }
@@ -8756,7 +8756,7 @@ public final class client extends AnimFrame {
                 local183 += local202;
             }
             if (arg0) {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             this.aTextureOpMonochromeFill22.method525(super.aGraphics2, 0, 0, true);
             for (local198 = 0; local198 < 33920; local198++) {
@@ -8871,8 +8871,8 @@ public final class client extends AnimFrame {
                         for (@Pc(28) int local28 = local8; local28 < this.anInt274; local28++) {
                             this.aLongArray4[local28] = this.aLongArray4[local28 + 1];
                         }
-                        this.aSecondaryParticleLinkedList4.method469(true, 104);
-                        this.aSecondaryParticleLinkedList4.method476(-13398, arg1);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 104);
+                        this.aSecondaryParticleLinkedList4.put8(-13398, arg1);
                         break;
                     }
                 }
@@ -8983,7 +8983,7 @@ public final class client extends AnimFrame {
                 Static8.anInt379++;
                 if (Static8.anInt379 > 57) {
                     Static8.anInt379 = 0;
-                    this.aSecondaryParticleLinkedList4.method469(true, 34);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 34);
                 }
             }
             if (this.anInt319 != -1) {
@@ -8998,7 +8998,7 @@ public final class client extends AnimFrame {
             if (arg0 == 1) {
                 @Pc(122) boolean local122 = false;
             } else {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             if (!this.aBoolean78) {
                 this.method222(270);
@@ -9086,8 +9086,8 @@ public final class client extends AnimFrame {
                 Static8.anInt267++;
                 if (Static8.anInt267 > 122) {
                     Static8.anInt267 = 0;
-                    this.aSecondaryParticleLinkedList4.method469(true, 110);
-                    this.aSecondaryParticleLinkedList4.method470(62);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 110);
+                    this.aSecondaryParticleLinkedList4.put1(62);
                 }
             }
             @Pc(39) int local39 = this.anInt332;
@@ -9206,28 +9206,28 @@ public final class client extends AnimFrame {
             }
             if (Static8.anInt349 > 1174) {
                 Static8.anInt349 = 0;
-                this.aSecondaryParticleLinkedList4.method469(true, 90);
-                this.aSecondaryParticleLinkedList4.method470(0);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 90);
+                this.aSecondaryParticleLinkedList4.put1(0);
                 @Pc(194) int local194 = this.aSecondaryParticleLinkedList4.anInt742;
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.clear(11499);
+                    this.aSecondaryParticleLinkedList4.put2(11499);
                 }
-                this.aSecondaryParticleLinkedList4.clear(10548);
+                this.aSecondaryParticleLinkedList4.put2(10548);
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.method470(139);
+                    this.aSecondaryParticleLinkedList4.put1(139);
                 }
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.method470(94);
+                    this.aSecondaryParticleLinkedList4.put1(94);
                 }
-                this.aSecondaryParticleLinkedList4.clear(51693);
-                this.aSecondaryParticleLinkedList4.method470(16);
-                this.aSecondaryParticleLinkedList4.clear(15036);
+                this.aSecondaryParticleLinkedList4.put2(51693);
+                this.aSecondaryParticleLinkedList4.put1(16);
+                this.aSecondaryParticleLinkedList4.put2(15036);
                 if ((int) (Math.random() * 2.0D) == 0) {
-                    this.aSecondaryParticleLinkedList4.method470(65);
+                    this.aSecondaryParticleLinkedList4.put1(65);
                 }
-                this.aSecondaryParticleLinkedList4.method470((int) (Math.random() * 256.0D));
-                this.aSecondaryParticleLinkedList4.clear(22990);
-                this.aSecondaryParticleLinkedList4.method479(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local194);
+                this.aSecondaryParticleLinkedList4.put1((int) (Math.random() * 256.0D));
+                this.aSecondaryParticleLinkedList4.put2(22990);
+                this.aSecondaryParticleLinkedList4.putPacketSize(-28191, this.aSecondaryParticleLinkedList4.anInt742 - local194);
             }
         } catch (@Pc(268) RuntimeException local268) {
             signlink.reporterror("78132, " + arg0 + ", " + local268.toString());
@@ -9809,8 +9809,8 @@ public final class client extends AnimFrame {
                         this.anIntArray49[this.anInt409] = 0;
                         this.anInt409++;
                         this.aBoolean53 = true;
-                        this.aSecondaryParticleLinkedList4.method469(true, 221);
-                        this.aSecondaryParticleLinkedList4.method476(-13398, arg0);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 221);
+                        this.aSecondaryParticleLinkedList4.put8(-13398, arg0);
                     }
                 }
             }
@@ -9826,8 +9826,8 @@ public final class client extends AnimFrame {
             if (arg2 != -87) {
                 Static8.anInt285 = 416;
             }
-            arg1.method490(0);
-            @Pc(14) int local14 = arg1.method491(477, 8);
+            arg1.accessBits(0);
+            @Pc(14) int local14 = arg1.getBit(477, 8);
             @Pc(20) int local20;
             if (local14 < this.anInt424) {
                 for (local20 = local14; local20 < this.anInt424; local20++) {
@@ -9842,12 +9842,12 @@ public final class client extends AnimFrame {
             for (local20 = 0; local20 < local14; local20++) {
                 @Pc(72) int local72 = this.anIntArray92[local20];
                 @Pc(77) Class1_Sub1_Sub1_Sub1_Sub2 local77 = this.aClass1_Sub1_Sub1_Sub1_Sub2Array1[local72];
-                @Pc(82) int local82 = arg1.method491(477, 1);
+                @Pc(82) int local82 = arg1.getBit(477, 1);
                 if (local82 == 0) {
                     this.anIntArray92[this.anInt424++] = local72;
                     local77.anInt1019 = Static8.anInt297;
                 } else {
-                    @Pc(105) int local105 = arg1.method491(477, 2);
+                    @Pc(105) int local105 = arg1.getBit(477, 2);
                     if (local105 == 0) {
                         this.anIntArray92[this.anInt424++] = local72;
                         local77.anInt1019 = Static8.anInt297;
@@ -9858,20 +9858,20 @@ public final class client extends AnimFrame {
                         if (local105 == 1) {
                             this.anIntArray92[this.anInt424++] = local72;
                             local77.anInt1019 = Static8.anInt297;
-                            local156 = arg1.method491(477, 3);
+                            local156 = arg1.getBit(477, 3);
                             local77.method678(false, 490, local156);
-                            local166 = arg1.method491(477, 1);
+                            local166 = arg1.getBit(477, 1);
                             if (local166 == 1) {
                                 this.anIntArray65[this.anInt333++] = local72;
                             }
                         } else if (local105 == 2) {
                             this.anIntArray92[this.anInt424++] = local72;
                             local77.anInt1019 = Static8.anInt297;
-                            local156 = arg1.method491(477, 3);
+                            local156 = arg1.getBit(477, 3);
                             local77.method678(true, 490, local156);
-                            local166 = arg1.method491(477, 3);
+                            local166 = arg1.getBit(477, 3);
                             local77.method678(true, 490, local166);
-                            @Pc(224) int local224 = arg1.method491(477, 1);
+                            @Pc(224) int local224 = arg1.getBit(477, 1);
                             if (local224 == 1) {
                                 this.anIntArray65[this.anInt333++] = local72;
                             }
@@ -10172,17 +10172,17 @@ public final class client extends AnimFrame {
                     @Pc(116) int local116 = Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt980 - local102 >> 7;
                     @Pc(137) boolean local137 = this.method150((byte) 2, 0, local116, local109, Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray273[0], 0, 0, 1, true, Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anIntArray272[0], 0, 0);
                     if (local137) {
-                        this.aSecondaryParticleLinkedList4.method470(local29);
-                        this.aSecondaryParticleLinkedList4.method470(local36);
-                        this.aSecondaryParticleLinkedList4.clear(this.anInt392);
-                        this.aSecondaryParticleLinkedList4.method470(57);
-                        this.aSecondaryParticleLinkedList4.method470(this.anInt422);
-                        this.aSecondaryParticleLinkedList4.method470(this.anInt269);
-                        this.aSecondaryParticleLinkedList4.method470(89);
-                        this.aSecondaryParticleLinkedList4.clear(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt979);
-                        this.aSecondaryParticleLinkedList4.clear(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt980);
-                        this.aSecondaryParticleLinkedList4.method470(this.anInt268);
-                        this.aSecondaryParticleLinkedList4.method470(63);
+                        this.aSecondaryParticleLinkedList4.put1(local29);
+                        this.aSecondaryParticleLinkedList4.put1(local36);
+                        this.aSecondaryParticleLinkedList4.put2(this.anInt392);
+                        this.aSecondaryParticleLinkedList4.put1(57);
+                        this.aSecondaryParticleLinkedList4.put1(this.anInt422);
+                        this.aSecondaryParticleLinkedList4.put1(this.anInt269);
+                        this.aSecondaryParticleLinkedList4.put1(89);
+                        this.aSecondaryParticleLinkedList4.put2(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt979);
+                        this.aSecondaryParticleLinkedList4.put2(Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt980);
+                        this.aSecondaryParticleLinkedList4.put1(this.anInt268);
+                        this.aSecondaryParticleLinkedList4.put1(63);
                         return;
                     }
                 }
@@ -10960,8 +10960,8 @@ public final class client extends AnimFrame {
             if (this.aBoolean64) {
                 if (this.anInt271 != -1 && this.anInt271 == this.anInt334) {
                     this.anInt271 = -1;
-                    this.aSecondaryParticleLinkedList4.method469(true, 36);
-                    this.aSecondaryParticleLinkedList4.method470(this.anInt334);
+                    this.aSecondaryParticleLinkedList4.putPacketId(true, 36);
+                    this.aSecondaryParticleLinkedList4.put1(this.anInt334);
                 }
                 this.aBoolean64 = false;
                 this.aTextureOpMonochromeFill9.method524(this.anInt255);
@@ -11104,7 +11104,7 @@ public final class client extends AnimFrame {
             }
             this.anInt208 = 0;
             if (arg0 != -25848) {
-                this.aSecondaryParticleLinkedList4.method470(235);
+                this.aSecondaryParticleLinkedList4.put1(235);
             }
         } catch (@Pc(1058) RuntimeException local1058) {
             signlink.reporterror("88506, " + arg0 + ", " + local1058.toString());
@@ -11151,7 +11151,7 @@ public final class client extends AnimFrame {
                     local73.readFully(local89, 0, 6);
                     @Pc(100) Buffer local100 = new Buffer(local89, -26728);
                     local100.anInt742 = 3;
-                    @Pc(108) int local108 = local100.method484() + 6;
+                    @Pc(108) int local108 = local100.get3() + 6;
                     @Pc(110) int local110 = 6;
                     local8 = new byte[local108];
                     for (@Pc(115) int local115 = 0; local115 < 6; local115++) {
@@ -11290,7 +11290,7 @@ public final class client extends AnimFrame {
     private void method206(@OriginalArg(0) int arg0) {
         try {
             if (arg0 < 7 || arg0 > 7) {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             try {
                 @Pc(18) int local18 = Static8.aClass1_Sub1_Sub1_Sub1_Sub1_1.anInt979 + this.anInt399;
@@ -11455,8 +11455,8 @@ public final class client extends AnimFrame {
                             this.anIntArray49[local28] = this.anIntArray49[local28 + 1];
                             this.aLongArray3[local28] = this.aLongArray3[local28 + 1];
                         }
-                        this.aSecondaryParticleLinkedList4.method469(true, 160);
-                        this.aSecondaryParticleLinkedList4.method476(-13398, arg0);
+                        this.aSecondaryParticleLinkedList4.putPacketId(true, 160);
+                        this.aSecondaryParticleLinkedList4.put8(-13398, arg0);
                         break;
                     }
                 }
@@ -11582,8 +11582,8 @@ public final class client extends AnimFrame {
             Static8.anInt235++;
             if (Static8.anInt235 > 112) {
                 Static8.anInt235 = 0;
-                this.aSecondaryParticleLinkedList4.method469(true, 164);
-                this.aSecondaryParticleLinkedList4.method470(50);
+                this.aSecondaryParticleLinkedList4.putPacketId(true, 164);
+                this.aSecondaryParticleLinkedList4.put1(50);
             }
         } catch (@Pc(441) RuntimeException local441) {
             signlink.reporterror("37102, " + arg0 + ", " + arg1 + ", " + local441.toString());
@@ -11935,7 +11935,7 @@ public final class client extends AnimFrame {
     private void method215(@OriginalArg(0) int arg0) {
         try {
             if (arg0 >= 0) {
-                this.aSecondaryParticleLinkedList4.method470(67);
+                this.aSecondaryParticleLinkedList4.put1(67);
             }
             while (true) {
                 @Pc(11) ParticleNode local11 = this.aDisplayMode1.method647();
@@ -12095,7 +12095,7 @@ public final class client extends AnimFrame {
         try {
             @Pc(4) int local4 = Static30.aClass39Array1[arg0].anInt892;
             if (arg1 != -43) {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             if (local4 != 0) {
                 @Pc(20) int local20 = this.anIntArray50[arg0];
@@ -12207,7 +12207,7 @@ public final class client extends AnimFrame {
                 }
             }
             if (arg0 != this.anInt294) {
-                this.aSecondaryParticleLinkedList4.method470(232);
+                this.aSecondaryParticleLinkedList4.put1(232);
             }
             for (local11 = 0; local11 < this.anInt424; local11++) {
                 @Pc(62) int local62 = this.anIntArray92[local11];
@@ -12248,7 +12248,7 @@ public final class client extends AnimFrame {
             local13.method389(-128, -171, 1);
             this.aTextureOpMonochromeFill27.method524(this.anInt255);
             if (arg0 != 21480) {
-                this.anInt369 = this.aSecondaryParticleLinkedList3.method480();
+                this.anInt369 = this.aSecondaryParticleLinkedList3.get1();
             }
             local13.method389(-562, -171, 1);
             @Pc(115) int[] local115 = new int[local13.anInt652];
@@ -12462,9 +12462,9 @@ public final class client extends AnimFrame {
             for (local6 = 0; local6 < this.anInt333; local6++) {
                 @Pc(20) int local20 = this.anIntArray65[local6];
                 @Pc(25) Class1_Sub1_Sub1_Sub1_Sub1 local25 = this.aClass1_Sub1_Sub1_Sub1_Sub1Array1[local20];
-                @Pc(28) int local28 = arg1.method480();
+                @Pc(28) int local28 = arg1.get1();
                 if ((local28 & 0x80) == 128) {
-                    local28 += arg1.method480() << 8;
+                    local28 += arg1.get1() << 8;
                 }
                 this.method140(-521, arg1, local25, local28, local20);
             }
@@ -12548,7 +12548,7 @@ public final class client extends AnimFrame {
             this.aStringArray2[0] = arg2;
             this.aStringArray3[0] = arg3;
             if (arg0 <= 0) {
-                this.aSecondaryParticleLinkedList4.method470(170);
+                this.aSecondaryParticleLinkedList4.put1(170);
             }
         } catch (@Pc(78) RuntimeException local78) {
             signlink.reporterror("3360, " + arg0 + ", " + arg1 + ", " + arg2 + ", " + arg3 + ", " + local78.toString());

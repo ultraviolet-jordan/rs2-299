@@ -39,12 +39,12 @@ public final class Static12 {
     public static void method286(@OriginalArg(0) Class47 arg0) {
         aSecondaryParticleLinkedList5 = new Buffer(arg0.method666("loc.dat", null), -26728);
         @Pc(19) Buffer local19 = new Buffer(arg0.method666("loc.idx", null), -26728);
-        anInt510 = local19.method482();
+        anInt510 = local19.get2();
         anIntArray155 = new int[anInt510];
         @Pc(27) int local27 = 2;
         for (@Pc(29) int local29 = 0; local29 < anInt510; local29++) {
             anIntArray155[local29] = local27;
-            local27 += local19.method482();
+            local27 += local19.get2();
         }
         aGlShaderArray1 = new GlShader[20];
         for (@Pc(49) int local49 = 0; local49 < 20; local49++) {

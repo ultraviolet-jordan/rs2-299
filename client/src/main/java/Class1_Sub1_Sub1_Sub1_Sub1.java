@@ -89,22 +89,22 @@ public final class Class1_Sub1_Sub1_Sub1_Sub1 extends Class1_Sub1_Sub1_Sub1 {
     public void method39(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
         try {
             arg1.anInt742 = 0;
-            this.anInt126 = arg1.method480();
-            this.anInt127 = arg1.method480();
+            this.anInt126 = arg1.get1();
+            this.anInt127 = arg1.get1();
             this.aClass13_1 = null;
             this.anInt140 = 0;
             @Pc(25) int local25;
             @Pc(37) int local37;
             @Pc(84) int local84;
             for (@Pc(20) int local20 = 0; local20 < 12; local20++) {
-                local25 = arg1.method480();
+                local25 = arg1.get1();
                 if (local25 == 0) {
                     this.anIntArray13[local20] = 0;
                 } else {
-                    local37 = arg1.method480();
+                    local37 = arg1.get1();
                     this.anIntArray13[local20] = (local25 << 8) + local37;
                     if (local20 == 0 && this.anIntArray13[0] == 65535) {
-                        this.aClass13_1 = Static15.method323(arg1.method482());
+                        this.aClass13_1 = Static15.method323(arg1.get2());
                         break;
                     }
                     if (this.anIntArray13[local20] >= 512 && this.anIntArray13[local20] - 512 < Static17.anInt601) {
@@ -116,43 +116,43 @@ public final class Class1_Sub1_Sub1_Sub1_Sub1 extends Class1_Sub1_Sub1_Sub1 {
                 }
             }
             for (local25 = 0; local25 < 5; local25++) {
-                local37 = arg1.method480();
+                local37 = arg1.get1();
                 if (local37 < 0 || local37 >= Static8.anIntArrayArray3[local25].length) {
                     local37 = 0;
                 }
                 this.anIntArray14[local25] = local37;
             }
-            super.anInt983 = arg1.method482();
+            super.anInt983 = arg1.get2();
             if (super.anInt983 == 65535) {
                 super.anInt983 = -1;
             }
-            super.anInt984 = arg1.method482();
+            super.anInt984 = arg1.get2();
             if (super.anInt984 == 65535) {
                 super.anInt984 = -1;
             }
-            super.anInt985 = arg1.method482();
+            super.anInt985 = arg1.get2();
             if (super.anInt985 == 65535) {
                 super.anInt985 = -1;
             }
-            super.anInt986 = arg1.method482();
+            super.anInt986 = arg1.get2();
             if (super.anInt986 == 65535) {
                 super.anInt986 = -1;
             }
-            super.anInt987 = arg1.method482();
+            super.anInt987 = arg1.get2();
             if (super.anInt987 == 65535) {
                 super.anInt987 = -1;
             }
-            super.anInt988 = arg1.method482();
+            super.anInt988 = arg1.get2();
             if (super.anInt988 == 65535) {
                 super.anInt988 = -1;
             }
-            super.anInt989 = arg1.method482();
+            super.anInt989 = arg1.get2();
             if (super.anInt989 == 65535) {
                 super.anInt989 = -1;
             }
-            this.aString3 = Static37.method671(943, Static37.method668(0, arg1.method486(0)));
-            this.anInt128 = arg1.method480();
-            this.anInt129 = arg1.method482();
+            this.aString3 = Static37.method671(943, Static37.method668(0, arg1.get8(0)));
+            this.anInt128 = arg1.get1();
+            this.anInt129 = arg1.get2();
             this.aBoolean24 = true;
             this.aLong8 = 0L;
             for (local37 = 0; local37 < 12; local37++) {

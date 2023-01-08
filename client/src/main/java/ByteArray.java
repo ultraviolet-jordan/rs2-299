@@ -181,55 +181,55 @@ public final class ByteArray {
             }
             while (true) {
                 while (true) {
-                    @Pc(15) int local15 = arg0.method480();
+                    @Pc(15) int local15 = arg0.get1();
                     if (local15 == 0) {
                         return;
                     }
                     if (local15 == 1) {
-                        this.anInt604 = arg0.method482();
+                        this.anInt604 = arg0.get2();
                     } else if (local15 == 2) {
-                        this.aString25 = arg0.method487();
+                        this.aString25 = arg0.getString();
                     } else if (local15 == 3) {
-                        this.aByteArray6 = arg0.method488((byte) 6);
+                        this.aByteArray6 = arg0.getStringArray((byte) 6);
                     } else if (local15 == 4) {
-                        this.anInt605 = arg0.method482();
+                        this.anInt605 = arg0.get2();
                     } else if (local15 == 5) {
-                        this.anInt606 = arg0.method482();
+                        this.anInt606 = arg0.get2();
                     } else if (local15 == 6) {
-                        this.anInt607 = arg0.method482();
+                        this.anInt607 = arg0.get2();
                     } else if (local15 == 7) {
-                        this.anInt609 = arg0.method482();
+                        this.anInt609 = arg0.get2();
                         if (this.anInt609 > 32767) {
                             this.anInt609 -= 65536;
                         }
                     } else if (local15 == 8) {
-                        this.anInt610 = arg0.method482();
+                        this.anInt610 = arg0.get2();
                         if (this.anInt610 > 32767) {
                             this.anInt610 -= 65536;
                         }
                     } else if (local15 == 10) {
-                        this.anInt611 = arg0.method482();
+                        this.anInt611 = arg0.get2();
                     } else if (local15 == 11) {
                         this.aBoolean153 = true;
                     } else if (local15 == 12) {
-                        this.anInt612 = arg0.method485();
+                        this.anInt612 = arg0.get4();
                     } else if (local15 == 16) {
                         this.aBoolean154 = true;
                     } else if (local15 == 23) {
-                        this.anInt613 = arg0.method482();
-                        this.aByte18 = arg0.method481();
+                        this.anInt613 = arg0.get2();
+                        this.aByte18 = arg0.get1Signed();
                     } else if (local15 == 24) {
-                        this.anInt614 = arg0.method482();
+                        this.anInt614 = arg0.get2();
                     } else if (local15 == 25) {
-                        this.anInt615 = arg0.method482();
-                        this.aByte19 = arg0.method481();
+                        this.anInt615 = arg0.get2();
+                        this.aByte19 = arg0.get1Signed();
                     } else if (local15 == 26) {
-                        this.anInt616 = arg0.method482();
+                        this.anInt616 = arg0.get2();
                     } else if (local15 >= 30 && local15 < 35) {
                         if (this.aStringArray10 == null) {
                             this.aStringArray10 = new String[5];
                         }
-                        this.aStringArray10[local15 - 30] = arg0.method487();
+                        this.aStringArray10[local15 - 30] = arg0.getString();
                         if (this.aStringArray10[local15 - 30].equalsIgnoreCase("hidden")) {
                             this.aStringArray10[local15 - 30] = null;
                         }
@@ -237,52 +237,52 @@ public final class ByteArray {
                         if (this.aStringArray11 == null) {
                             this.aStringArray11 = new String[5];
                         }
-                        this.aStringArray11[local15 - 35] = arg0.method487();
+                        this.aStringArray11[local15 - 35] = arg0.getString();
                     } else if (local15 == 40) {
-                        @Pc(257) int local257 = arg0.method480();
+                        @Pc(257) int local257 = arg0.get1();
                         this.anIntArray185 = new int[local257];
                         this.anIntArray186 = new int[local257];
                         for (@Pc(267) int local267 = 0; local267 < local257; local267++) {
-                            this.anIntArray185[local267] = arg0.method482();
-                            this.anIntArray186[local267] = arg0.method482();
+                            this.anIntArray185[local267] = arg0.get2();
+                            this.anIntArray186[local267] = arg0.get2();
                         }
                     } else if (local15 == 78) {
-                        this.anInt617 = arg0.method482();
+                        this.anInt617 = arg0.get2();
                     } else if (local15 == 79) {
-                        this.anInt618 = arg0.method482();
+                        this.anInt618 = arg0.get2();
                     } else if (local15 == 90) {
-                        this.anInt619 = arg0.method482();
+                        this.anInt619 = arg0.get2();
                     } else if (local15 == 91) {
-                        this.anInt621 = arg0.method482();
+                        this.anInt621 = arg0.get2();
                     } else if (local15 == 92) {
-                        this.anInt620 = arg0.method482();
+                        this.anInt620 = arg0.get2();
                     } else if (local15 == 93) {
-                        this.anInt622 = arg0.method482();
+                        this.anInt622 = arg0.get2();
                     } else if (local15 == 95) {
-                        this.anInt608 = arg0.method482();
+                        this.anInt608 = arg0.get2();
                     } else if (local15 == 97) {
-                        this.anInt623 = arg0.method482();
+                        this.anInt623 = arg0.get2();
                     } else if (local15 == 98) {
-                        this.anInt624 = arg0.method482();
+                        this.anInt624 = arg0.get2();
                     } else if (local15 >= 100 && local15 < 110) {
                         if (this.anIntArray187 == null) {
                             this.anIntArray187 = new int[10];
                             this.anIntArray188 = new int[10];
                         }
-                        this.anIntArray187[local15 - 100] = arg0.method482();
-                        this.anIntArray188[local15 - 100] = arg0.method482();
+                        this.anIntArray187[local15 - 100] = arg0.get2();
+                        this.anIntArray188[local15 - 100] = arg0.get2();
                     } else if (local15 == 110) {
-                        this.anInt625 = arg0.method482();
+                        this.anInt625 = arg0.get2();
                     } else if (local15 == 111) {
-                        this.anInt626 = arg0.method482();
+                        this.anInt626 = arg0.get2();
                     } else if (local15 == 112) {
-                        this.anInt627 = arg0.method482();
+                        this.anInt627 = arg0.get2();
                     } else if (local15 == 113) {
-                        this.anInt628 = arg0.method481();
+                        this.anInt628 = arg0.get1Signed();
                     } else if (local15 == 114) {
-                        this.anInt629 = arg0.method481() * 5;
+                        this.anInt629 = arg0.get1Signed() * 5;
                     } else if (local15 == 115) {
-                        this.anInt630 = arg0.method480();
+                        this.anInt630 = arg0.get1();
                     }
                 }
             }

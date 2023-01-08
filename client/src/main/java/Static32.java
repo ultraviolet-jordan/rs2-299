@@ -79,14 +79,14 @@ public final class Static32 {
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!lb;I)V")
     private static void method596(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
-            @Pc(4) int local4 = arg0.method485();
+            @Pc(4) int local4 = arg0.get4();
             aCharArrayArray3 = new char[local4][];
             anIntArray255 = new int[local4];
             for (@Pc(12) int local12 = 0; local12 < local4; local12++) {
-                anIntArray255[local12] = arg0.method480();
-                @Pc(23) char[] local23 = new char[arg0.method480()];
+                anIntArray255[local12] = arg0.get1();
+                @Pc(23) char[] local23 = new char[arg0.get1()];
                 for (@Pc(25) int local25 = 0; local25 < local23.length; local25++) {
-                    local23[local25] = (char) arg0.method480();
+                    local23[local25] = (char) arg0.get1();
                 }
                 aCharArrayArray3[local12] = local23;
             }
@@ -102,7 +102,7 @@ public final class Static32 {
     @OriginalMember(owner = "client!sc", name = "b", descriptor = "(Lclient!lb;I)V")
     private static void method597(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
-            @Pc(2) int local2 = arg0.method485();
+            @Pc(2) int local2 = arg0.get4();
             if (arg1 != 35138) {
                 anInt930 = -477;
             }
@@ -118,7 +118,7 @@ public final class Static32 {
     @OriginalMember(owner = "client!sc", name = "c", descriptor = "(Lclient!lb;I)V")
     private static void method598(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
-            @Pc(2) int local2 = arg0.method485();
+            @Pc(2) int local2 = arg0.get4();
             if (arg1 == anInt931) {
                 aCharArrayArray2 = new char[local2][];
                 method601(arg0, anInt932, aCharArrayArray2);
@@ -135,9 +135,9 @@ public final class Static32 {
             if (arg1 != 22) {
                 aBoolean224 = !aBoolean224;
             }
-            anIntArray254 = new int[arg0.method485()];
+            anIntArray254 = new int[arg0.get4()];
             for (@Pc(14) int local14 = 0; local14 < anIntArray254.length; local14++) {
-                anIntArray254[local14] = arg0.method482();
+                anIntArray254[local14] = arg0.get2();
             }
         } catch (@Pc(28) RuntimeException local28) {
             signlink.reporterror("57869, " + arg0 + ", " + arg1 + ", " + local28.toString());
@@ -149,15 +149,15 @@ public final class Static32 {
     private static void method600(@OriginalArg(0) char[][] arg0, @OriginalArg(1) byte[][][] arg1, @OriginalArg(2) byte arg2, @OriginalArg(3) Buffer arg3) {
         try {
             for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
-                @Pc(9) char[] local9 = new char[arg3.method480()];
+                @Pc(9) char[] local9 = new char[arg3.get1()];
                 for (@Pc(11) int local11 = 0; local11 < local9.length; local11++) {
-                    local9[local11] = (char) arg3.method480();
+                    local9[local11] = (char) arg3.get1();
                 }
                 arg0[local3] = local9;
-                @Pc(33) byte[][] local33 = new byte[arg3.method480()][2];
+                @Pc(33) byte[][] local33 = new byte[arg3.get1()][2];
                 for (@Pc(35) int local35 = 0; local35 < local33.length; local35++) {
-                    local33[local35][0] = (byte) arg3.method480();
-                    local33[local35][1] = (byte) arg3.method480();
+                    local33[local35][0] = (byte) arg3.get1();
+                    local33[local35][1] = (byte) arg3.get1();
                 }
                 if (local33.length > 0) {
                     arg1[local3] = local33;
@@ -176,9 +176,9 @@ public final class Static32 {
     private static void method601(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1, @OriginalArg(2) char[][] arg2) {
         try {
             for (@Pc(3) int local3 = 0; local3 < arg2.length; local3++) {
-                @Pc(9) char[] local9 = new char[arg0.method480()];
+                @Pc(9) char[] local9 = new char[arg0.get1()];
                 for (@Pc(11) int local11 = 0; local11 < local9.length; local11++) {
-                    local9[local11] = (char) arg0.method480();
+                    local9[local11] = (char) arg0.get1();
                 }
                 arg2[local3] = local9;
             }

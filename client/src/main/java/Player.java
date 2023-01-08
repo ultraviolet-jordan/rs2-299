@@ -22,20 +22,20 @@ public final class Player {
     @OriginalMember(owner = "client!f", name = "<init>", descriptor = "(Lclient!lb;Z)V")
     public Player(@OriginalArg(0) Buffer arg0, @OriginalArg(1) boolean arg1) {
         try {
-            this.anInt530 = arg0.method480();
+            this.anInt530 = arg0.get1();
             this.anIntArray161 = new int[this.anInt530];
             this.anIntArrayArray12 = new int[this.anInt530][];
             if (!arg1) {
                 this.anInt529 = 441;
             }
             for (@Pc(27) int local27 = 0; local27 < this.anInt530; local27++) {
-                this.anIntArray161[local27] = arg0.method480();
+                this.anIntArray161[local27] = arg0.get1();
             }
             for (@Pc(42) int local42 = 0; local42 < this.anInt530; local42++) {
-                @Pc(47) int local47 = arg0.method480();
+                @Pc(47) int local47 = arg0.get1();
                 this.anIntArrayArray12[local42] = new int[local47];
                 for (@Pc(55) int local55 = 0; local55 < local47; local55++) {
-                    this.anIntArrayArray12[local42][local55] = arg0.method480();
+                    this.anIntArrayArray12[local42][local55] = arg0.get1();
                 }
             }
         } catch (@Pc(76) RuntimeException local76) {

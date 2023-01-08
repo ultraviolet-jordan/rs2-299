@@ -50,21 +50,21 @@ public final class GroundShadowModel {
                 throw new NullPointerException();
             }
             while (true) {
-                @Pc(11) int local11 = arg0.method480();
+                @Pc(11) int local11 = arg0.get1();
                 if (local11 == 0) {
                     return;
                 }
                 if (local11 == 1) {
-                    this.anInt713 = arg0.method484();
+                    this.anInt713 = arg0.get3();
                     this.method464(this.anInt713, true);
                 } else if (local11 == 2) {
-                    this.anInt714 = arg0.method480();
+                    this.anInt714 = arg0.get1();
                 } else if (local11 == 3) {
                     this.aBoolean182 = true;
                 } else if (local11 == 5) {
                     this.aBoolean183 = false;
                 } else if (local11 == 6) {
-                    this.aString26 = arg0.method487();
+                    this.aString26 = arg0.getString();
                 } else {
                     System.out.println("Error unrecognised config code: " + local11);
                 }

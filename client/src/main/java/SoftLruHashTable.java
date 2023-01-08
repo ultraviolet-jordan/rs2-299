@@ -38,7 +38,7 @@ public final class SoftLruHashTable {
     public void method80(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             for (@Pc(1) int local1 = 0; local1 < 10; local1++) {
-                @Pc(6) int local6 = arg0.method480();
+                @Pc(6) int local6 = arg0.get1();
                 if (local6 != 0) {
                     arg0.anInt742--;
                     this.aParticleEffectorTypeArray1[local1] = new ParticleEffectorType();
@@ -48,8 +48,8 @@ public final class SoftLruHashTable {
             if (arg1 != 8) {
                 this.anInt181 = -128;
             }
-            this.available = arg0.method482();
-            this.anInt184 = arg0.method482();
+            this.available = arg0.get2();
+            this.anInt184 = arg0.get2();
         } catch (@Pc(48) RuntimeException local48) {
             signlink.reporterror("49815, " + arg0 + ", " + arg1 + ", " + local48.toString());
             throw new RuntimeException();
@@ -95,19 +95,19 @@ public final class SoftLruHashTable {
         try {
             @Pc(3) int local3 = this.method83(arg0);
             Static7.aSecondaryParticleLinkedList1.anInt742 = 0;
-            Static7.aSecondaryParticleLinkedList1.method474(1380533830);
-            Static7.aSecondaryParticleLinkedList1.method475((byte) 5, local3 + 36);
-            Static7.aSecondaryParticleLinkedList1.method474(1463899717);
-            Static7.aSecondaryParticleLinkedList1.method474(1718449184);
-            Static7.aSecondaryParticleLinkedList1.method475((byte) 5, 16);
-            Static7.aSecondaryParticleLinkedList1.method472(1, 0);
-            Static7.aSecondaryParticleLinkedList1.method472(1, 0);
-            Static7.aSecondaryParticleLinkedList1.method475((byte) 5, 22050);
-            Static7.aSecondaryParticleLinkedList1.method475((byte) 5, 22050);
-            Static7.aSecondaryParticleLinkedList1.method472(1, 0);
-            Static7.aSecondaryParticleLinkedList1.method472(8, 0);
-            Static7.aSecondaryParticleLinkedList1.method474(1684108385);
-            Static7.aSecondaryParticleLinkedList1.method475((byte) 5, local3);
+            Static7.aSecondaryParticleLinkedList1.put4(1380533830);
+            Static7.aSecondaryParticleLinkedList1.put4LE((byte) 5, local3 + 36);
+            Static7.aSecondaryParticleLinkedList1.put4(1463899717);
+            Static7.aSecondaryParticleLinkedList1.put4(1718449184);
+            Static7.aSecondaryParticleLinkedList1.put4LE((byte) 5, 16);
+            Static7.aSecondaryParticleLinkedList1.put2LE(1, 0);
+            Static7.aSecondaryParticleLinkedList1.put2LE(1, 0);
+            Static7.aSecondaryParticleLinkedList1.put4LE((byte) 5, 22050);
+            Static7.aSecondaryParticleLinkedList1.put4LE((byte) 5, 22050);
+            Static7.aSecondaryParticleLinkedList1.put2LE(1, 0);
+            Static7.aSecondaryParticleLinkedList1.put2LE(8, 0);
+            Static7.aSecondaryParticleLinkedList1.put4(1684108385);
+            Static7.aSecondaryParticleLinkedList1.put4LE((byte) 5, local3);
             if (arg1 != -33430) {
                 this.anInt528 = 337;
             }

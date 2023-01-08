@@ -42,26 +42,26 @@ public final class TextureOpRasterizerShape {
             }
             while (true) {
                 while (true) {
-                    @Pc(13) int local13 = arg0.method480();
+                    @Pc(13) int local13 = arg0.get1();
                     if (local13 == 0) {
                         return;
                     }
                     if (local13 == 1) {
-                        this.anInt751 = arg0.method480();
+                        this.anInt751 = arg0.get1();
                     } else if (local13 == 2) {
-                        @Pc(31) int local31 = arg0.method480();
+                        @Pc(31) int local31 = arg0.get1();
                         this.anIntArray221 = new int[local31];
                         for (@Pc(37) int local37 = 0; local37 < local31; local37++) {
-                            this.anIntArray221[local37] = arg0.method482();
+                            this.anIntArray221[local37] = arg0.get2();
                         }
                     } else if (local13 == 3) {
                         this.aBoolean192 = true;
                     } else if (local13 >= 40 && local13 < 50) {
-                        this.anIntArray222[local13 - 40] = arg0.method482();
+                        this.anIntArray222[local13 - 40] = arg0.get2();
                     } else if (local13 >= 50 && local13 < 60) {
-                        this.anIntArray223[local13 - 50] = arg0.method482();
+                        this.anIntArray223[local13 - 50] = arg0.get2();
                     } else if (local13 >= 60 && local13 < 70) {
-                        this.anIntArray224[local13 - 60] = arg0.method482();
+                        this.anIntArray224[local13 - 60] = arg0.get2();
                     } else {
                         System.out.println("Error unrecognised config code: " + local13);
                     }

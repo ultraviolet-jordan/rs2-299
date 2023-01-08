@@ -17,7 +17,7 @@ public final class Static24 {
                 for (local14 = 1; local14 > 0; local14++) {
                 }
             }
-            BufferPool.mediumBufferCount = local10.method482();
+            BufferPool.mediumBufferCount = local10.get2();
             if (aClass27Array1 == null) {
                 aClass27Array1 = new Class27[BufferPool.mediumBufferCount];
             }

@@ -86,7 +86,7 @@ public final class Class27 {
             }
             while (true) {
                 while (true) {
-                    @Pc(10) int local10 = arg0.method480();
+                    @Pc(10) int local10 = arg0.get1();
                     if (local10 == 0) {
                         if (this.anInt794 == 0) {
                             this.anInt794 = 1;
@@ -116,45 +116,45 @@ public final class Class27 {
                     }
                     @Pc(37) int local37;
                     if (local10 == 1) {
-                        this.anInt794 = arg0.method480();
+                        this.anInt794 = arg0.get1();
                         this.anIntArray225 = new int[this.anInt794];
                         this.anIntArray226 = new int[this.anInt794];
                         this.anIntArray227 = new int[this.anInt794];
                         for (local37 = 0; local37 < this.anInt794; local37++) {
-                            this.anIntArray225[local37] = arg0.method482();
-                            this.anIntArray226[local37] = arg0.method482();
+                            this.anIntArray225[local37] = arg0.get2();
+                            this.anIntArray226[local37] = arg0.get2();
                             if (this.anIntArray226[local37] == 65535) {
                                 this.anIntArray226[local37] = -1;
                             }
-                            this.anIntArray227[local37] = arg0.method482();
+                            this.anIntArray227[local37] = arg0.get2();
                         }
                     } else if (local10 == 2) {
-                        this.anInt795 = arg0.method482();
+                        this.anInt795 = arg0.get2();
                     } else if (local10 == 3) {
-                        local37 = arg0.method480();
+                        local37 = arg0.get1();
                         this.anIntArray228 = new int[local37 + 1];
                         for (@Pc(98) int local98 = 0; local98 < local37; local98++) {
-                            this.anIntArray228[local98] = arg0.method480();
+                            this.anIntArray228[local98] = arg0.get1();
                         }
                         this.anIntArray228[local37] = 9999999;
                     } else if (local10 == 4) {
                         this.aBoolean204 = true;
                     } else if (local10 == 5) {
-                        this.anInt796 = arg0.method480();
+                        this.anInt796 = arg0.get1();
                     } else if (local10 == 6) {
-                        this.anInt797 = arg0.method482();
+                        this.anInt797 = arg0.get2();
                     } else if (local10 == 7) {
-                        this.anInt798 = arg0.method482();
+                        this.anInt798 = arg0.get2();
                     } else if (local10 == 8) {
-                        this.anInt799 = arg0.method480();
+                        this.anInt799 = arg0.get1();
                     } else if (local10 == 9) {
-                        this.anInt800 = arg0.method480();
+                        this.anInt800 = arg0.get1();
                     } else if (local10 == 10) {
-                        this.anInt801 = arg0.method480();
+                        this.anInt801 = arg0.get1();
                     } else if (local10 == 11) {
-                        this.anInt802 = arg0.method480();
+                        this.anInt802 = arg0.get1();
                     } else if (local10 == 12) {
-                        this.anInt803 = arg0.method485();
+                        this.anInt803 = arg0.get4();
                     } else {
                         System.out.println("Error unrecognised seq config code: " + local10);
                     }

@@ -28,10 +28,10 @@ public final class Static13 {
         try {
             @Pc(7) Buffer local7 = new Buffer(arg1, -26728);
             local7.anInt742 = arg1.length - 8;
-            @Pc(16) int local16 = local7.method482();
-            @Pc(19) int local19 = local7.method482();
-            @Pc(22) int local22 = local7.method482();
-            @Pc(25) int local25 = local7.method482();
+            @Pc(16) int local16 = local7.get2();
+            @Pc(19) int local19 = local7.get2();
+            @Pc(22) int local22 = local7.get2();
+            @Pc(25) int local25 = local7.get2();
             @Pc(27) byte local27 = 0;
             @Pc(33) Buffer local33 = new Buffer(arg1, -26728);
             local33.anInt742 = local27;
@@ -52,22 +52,22 @@ public final class Static13 {
             @Pc(100) Buffer local100 = new Buffer(arg1, -26728);
             local100.anInt742 = local42;
             @Pc(109) Player local109 = new Player(local100, true);
-            @Pc(112) int local112 = local33.method482();
+            @Pc(112) int local112 = local33.get2();
             @Pc(115) int[] local115 = new int[500];
             @Pc(118) int[] local118 = new int[500];
             @Pc(121) int[] local121 = new int[500];
             @Pc(124) int[] local124 = new int[500];
             for (@Pc(126) int local126 = 0; local126 < local112; local126++) {
-                @Pc(131) int local131 = local33.method482();
+                @Pc(131) int local131 = local33.get2();
                 @Pc(139) DelayedStateChange local139 = aDelayedStateChangeArray1[local131] = new DelayedStateChange();
-                local139.anInt542 = local87.method480();
+                local139.anInt542 = local87.get1();
                 local139.aPlayer1 = local109;
-                @Pc(149) int local149 = local33.method480();
+                @Pc(149) int local149 = local33.get1();
                 @Pc(151) int local151 = -1;
                 @Pc(153) int local153 = 0;
                 @Pc(160) int local160;
                 for (@Pc(155) int local155 = 0; local155 < local149; local155++) {
-                    local160 = local48.method480();
+                    local160 = local48.get1();
                     if (local160 > 0) {
                         if (local109.anIntArray161[local155] != 0) {
                             for (@Pc(171) int local171 = local155 - 1; local171 > local151; local171--) {
