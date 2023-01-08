@@ -11,7 +11,7 @@ public final class Static22 {
     @OriginalMember(owner = "client!lc", name = "a", descriptor = "(ILclient!xb;)V")
     public static void method496(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
-            @Pc(10) SecondaryParticleLinkedList local10 = new SecondaryParticleLinkedList(arg1.method666("idk.dat", null), -26728);
+            @Pc(10) Buffer local10 = new Buffer(arg1.method666("idk.dat", null), -26728);
             @Pc(14) int local14;
             if (arg0 != 0) {
                 for (local14 = 1; local14 > 0; local14++) {

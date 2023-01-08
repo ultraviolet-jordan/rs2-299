@@ -15,13 +15,13 @@ public final class Static38 {
     private static char[] aCharArray3 = new char[100];
 
     @OriginalMember(owner = "client!zb", name = "d", descriptor = "Lclient!lb;")
-    private static SecondaryParticleLinkedList aSecondaryParticleLinkedList8 = new SecondaryParticleLinkedList(new byte[100], -26728);
+    private static Buffer aSecondaryParticleLinkedList8 = new Buffer(new byte[100], -26728);
 
     @OriginalMember(owner = "client!zb", name = "e", descriptor = "[C")
     private static char[] aCharArray4 = new char[]{' ', 'e', 't', 'a', 'o', 'i', 'h', 'n', 's', 'r', 'd', 'l', 'u', 'm', 'w', 'c', 'y', 'f', 'g', 'p', 'b', 'v', 'k', 'x', 'j', 'q', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' ', '!', '?', '.', ',', ':', ';', '(', ')', '-', '&', '*', '\\', '\'', '@', '#', '+', '=', '£', '$', '%', '"', '[', ']'};
 
     @OriginalMember(owner = "client!zb", name = "a", descriptor = "(ILclient!lb;I)Ljava/lang/String;")
-    public static String method683(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) int arg2) {
+    public static String method683(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2) {
         try {
             @Pc(3) int local3 = 0;
             @Pc(5) int local5 = -1;
@@ -69,7 +69,7 @@ public final class Static38 {
     }
 
     @OriginalMember(owner = "client!zb", name = "a", descriptor = "(Lclient!lb;Ljava/lang/String;Z)V")
-    public static void method684(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
+    public static void method684(@OriginalArg(0) Buffer arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
         try {
             if (arg1.length() > 80) {
                 arg1 = arg1.substring(0, 80);

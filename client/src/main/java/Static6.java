@@ -39,7 +39,7 @@ public final class Static6 {
     public static boolean method58(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) byte[] arg3) {
         try {
             @Pc(3) boolean local3 = true;
-            @Pc(9) SecondaryParticleLinkedList local9 = new SecondaryParticleLinkedList(arg3, -26728);
+            @Pc(9) Buffer local9 = new Buffer(arg3, -26728);
             if (arg0 != 21991) {
                 throw new NullPointerException();
             }
@@ -88,7 +88,7 @@ public final class Static6 {
     }
 
     @OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!lb;Lclient!ub;B)V")
-    public static void method59(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) DisplayMode arg1, @OriginalArg(2) byte arg2) {
+    public static void method59(@OriginalArg(0) Buffer arg0, @OriginalArg(1) DisplayMode arg1, @OriginalArg(2) byte arg2) {
         try {
             if (arg2 != -75) {
                 anInt170 = 109;

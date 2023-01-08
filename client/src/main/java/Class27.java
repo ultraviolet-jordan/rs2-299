@@ -79,7 +79,7 @@ public final class Class27 {
     }
 
     @OriginalMember(owner = "client!nc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method507(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method507(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             if (arg1 != 8) {
                 this.anInt792 = -320;

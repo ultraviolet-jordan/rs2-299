@@ -12,7 +12,7 @@ public final class Static20 {
     public static void method462(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
             if (arg0 == 0) {
-                @Pc(11) SecondaryParticleLinkedList local11 = new SecondaryParticleLinkedList(arg1.method666("flo.dat", null), -26728);
+                @Pc(11) Buffer local11 = new Buffer(arg1.method666("flo.dat", null), -26728);
                 GroundShadowModel.textureId = local11.method482();
                 if (aGroundShadowModelArray1 == null) {
                     aGroundShadowModelArray1 = new GroundShadowModel[GroundShadowModel.textureId];

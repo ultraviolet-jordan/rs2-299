@@ -174,15 +174,15 @@ public final class Sound extends Class1_Sub1_Sub1 {
                 this.anIntArray135 = new int[this.anInt491];
             }
             this.anIntArray130 = new int[this.anInt491];
-            @Pc(144) SecondaryParticleLinkedList local144 = new SecondaryParticleLinkedList(local26.aByteArray8, -26728);
+            @Pc(144) Buffer local144 = new Buffer(local26.aByteArray8, -26728);
             local144.anInt742 = local26.anInt724;
-            @Pc(155) SecondaryParticleLinkedList local155 = new SecondaryParticleLinkedList(local26.aByteArray8, -26728);
+            @Pc(155) Buffer local155 = new Buffer(local26.aByteArray8, -26728);
             local155.anInt742 = local26.anInt725;
-            @Pc(166) SecondaryParticleLinkedList local166 = new SecondaryParticleLinkedList(local26.aByteArray8, -26728);
+            @Pc(166) Buffer local166 = new Buffer(local26.aByteArray8, -26728);
             local166.anInt742 = local26.anInt726;
-            @Pc(177) SecondaryParticleLinkedList local177 = new SecondaryParticleLinkedList(local26.aByteArray8, -26728);
+            @Pc(177) Buffer local177 = new Buffer(local26.aByteArray8, -26728);
             local177.anInt742 = local26.anInt727;
-            @Pc(188) SecondaryParticleLinkedList local188 = new SecondaryParticleLinkedList(local26.aByteArray8, -26728);
+            @Pc(188) Buffer local188 = new Buffer(local26.aByteArray8, -26728);
             local188.anInt742 = local26.anInt728;
             @Pc(194) int local194 = 0;
             @Pc(196) int local196 = 0;

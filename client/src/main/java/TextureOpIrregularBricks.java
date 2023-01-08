@@ -47,7 +47,7 @@ public final class TextureOpIrregularBricks {
     private int anInt142 = 633;
 
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method42(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method42(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             this.anInt146 = arg0.method480();
             if (arg1 != 8) {
@@ -64,7 +64,7 @@ public final class TextureOpIrregularBricks {
     }
 
     @OriginalMember(owner = "client!ac", name = "b", descriptor = "(Lclient!lb;I)V")
-    public void method43(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method43(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             this.anInt143 = arg0.method480();
             this.anIntArray15 = new int[this.anInt143];

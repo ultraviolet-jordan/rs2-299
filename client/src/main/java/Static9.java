@@ -25,7 +25,7 @@ public final class Static9 {
         try {
             if (arg0) {
                 aGlModel3 = new GlModel(-739, 50000);
-                @Pc(19) SecondaryParticleLinkedList local19 = new SecondaryParticleLinkedList(arg2.method666("data", null), -26728);
+                @Pc(19) Buffer local19 = new Buffer(arg2.method666("data", null), -26728);
                 @Pc(21) int local21 = -1;
                 @Pc(24) int local24 = local19.method482();
                 aBasTypeArray1 = new BasType[local24];

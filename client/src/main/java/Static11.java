@@ -167,7 +167,7 @@ public final class Static11 {
                 local11.anInt722 = 0;
                 local11.anInt723 = 0;
             } else {
-                @Pc(27) SecondaryParticleLinkedList local27 = new SecondaryParticleLinkedList(arg2, -26728);
+                @Pc(27) Buffer local27 = new Buffer(arg2, -26728);
                 local27.anInt742 = arg2.length - 18;
                 @Pc(41) ClanMember local41 = aClanMemberArray1[arg0] = new ClanMember();
                 local41.aByteArray8 = arg2;

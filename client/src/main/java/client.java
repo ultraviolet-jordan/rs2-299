@@ -917,7 +917,7 @@ public final class client extends AnimFrame {
     private SkyBoxCube[] aSkyBoxCubeArray4 = new SkyBoxCube[20];
 
     @OriginalMember(owner = "client!client", name = "Id", descriptor = "Lclient!lb;")
-    private SecondaryParticleLinkedList aSecondaryParticleLinkedList2 = Static21.method468(1, false);
+    private Buffer aSecondaryParticleLinkedList2 = Static21.method468(1, false);
 
     @OriginalMember(owner = "client!client", name = "Jd", descriptor = "Z")
     private boolean aBoolean53 = false;
@@ -959,7 +959,7 @@ public final class client extends AnimFrame {
     private boolean aBoolean58 = true;
 
     @OriginalMember(owner = "client!client", name = "ue", descriptor = "Lclient!lb;")
-    private SecondaryParticleLinkedList aSecondaryParticleLinkedList3 = Static21.method468(1, false);
+    private Buffer aSecondaryParticleLinkedList3 = Static21.method468(1, false);
 
     @OriginalMember(owner = "client!client", name = "ve", descriptor = "[I")
     private int[] anIntArray57 = new int[5];
@@ -1055,7 +1055,7 @@ public final class client extends AnimFrame {
     private int[] anIntArray65 = new int[this.anInt330];
 
     @OriginalMember(owner = "client!client", name = "Ff", descriptor = "[Lclient!lb;")
-    private SecondaryParticleLinkedList[] aSecondaryParticleLinkedListArray1 = new SecondaryParticleLinkedList[this.anInt330];
+    private Buffer[] aSecondaryParticleLinkedListArray1 = new Buffer[this.anInt330];
 
     @OriginalMember(owner = "client!client", name = "Gf", descriptor = "[Lclient!ib;")
     private SkyBoxCube[] aSkyBoxCubeArray6 = new SkyBoxCube[100];
@@ -1226,7 +1226,7 @@ public final class client extends AnimFrame {
     private boolean aBoolean80 = false;
 
     @OriginalMember(owner = "client!client", name = "ii", descriptor = "Lclient!lb;")
-    private SecondaryParticleLinkedList aSecondaryParticleLinkedList4 = Static21.method468(1, false);
+    private Buffer aSecondaryParticleLinkedList4 = Static21.method468(1, false);
 
     @OriginalMember(owner = "client!client", name = "ni", descriptor = "B")
     private byte aByte9 = -70;
@@ -1838,7 +1838,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(Lclient!lb;II)V")
-    private void method102(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+    private void method102(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
         try {
             for (@Pc(3) int local3 = 0; local3 < this.anInt333; local3++) {
                 @Pc(10) int local10 = this.anIntArray65[local3];
@@ -2691,7 +2691,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(IBLclient!lb;)V")
-    private void method118(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    private void method118(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) Buffer arg2) {
         try {
             this.anInt260 = 0;
             this.anInt333 = 0;
@@ -3510,7 +3510,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(ILclient!lb;B)V")
-    private void method127(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) byte arg2) {
+    private void method127(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) byte arg2) {
         try {
             @Pc(6) int local6 = arg1.method491(477, 8);
             if (arg2 == -124) {
@@ -3777,7 +3777,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(ZLclient!lb;I)V")
-    private void method132(@OriginalArg(0) boolean arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) int arg2) {
+    private void method132(@OriginalArg(0) boolean arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2) {
         try {
             this.aBoolean54 &= arg0;
             @Pc(16) int local16;
@@ -4371,7 +4371,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(BLclient!lb;I)V")
-    private void method138(@OriginalArg(0) byte arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) int arg2) {
+    private void method138(@OriginalArg(0) byte arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2) {
         try {
             while (true) {
                 if (arg1.anInt743 + 10 < arg2 * 8) {
@@ -4438,14 +4438,14 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(ILclient!lb;Lclient!ab;II)V")
-    private void method140(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) Class1_Sub1_Sub1_Sub1_Sub1 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+    private void method140(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) Class1_Sub1_Sub1_Sub1_Sub1 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
         try {
             if (arg0 < 0) {
                 @Pc(14) int local14;
                 if ((arg3 & 0x1) == 1) {
                     local14 = arg1.method480();
                     @Pc(17) byte[] local17 = new byte[local14];
-                    @Pc(23) SecondaryParticleLinkedList local23 = new SecondaryParticleLinkedList(local17, -26728);
+                    @Pc(23) Buffer local23 = new Buffer(local17, -26728);
                     arg1.method489(local14, 0, local17, (byte) 121);
                     this.aSecondaryParticleLinkedListArray1[arg4] = local23;
                     arg2.method39(627, local23);
@@ -4939,7 +4939,7 @@ public final class client extends AnimFrame {
                     @Pc(12) boolean local12 = false;
                     try {
                         if (this.anIntArray42[local3] != this.anInt243 || this.anIntArray89[local3] != this.anInt355) {
-                            @Pc(45) SecondaryParticleLinkedList local45 = Static7.method79(true, this.anIntArray89[local3], this.anIntArray42[local3]);
+                            @Pc(45) Buffer local45 = Static7.method79(true, this.anIntArray89[local3], this.anIntArray42[local3]);
                             if (System.currentTimeMillis() + (long) (local45.anInt742 / 22) > this.aLong15 + (long) (this.anInt259 / 22)) {
                                 this.anInt259 = local45.anInt742;
                                 this.aLong15 = System.currentTimeMillis();
@@ -5299,7 +5299,7 @@ public final class client extends AnimFrame {
                 this.method96((byte) 22, 20, "Connecting to web server");
                 try {
                     @Pc(42) DataInputStream local42 = this.method169("crc" + (int) (Math.random() * 9.9999999E7D) + "-" + 299);
-                    @Pc(49) SecondaryParticleLinkedList local49 = new SecondaryParticleLinkedList(new byte[40], -26728);
+                    @Pc(49) Buffer local49 = new Buffer(new byte[40], -26728);
                     local42.readFully(local49.aByteArray9, 0, 40);
                     local42.close();
                     for (@Pc(59) int local59 = 0; local59 < 9; local59++) {
@@ -7126,7 +7126,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(IBLclient!lb;)V")
-    private void method162(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    private void method162(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) Buffer arg2) {
         try {
             while (true) {
                 if (arg2.anInt743 + 21 < arg0 * 8) {
@@ -8620,7 +8620,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(IILclient!lb;)V")
-    private void method172(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    private void method172(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
             arg2.method490(0);
             @Pc(7) int local7 = arg2.method491(477, 1);
@@ -8791,7 +8791,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(IILclient!lb;)V")
-    private void method175(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    private void method175(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
             this.anInt260 = 0;
             this.anInt333 = 0;
@@ -9586,7 +9586,7 @@ public final class client extends AnimFrame {
             if (!Static8.aBoolean71) {
                 this.method96((byte) 22, 90, "Unpacking sounds");
                 @Pc(1586) byte[] local1586 = local251.method666("sounds.dat", null);
-                @Pc(1592) SecondaryParticleLinkedList local1592 = new SecondaryParticleLinkedList(local1586, -26728);
+                @Pc(1592) Buffer local1592 = new Buffer(local1586, -26728);
                 Static7.method78(Static8.anInt232, local1592);
             }
             this.method96((byte) 22, 95, "Unpacking interfaces");
@@ -9821,7 +9821,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(ILclient!lb;B)V")
-    private void method189(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) byte arg2) {
+    private void method189(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) byte arg2) {
         try {
             if (arg2 != -87) {
                 Static8.anInt285 = 416;
@@ -11149,7 +11149,7 @@ public final class client extends AnimFrame {
                     local73 = this.method169(arg0 + arg2);
                     @Pc(89) byte[] local89 = new byte[6];
                     local73.readFully(local89, 0, 6);
-                    @Pc(100) SecondaryParticleLinkedList local100 = new SecondaryParticleLinkedList(local89, -26728);
+                    @Pc(100) Buffer local100 = new Buffer(local89, -26728);
                     local100.anInt742 = 3;
                     @Pc(108) int local108 = local100.method484() + 6;
                     @Pc(110) int local110 = 6;
@@ -11976,7 +11976,7 @@ public final class client extends AnimFrame {
                     }
                 }
                 if (local11.anInt770 == 93 && this.aDisplayMode1.method642(local11.index, -640)) {
-                    Static6.method59(new SecondaryParticleLinkedList(local11.aByteArray10, -26728), this.aDisplayMode1, (byte) -75);
+                    Static6.method59(new Buffer(local11.aByteArray10, -26728), this.aDisplayMode1, (byte) -75);
                 }
             }
         } catch (@Pc(160) RuntimeException local160) {
@@ -12452,7 +12452,7 @@ public final class client extends AnimFrame {
     }
 
     @OriginalMember(owner = "client!client", name = "c", descriptor = "(ILclient!lb;B)V")
-    private void method224(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) byte arg2) {
+    private void method224(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) byte arg2) {
         try {
             @Pc(6) int local6;
             if (arg2 != 5) {

@@ -33,20 +33,20 @@ public final class Static21 {
     private static char[] aCharArray1 = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'};
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(IZ)Lclient!lb;")
-    public static SecondaryParticleLinkedList method468(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
+    public static Buffer method468(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
         try {
             @Pc(3) FrameBuffer local3 = aFrameBuffer5;
             synchronized (aFrameBuffer5) {
-                @Pc(7) SecondaryParticleLinkedList local7 = null;
+                @Pc(7) Buffer local7 = null;
                 if (arg0 == 0 && anInt744 > 0) {
                     anInt744--;
-                    local7 = (SecondaryParticleLinkedList) aFrameBuffer4.method510();
+                    local7 = (Buffer) aFrameBuffer4.method510();
                 } else if (arg0 == 1 && anInt745 > 0) {
                     anInt745--;
-                    local7 = (SecondaryParticleLinkedList) aFrameBuffer5.method510();
+                    local7 = (Buffer) aFrameBuffer5.method510();
                 } else if (arg0 == 2 && anInt746 > 0) {
                     anInt746--;
-                    local7 = (SecondaryParticleLinkedList) aFrameBuffer6.method510();
+                    local7 = (Buffer) aFrameBuffer6.method510();
                 }
                 if (local7 != null) {
                     local7.anInt742 = 0;
@@ -56,7 +56,7 @@ public final class Static21 {
             if (arg1) {
                 anInt741 = -68;
             }
-            @Pc(73) SecondaryParticleLinkedList local73 = new SecondaryParticleLinkedList(true);
+            @Pc(73) Buffer local73 = new Buffer(true);
             local73.anInt742 = 0;
             if (arg0 == 0) {
                 local73.aByteArray9 = new byte[100];

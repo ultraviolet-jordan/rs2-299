@@ -174,7 +174,7 @@ public final class ByteArray {
     }
 
     @OriginalMember(owner = "client!hc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method363(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method363(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             if (arg1 != 8) {
                 this.aBoolean151 = !this.aBoolean151;

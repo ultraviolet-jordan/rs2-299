@@ -134,7 +134,7 @@ public final class Js5GlTextureProvider {
     @OriginalMember(owner = "client!c", name = "a", descriptor = "(IIIII[B)V")
     public void method57(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) byte[] arg5) {
         try {
-            @Pc(7) SecondaryParticleLinkedList local7 = new SecondaryParticleLinkedList(arg5, -26728);
+            @Pc(7) Buffer local7 = new Buffer(arg5, -26728);
             if (arg4 < 2 || arg4 > 2) {
                 this.aBoolean31 = !this.aBoolean31;
             }
@@ -205,7 +205,7 @@ public final class Js5GlTextureProvider {
     @OriginalMember(owner = "client!c", name = "a", descriptor = "(I[Lclient!jc;Lclient!r;I[BZ)V")
     public void method60(@OriginalArg(0) int arg0, @OriginalArg(1) ParamType[] arg1, @OriginalArg(2) SecondaryParticleNode arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(5) boolean arg5) {
         try {
-            @Pc(7) SecondaryParticleLinkedList local7 = new SecondaryParticleLinkedList(arg4, -26728);
+            @Pc(7) Buffer local7 = new Buffer(arg4, -26728);
             @Pc(9) int local9 = -1;
             @Pc(13) int local13;
             if (!arg5) {

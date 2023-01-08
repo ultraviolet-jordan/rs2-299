@@ -17,7 +17,7 @@ public final class Static30 {
     @OriginalMember(owner = "client!rc", name = "a", descriptor = "(ILclient!xb;)V")
     public static void method589(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
-            @Pc(8) SecondaryParticleLinkedList local8 = new SecondaryParticleLinkedList(arg1.method666("varp.dat", null), -26728);
+            @Pc(8) Buffer local8 = new Buffer(arg1.method666("varp.dat", null), -26728);
             NpcList.size = 0;
             if (arg0 == 0) {
                 anInt888 = local8.method482();

@@ -44,7 +44,7 @@ public final class SoundPcmStream {
     public int anInt831 = 128;
 
     @OriginalMember(owner = "client!pc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method522(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method522(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             if (arg1 != 8) {
                 this.aBoolean210 = !this.aBoolean210;

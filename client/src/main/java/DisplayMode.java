@@ -164,7 +164,7 @@ public final class DisplayMode extends Keyboard implements Runnable {
         for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
             @Pc(31) byte[] local31 = arg0.method666(local20[local22], null);
             local36 = local31.length / 2;
-            @Pc(42) SecondaryParticleLinkedList local42 = new SecondaryParticleLinkedList(local31, -26728);
+            @Pc(42) Buffer local42 = new Buffer(local31, -26728);
             this.anIntArrayArray24[local22] = new int[local36];
             this.aByteArrayArray6[local22] = new byte[local36];
             for (local56 = 0; local56 < local36; local56++) {
@@ -176,7 +176,7 @@ public final class DisplayMode extends Keyboard implements Runnable {
         for (local36 = 0; local36 < 4; local36++) {
             local104 = arg0.method666(local93[local36], null);
             local56 = local104.length / 4;
-            @Pc(115) SecondaryParticleLinkedList local115 = new SecondaryParticleLinkedList(local104, -26728);
+            @Pc(115) Buffer local115 = new Buffer(local104, -26728);
             this.anIntArrayArray25[local36] = new int[local56];
             for (@Pc(123) int local123 = 0; local123 < local56; local123++) {
                 this.anIntArrayArray25[local36][local123] = local115.method485();
@@ -193,7 +193,7 @@ public final class DisplayMode extends Keyboard implements Runnable {
             }
         }
         local104 = arg0.method666("map_index", null);
-        @Pc(193) SecondaryParticleLinkedList local193 = new SecondaryParticleLinkedList(local104, -26728);
+        @Pc(193) Buffer local193 = new Buffer(local104, -26728);
         local56 = local104.length / 7;
         this.anIntArray256 = new int[local56];
         this.anIntArray257 = new int[local56];
@@ -206,14 +206,14 @@ public final class DisplayMode extends Keyboard implements Runnable {
             this.anIntArray259[local216] = local193.method480();
         }
         local104 = arg0.method666("anim_index", null);
-        local193 = new SecondaryParticleLinkedList(local104, -26728);
+        local193 = new Buffer(local104, -26728);
         local56 = local104.length / 2;
         this.anIntArray260 = new int[local56];
         for (@Pc(268) int local268 = 0; local268 < local56; local268++) {
             this.anIntArray260[local268] = local193.method482();
         }
         local104 = arg0.method666("midi_index", null);
-        local193 = new SecondaryParticleLinkedList(local104, -26728);
+        local193 = new Buffer(local104, -26728);
         local56 = local104.length;
         this.anIntArray261 = new int[local56];
         for (@Pc(300) int local300 = 0; local300 < local56; local300++) {

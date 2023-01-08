@@ -66,8 +66,8 @@ public final class JavaAudioChannel extends World {
     @OriginalMember(owner = "client!kb", name = "<init>", descriptor = "(IZLjava/lang/String;Lclient!xb;)V")
     public JavaAudioChannel(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class47 arg3) {
         try {
-            @Pc(72) SecondaryParticleLinkedList local72 = new SecondaryParticleLinkedList(arg3.method666(arg2 + ".dat", null), -26728);
-            @Pc(81) SecondaryParticleLinkedList local81 = new SecondaryParticleLinkedList(arg3.method666("index.dat", null), -26728);
+            @Pc(72) Buffer local72 = new Buffer(arg3.method666(arg2 + ".dat", null), -26728);
+            @Pc(81) Buffer local81 = new Buffer(arg3.method666("index.dat", null), -26728);
             @Pc(83) boolean local83 = true;
             local81.anInt742 = local72.method482() + 4;
             @Pc(92) int local92 = local81.method480();

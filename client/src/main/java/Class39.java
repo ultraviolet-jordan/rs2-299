@@ -41,7 +41,7 @@ public final class Class39 {
     private int anInt895 = -1;
 
     @OriginalMember(owner = "client!rc", name = "a", descriptor = "(IILclient!lb;)V")
-    public void method590(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    public void method590(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
             if (arg1 == 39196) {
                 while (true) {

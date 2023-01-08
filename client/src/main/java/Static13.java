@@ -26,30 +26,30 @@ public final class Static13 {
     @OriginalMember(owner = "client!g", name = "a", descriptor = "(I[B)V")
     public static void method303(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
         try {
-            @Pc(7) SecondaryParticleLinkedList local7 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(7) Buffer local7 = new Buffer(arg1, -26728);
             local7.anInt742 = arg1.length - 8;
             @Pc(16) int local16 = local7.method482();
             @Pc(19) int local19 = local7.method482();
             @Pc(22) int local22 = local7.method482();
             @Pc(25) int local25 = local7.method482();
             @Pc(27) byte local27 = 0;
-            @Pc(33) SecondaryParticleLinkedList local33 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(33) Buffer local33 = new Buffer(arg1, -26728);
             local33.anInt742 = local27;
             @Pc(42) int local42 = local27 + local16 + 2;
-            @Pc(48) SecondaryParticleLinkedList local48 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(48) Buffer local48 = new Buffer(arg1, -26728);
             local48.anInt742 = local42;
             @Pc(55) int local55 = local42 + local19;
-            @Pc(61) SecondaryParticleLinkedList local61 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(61) Buffer local61 = new Buffer(arg1, -26728);
             local61.anInt742 = local55;
             @Pc(68) int local68 = local55 + local22;
             if (arg0 < 3 || arg0 > 3) {
                 for (@Pc(76) int local76 = 1; local76 > 0; local76++) {
                 }
             }
-            @Pc(87) SecondaryParticleLinkedList local87 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(87) Buffer local87 = new Buffer(arg1, -26728);
             local87.anInt742 = local68;
             local42 = local68 + local25;
-            @Pc(100) SecondaryParticleLinkedList local100 = new SecondaryParticleLinkedList(arg1, -26728);
+            @Pc(100) Buffer local100 = new Buffer(arg1, -26728);
             local100.anInt742 = local42;
             @Pc(109) Player local109 = new Player(local100, true);
             @Pc(112) int local112 = local33.method482();

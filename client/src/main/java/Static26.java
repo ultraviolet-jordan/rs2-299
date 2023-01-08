@@ -20,7 +20,7 @@ public final class Static26 {
     @OriginalMember(owner = "client!pc", name = "a", descriptor = "(ILclient!xb;)V")
     public static void method521(@OriginalArg(0) int arg0, @OriginalArg(1) Class47 arg1) {
         try {
-            @Pc(8) SecondaryParticleLinkedList local8 = new SecondaryParticleLinkedList(arg1.method666("spotanim.dat", null), -26728);
+            @Pc(8) Buffer local8 = new Buffer(arg1.method666("spotanim.dat", null), -26728);
             anInt826 = local8.method482();
             if (aSoundPcmStreamArray1 == null) {
                 aSoundPcmStreamArray1 = new SoundPcmStream[anInt826];

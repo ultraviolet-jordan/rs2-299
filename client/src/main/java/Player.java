@@ -20,7 +20,7 @@ public final class Player {
     public int[][] anIntArrayArray12;
 
     @OriginalMember(owner = "client!f", name = "<init>", descriptor = "(Lclient!lb;Z)V")
-    public Player(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) boolean arg1) {
+    public Player(@OriginalArg(0) Buffer arg0, @OriginalArg(1) boolean arg1) {
         try {
             this.anInt530 = arg0.method480();
             this.anIntArray161 = new int[this.anInt530];

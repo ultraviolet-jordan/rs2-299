@@ -168,7 +168,7 @@ public final class GlShader {
     }
 
     @OriginalMember(owner = "client!ec", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method290(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method290(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(3) int local3 = -1;
             if (arg1 < 8 || arg1 > 8) {

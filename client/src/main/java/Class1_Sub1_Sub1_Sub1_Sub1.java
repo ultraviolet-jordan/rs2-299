@@ -86,7 +86,7 @@ public final class Class1_Sub1_Sub1_Sub1_Sub1 extends Class1_Sub1_Sub1_Sub1 {
     private long aLong9 = -1L;
 
     @OriginalMember(owner = "client!ab", name = "a", descriptor = "(ILclient!lb;)V")
-    public void method39(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1) {
+    public void method39(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
         try {
             arg1.anInt742 = 0;
             this.anInt126 = arg1.method480();

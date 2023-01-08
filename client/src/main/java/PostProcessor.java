@@ -123,7 +123,7 @@ public final class PostProcessor {
     }
 
     @OriginalMember(owner = "client!bc", name = "a", descriptor = "(Lclient!ac;ILclient!lb;)V")
-    public void method55(@OriginalArg(0) TextureOpIrregularBricks arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2) {
+    public void method55(@OriginalArg(0) TextureOpIrregularBricks arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2) {
         try {
             if (arg1 == 39196) {
                 @Pc(8) int local8 = arg2.method480();

@@ -61,15 +61,15 @@ public final class Static32 {
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!xb;)V")
     public static void method594(@OriginalArg(0) Class47 arg0) {
-        @Pc(10) SecondaryParticleLinkedList local10 = new SecondaryParticleLinkedList(arg0.method666("fragmentsenc.txt", null), -26728);
-        @Pc(19) SecondaryParticleLinkedList local19 = new SecondaryParticleLinkedList(arg0.method666("badenc.txt", null), -26728);
-        @Pc(28) SecondaryParticleLinkedList local28 = new SecondaryParticleLinkedList(arg0.method666("domainenc.txt", null), -26728);
-        @Pc(37) SecondaryParticleLinkedList local37 = new SecondaryParticleLinkedList(arg0.method666("tldlist.txt", null), -26728);
+        @Pc(10) Buffer local10 = new Buffer(arg0.method666("fragmentsenc.txt", null), -26728);
+        @Pc(19) Buffer local19 = new Buffer(arg0.method666("badenc.txt", null), -26728);
+        @Pc(28) Buffer local28 = new Buffer(arg0.method666("domainenc.txt", null), -26728);
+        @Pc(37) Buffer local37 = new Buffer(arg0.method666("tldlist.txt", null), -26728);
         method595(local10, local19, local28, local37);
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!lb;Lclient!lb;Lclient!lb;Lclient!lb;)V")
-    private static void method595(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1, @OriginalArg(2) SecondaryParticleLinkedList arg2, @OriginalArg(3) SecondaryParticleLinkedList arg3) {
+    private static void method595(@OriginalArg(0) Buffer arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) Buffer arg2, @OriginalArg(3) Buffer arg3) {
         method597(arg1, anInt930);
         method598(arg2, 39405);
         method599(arg0, (byte) 22);
@@ -77,7 +77,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!lb;I)V")
-    private static void method596(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    private static void method596(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(4) int local4 = arg0.method485();
             aCharArrayArray3 = new char[local4][];
@@ -100,7 +100,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "b", descriptor = "(Lclient!lb;I)V")
-    private static void method597(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    private static void method597(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(2) int local2 = arg0.method485();
             if (arg1 != 35138) {
@@ -116,7 +116,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "c", descriptor = "(Lclient!lb;I)V")
-    private static void method598(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    private static void method598(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(2) int local2 = arg0.method485();
             if (arg1 == anInt931) {
@@ -130,7 +130,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!lb;B)V")
-    private static void method599(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) byte arg1) {
+    private static void method599(@OriginalArg(0) Buffer arg0, @OriginalArg(1) byte arg1) {
         try {
             if (arg1 != 22) {
                 aBoolean224 = !aBoolean224;
@@ -146,7 +146,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "([[C[[[BBLclient!lb;)V")
-    private static void method600(@OriginalArg(0) char[][] arg0, @OriginalArg(1) byte[][][] arg1, @OriginalArg(2) byte arg2, @OriginalArg(3) SecondaryParticleLinkedList arg3) {
+    private static void method600(@OriginalArg(0) char[][] arg0, @OriginalArg(1) byte[][][] arg1, @OriginalArg(2) byte arg2, @OriginalArg(3) Buffer arg3) {
         try {
             for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
                 @Pc(9) char[] local9 = new char[arg3.method480()];
@@ -173,7 +173,7 @@ public final class Static32 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lclient!lb;I[[C)V")
-    private static void method601(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1, @OriginalArg(2) char[][] arg2) {
+    private static void method601(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1, @OriginalArg(2) char[][] arg2) {
         try {
             for (@Pc(3) int local3 = 0; local3 < arg2.length; local3++) {
                 @Pc(9) char[] local9 = new char[arg0.method480()];

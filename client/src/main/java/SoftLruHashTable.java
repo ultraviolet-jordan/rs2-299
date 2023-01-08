@@ -35,7 +35,7 @@ public final class SoftLruHashTable {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method80(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method80(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             for (@Pc(1) int local1 = 0; local1 < 10; local1++) {
                 @Pc(6) int local6 = arg0.method480();
@@ -91,7 +91,7 @@ public final class SoftLruHashTable {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(II)Lclient!lb;")
-    public SecondaryParticleLinkedList method82(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+    public Buffer method82(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(3) int local3 = this.method83(arg0);
             Static7.aSecondaryParticleLinkedList1.anInt742 = 0;

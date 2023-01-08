@@ -92,8 +92,8 @@ public final class SkyBoxCube extends World {
 
     @OriginalMember(owner = "client!ib", name = "<init>", descriptor = "(Lclient!xb;Ljava/lang/String;I)V")
     public SkyBoxCube(@OriginalArg(0) Class47 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-        @Pc(49) SecondaryParticleLinkedList local49 = new SecondaryParticleLinkedList(arg0.method666(arg1 + ".dat", null), -26728);
-        @Pc(58) SecondaryParticleLinkedList local58 = new SecondaryParticleLinkedList(arg0.method666("index.dat", null), -26728);
+        @Pc(49) Buffer local49 = new Buffer(arg0.method666(arg1 + ".dat", null), -26728);
+        @Pc(58) Buffer local58 = new Buffer(arg0.method666("index.dat", null), -26728);
         local58.anInt742 = local49.method482();
         this.anInt656 = local58.method482();
         this.anInt657 = local58.method482();

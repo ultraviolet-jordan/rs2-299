@@ -7,7 +7,7 @@ import sign.signlink;
 import java.math.BigInteger;
 
 @OriginalClass("client!lb")
-public final class SecondaryParticleLinkedList extends ObjStackNode {
+public final class Buffer extends ObjStackNode {
 
     @OriginalMember(owner = "client!lb", name = "v", descriptor = "[I")
     private static int[] anIntArray219 = new int[256];
@@ -69,7 +69,7 @@ public final class SecondaryParticleLinkedList extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "<init>", descriptor = "(Z)V")
-    public SecondaryParticleLinkedList(@OriginalArg(0) boolean arg0) {
+    public Buffer(@OriginalArg(0) boolean arg0) {
         try {
             if (!arg0) {
                 throw new NullPointerException();
@@ -81,7 +81,7 @@ public final class SecondaryParticleLinkedList extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "<init>", descriptor = "([BI)V")
-    public SecondaryParticleLinkedList(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
+    public Buffer(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
         try {
             this.aByteArray9 = arg0;
             if (arg1 != -26728) {

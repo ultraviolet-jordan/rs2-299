@@ -51,7 +51,7 @@ public final class Class47 {
     @OriginalMember(owner = "client!xb", name = "a", descriptor = "([BI)V")
     private void method665(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
         try {
-            @Pc(7) SecondaryParticleLinkedList local7 = new SecondaryParticleLinkedList(arg0, -26728);
+            @Pc(7) Buffer local7 = new Buffer(arg0, -26728);
             @Pc(10) int local10 = local7.method484();
             @Pc(13) int local13 = local7.method484();
             if (local13 == local10) {
@@ -61,7 +61,7 @@ public final class Class47 {
                 @Pc(19) byte[] local19 = new byte[local10];
                 Static29.method581(local19, local10, arg0, local13, 6);
                 this.aByteArray21 = local19;
-                local7 = new SecondaryParticleLinkedList(this.aByteArray21, -26728);
+                local7 = new Buffer(this.aByteArray21, -26728);
                 this.aBoolean237 = true;
             }
             this.anInt974 = local7.method482();

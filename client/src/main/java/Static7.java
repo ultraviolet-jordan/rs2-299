@@ -9,7 +9,7 @@ public final class Static7 {
     public static byte[] aByteArray1;
 
     @OriginalMember(owner = "client!cc", name = "g", descriptor = "Lclient!lb;")
-    public static SecondaryParticleLinkedList aSecondaryParticleLinkedList1;
+    public static Buffer aSecondaryParticleLinkedList1;
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "Z")
     private static boolean aBoolean36 = true;
@@ -21,13 +21,13 @@ public final class Static7 {
     public static int[] anIntArray29 = new int[5000];
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(ILclient!lb;)V")
-    public static void method78(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryParticleLinkedList arg1) {
+    public static void method78(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
         try {
             aByteArray1 = new byte[441000];
             if (arg0 != 0) {
                 aBoolean36 = !aBoolean36;
             }
-            aSecondaryParticleLinkedList1 = new SecondaryParticleLinkedList(aByteArray1, -26728);
+            aSecondaryParticleLinkedList1 = new Buffer(aByteArray1, -26728);
             Static10.method243();
             while (true) {
                 @Pc(20) int local20 = arg1.method482();
@@ -45,7 +45,7 @@ public final class Static7 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(ZII)Lclient!lb;")
-    public static SecondaryParticleLinkedList method79(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+    public static Buffer method79(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
         try {
             if (!arg0) {
                 for (@Pc(3) int local3 = 1; local3 > 0; local3++) {

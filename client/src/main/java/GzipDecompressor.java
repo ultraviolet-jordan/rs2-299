@@ -48,8 +48,8 @@ public final class GzipDecompressor extends World {
 
     @OriginalMember(owner = "client!jb", name = "<init>", descriptor = "(Lclient!xb;Ljava/lang/String;I)V")
     public GzipDecompressor(@OriginalArg(0) Class47 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-        @Pc(31) SecondaryParticleLinkedList local31 = new SecondaryParticleLinkedList(arg0.method666(arg1 + ".dat", null), -26728);
-        @Pc(40) SecondaryParticleLinkedList local40 = new SecondaryParticleLinkedList(arg0.method666("index.dat", null), -26728);
+        @Pc(31) Buffer local31 = new Buffer(arg0.method666(arg1 + ".dat", null), -26728);
+        @Pc(40) Buffer local40 = new Buffer(arg0.method666("index.dat", null), -26728);
         local40.anInt742 = local31.method482();
         this.anInt679 = local40.method482();
         this.anInt680 = local40.method482();

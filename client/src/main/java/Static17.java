@@ -12,7 +12,7 @@ public final class Static17 {
     private static int[] anIntArray184;
 
     @OriginalMember(owner = "client!hc", name = "f", descriptor = "Lclient!lb;")
-    private static SecondaryParticleLinkedList aSecondaryParticleLinkedList7;
+    private static Buffer aSecondaryParticleLinkedList7;
 
     @OriginalMember(owner = "client!hc", name = "g", descriptor = "[Lclient!hc;")
     private static ByteArray[] aByteArrayArray3;
@@ -31,8 +31,8 @@ public final class Static17 {
 
     @OriginalMember(owner = "client!hc", name = "a", descriptor = "(Lclient!xb;)V")
     public static void method359(@OriginalArg(0) Class47 arg0) {
-        aSecondaryParticleLinkedList7 = new SecondaryParticleLinkedList(arg0.method666("obj.dat", null), -26728);
-        @Pc(19) SecondaryParticleLinkedList local19 = new SecondaryParticleLinkedList(arg0.method666("obj.idx", null), -26728);
+        aSecondaryParticleLinkedList7 = new Buffer(arg0.method666("obj.dat", null), -26728);
+        @Pc(19) Buffer local19 = new Buffer(arg0.method666("obj.idx", null), -26728);
         anInt601 = local19.method482();
         anIntArray184 = new int[anInt601];
         @Pc(27) int local27 = 2;

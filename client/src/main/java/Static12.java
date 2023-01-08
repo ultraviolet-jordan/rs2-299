@@ -15,7 +15,7 @@ public final class Static12 {
     private static int[] anIntArray155;
 
     @OriginalMember(owner = "client!ec", name = "h", descriptor = "Lclient!lb;")
-    private static SecondaryParticleLinkedList aSecondaryParticleLinkedList5;
+    private static Buffer aSecondaryParticleLinkedList5;
 
     @OriginalMember(owner = "client!ec", name = "i", descriptor = "[Lclient!ec;")
     private static GlShader[] aGlShaderArray1;
@@ -37,8 +37,8 @@ public final class Static12 {
 
     @OriginalMember(owner = "client!ec", name = "a", descriptor = "(Lclient!xb;)V")
     public static void method286(@OriginalArg(0) Class47 arg0) {
-        aSecondaryParticleLinkedList5 = new SecondaryParticleLinkedList(arg0.method666("loc.dat", null), -26728);
-        @Pc(19) SecondaryParticleLinkedList local19 = new SecondaryParticleLinkedList(arg0.method666("loc.idx", null), -26728);
+        aSecondaryParticleLinkedList5 = new Buffer(arg0.method666("loc.dat", null), -26728);
+        @Pc(19) Buffer local19 = new Buffer(arg0.method666("loc.idx", null), -26728);
         anInt510 = local19.method482();
         anIntArray155 = new int[anInt510];
         @Pc(27) int local27 = 2;

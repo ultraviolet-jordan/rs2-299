@@ -95,7 +95,7 @@ public final class Class13 {
     private int anInt574 = -1;
 
     @OriginalMember(owner = "client!gc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method324(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method324(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             @Pc(9) int local9;
             if (arg1 < 8 || arg1 > 8) {

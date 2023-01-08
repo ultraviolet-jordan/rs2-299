@@ -259,7 +259,7 @@ public final class ParticleEffectorType {
     }
 
     @OriginalMember(owner = "client!dc", name = "a", descriptor = "(Lclient!lb;I)V")
-    public void method246(@OriginalArg(0) SecondaryParticleLinkedList arg0, @OriginalArg(1) int arg1) {
+    public void method246(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
         try {
             this.aTextureOpIrregularBricks1 = new TextureOpIrregularBricks();
             this.aTextureOpIrregularBricks1.method42(arg0, 8);
