@@ -761,7 +761,7 @@ public final class client extends AnimFrame {
     private boolean aBoolean43 = false;
 
     @OriginalMember(owner = "client!client", name = "U", descriptor = "[I")
-    private int[] anIntArray32 = new int[Static25.anInt812];
+    private int[] anIntArray32 = new int[Skills.anInt812];
 
     @OriginalMember(owner = "client!client", name = "V", descriptor = "I")
     private int anInt772 = -1;
@@ -938,7 +938,7 @@ public final class client extends AnimFrame {
     public boolean aBoolean54 = false;
 
     @OriginalMember(owner = "client!client", name = "ee", descriptor = "[I")
-    private int[] anIntArray55 = new int[Static25.anInt812];
+    private int[] anIntArray55 = new int[Skills.anInt812];
 
     @OriginalMember(owner = "client!client", name = "ge", descriptor = "Z")
     private boolean aBoolean55 = false;
@@ -977,7 +977,7 @@ public final class client extends AnimFrame {
     private int anInt302 = -1;
 
     @OriginalMember(owner = "client!client", name = "De", descriptor = "[I")
-    private int[] anIntArray59 = new int[Static25.anInt812];
+    private int[] anIntArray59 = new int[Skills.anInt812];
 
     @OriginalMember(owner = "client!client", name = "Ge", descriptor = "Z")
     private boolean aBoolean61 = false;
@@ -1754,8 +1754,8 @@ public final class client extends AnimFrame {
                     }
                     @Pc(176) int local176;
                     if (local32 == 9) {
-                        for (local176 = 0; local176 < Static25.anInt812; local176++) {
-                            if (Static25.aBooleanArray9[local176]) {
+                        for (local176 = 0; local176 < Skills.anInt812; local176++) {
+                            if (Skills.aBooleanArray9[local176]) {
                                 local34 += this.anIntArray59[local176];
                             }
                         }

@@ -1,6 +1,6 @@
 import org.openrs2.deob.annotation.OriginalMember;
 
-public final class Static25 {
+public final class Skills {
 
     @OriginalMember(owner = "client!oc", name = "a", descriptor = "I")
     public static int anInt812 = 25;
