@@ -1,0 +1,6 @@
+/.idea/
+/.gradle/
+
+/build/
+/client/build/
+/deob-annotations/build/
