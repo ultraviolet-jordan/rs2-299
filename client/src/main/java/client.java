@@ -6665,7 +6665,7 @@ public final class client extends AnimFrame {
                 this.aSecondaryParticleLinkedList4.put4(signlink.uid);
                 this.aSecondaryParticleLinkedList4.putString(arg0);
                 this.aSecondaryParticleLinkedList4.putString(arg1);
-                this.aSecondaryParticleLinkedList4.rsa(0, Static8.aBigInteger1, Static8.aBigInteger2);
+                this.aSecondaryParticleLinkedList4.rsa(0, Static8.exponent, Static8.modulus);
                 this.aSecondaryParticleLinkedList2.anInt742 = 0;
                 if (arg2) {
                     this.aSecondaryParticleLinkedList2.put1(18);

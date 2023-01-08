@@ -378,7 +378,7 @@ public final class Buffer extends ObjStackNode {
     }
 
     @OriginalMember(owner = "client!lb", name = "a", descriptor = "(ILjava/math/BigInteger;Ljava/math/BigInteger;)V")
-    public void rsa(@OriginalArg(0) int arg0, @OriginalArg(1) BigInteger arg1, @OriginalArg(2) BigInteger arg2) {
+    public void rsa(@OriginalArg(0) int arg0, @OriginalArg(1) BigInteger exponent, @OriginalArg(2) BigInteger modulus) {
         try {
             @Pc(2) int local2 = this.anInt742;
             this.anInt742 = 0;
@@ -386,14 +386,14 @@ public final class Buffer extends ObjStackNode {
             this.getBytes(local2, 0, local8, (byte) 121);
             @Pc(19) BigInteger local19 = new BigInteger(local8);
             if (arg0 >= 0 && arg0 <= 0) {
-                @Pc(29) BigInteger local29 = local19.modPow(arg1, arg2);
+                @Pc(29) BigInteger local29 = local19.modPow(exponent, modulus);
                 @Pc(32) byte[] local32 = local29.toByteArray();
                 this.anInt742 = 0;
                 this.put1(local32.length);
                 this.putBytes(0, local32.length, local32, 0);
             }
         } catch (@Pc(48) RuntimeException local48) {
-            signlink.reporterror("67746, " + arg0 + ", " + arg1 + ", " + arg2 + ", " + local48.toString());
+            signlink.reporterror("67746, " + arg0 + ", " + exponent + ", " + modulus + ", " + local48.toString());
             throw new RuntimeException();
         }
     }

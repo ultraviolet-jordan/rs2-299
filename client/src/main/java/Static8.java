@@ -104,7 +104,7 @@ public final class Static8 {
     public static int anInt210 = 4;
 
     @OriginalMember(owner = "client!client", name = "Ub", descriptor = "Ljava/math/BigInteger;")
-    public static BigInteger aBigInteger1 = new BigInteger("58778699976184461502525193738213253649000149147835990136706041084440742975821");
+    public static BigInteger exponent = new BigInteger("65537");
 
     @OriginalMember(owner = "client!client", name = "Vc", descriptor = "[[I")
     public static final int[][] anIntArrayArray3 = new int[][]{{6798, 107, 10283, 16, 4797, 7744, 5799, 4634, 33697, 22433, 2983, 54193}, {8741, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003, 25239}, {25238, 8742, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003}, {4626, 11146, 6439, 12, 4758, 10270}, {4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574}};
@@ -119,7 +119,7 @@ public final class Static8 {
     public static int anInt395 = -16342;
 
     @OriginalMember(owner = "client!client", name = "di", descriptor = "Ljava/math/BigInteger;")
-    public static BigInteger aBigInteger2 = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
+    public static BigInteger modulus = new BigInteger("162430190928353386882632146152138366556903893421250065905926788305002913598741279965807059909202699204271028147694021897800880828551271056376952563662990058938569757225427782458272909700526404453366129377721860585519615956553971197160213430435103693906642984272798830316856805804216243600587987282455220060791");
 
     @OriginalMember(owner = "client!client", name = "Gi", descriptor = "Ljava/lang/String;")
     public static String aString14 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ";
