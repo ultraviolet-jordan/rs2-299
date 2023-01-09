@@ -15,7 +15,6 @@ allprojects {
 
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
-        options.release.set(8)
     }
 
     tasks.withType<JavaExec> {
